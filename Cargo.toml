@@ -1,0 +1,6 @@
+[package]
+name = "legendary_lamp"
+version = "0.1.0"
+authors = ["Spencer Prost <spencer.prost@pnnl.gov>"]
+
+[dependencies]
