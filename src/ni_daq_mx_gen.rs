@@ -5,6 +5,5761 @@ pub mod ni_daq_mx_gen {
          non_camel_case_types,
          non_upper_case_globals,
          non_snake_case)]
+pub const TRUE: ::std::os::raw::c_uchar = 1;
+pub const FALSE: ::std::os::raw::c_uchar = 0;
+pub const NULL: ::std::os::raw::c_uchar = 0;
+pub const DAQmx_Buf_Input_BufSize: ::std::os::raw::c_ushort = 6252;
+pub const DAQmx_Buf_Input_OnbrdBufSize: ::std::os::raw::c_ushort = 8970;
+pub const DAQmx_Buf_Output_BufSize: ::std::os::raw::c_ushort = 6253;
+pub const DAQmx_Buf_Output_OnbrdBufSize: ::std::os::raw::c_ushort = 8971;
+pub const DAQmx_SelfCal_Supported: ::std::os::raw::c_ushort = 6240;
+pub const DAQmx_SelfCal_LastTemp: ::std::os::raw::c_ushort = 6244;
+pub const DAQmx_ExtCal_RecommendedInterval: ::std::os::raw::c_ushort = 6248;
+pub const DAQmx_ExtCal_LastTemp: ::std::os::raw::c_ushort = 6247;
+pub const DAQmx_Cal_UserDefinedInfo: ::std::os::raw::c_ushort = 6241;
+pub const DAQmx_Cal_UserDefinedInfo_MaxSize: ::std::os::raw::c_ushort = 6428;
+pub const DAQmx_Cal_DevTemp: ::std::os::raw::c_ushort = 8763;
+pub const DAQmx_Cal_AccConnectionCount: ::std::os::raw::c_ushort = 12267;
+pub const DAQmx_Cal_RecommendedAccConnectionCountLimit:
+          ::std::os::raw::c_ushort =
+    12268;
+pub const DAQmx_AI_Max: ::std::os::raw::c_ushort = 6109;
+pub const DAQmx_AI_Min: ::std::os::raw::c_ushort = 6110;
+pub const DAQmx_AI_CustomScaleName: ::std::os::raw::c_ushort = 6112;
+pub const DAQmx_AI_MeasType: ::std::os::raw::c_ushort = 1685;
+pub const DAQmx_AI_Voltage_Units: ::std::os::raw::c_ushort = 4244;
+pub const DAQmx_AI_Voltage_dBRef: ::std::os::raw::c_ushort = 10672;
+pub const DAQmx_AI_Voltage_ACRMS_Units: ::std::os::raw::c_ushort = 6114;
+pub const DAQmx_AI_Temp_Units: ::std::os::raw::c_ushort = 4147;
+pub const DAQmx_AI_Thrmcpl_Type: ::std::os::raw::c_ushort = 4176;
+pub const DAQmx_AI_Thrmcpl_ScaleType: ::std::os::raw::c_ushort = 10704;
+pub const DAQmx_AI_Thrmcpl_CJCSrc: ::std::os::raw::c_ushort = 4149;
+pub const DAQmx_AI_Thrmcpl_CJCVal: ::std::os::raw::c_ushort = 4150;
+pub const DAQmx_AI_Thrmcpl_CJCChan: ::std::os::raw::c_ushort = 4148;
+pub const DAQmx_AI_RTD_Type: ::std::os::raw::c_ushort = 4146;
+pub const DAQmx_AI_RTD_R0: ::std::os::raw::c_ushort = 4144;
+pub const DAQmx_AI_RTD_A: ::std::os::raw::c_ushort = 4112;
+pub const DAQmx_AI_RTD_B: ::std::os::raw::c_ushort = 4113;
+pub const DAQmx_AI_RTD_C: ::std::os::raw::c_ushort = 4115;
+pub const DAQmx_AI_Thrmstr_A: ::std::os::raw::c_ushort = 6345;
+pub const DAQmx_AI_Thrmstr_B: ::std::os::raw::c_ushort = 6347;
+pub const DAQmx_AI_Thrmstr_C: ::std::os::raw::c_ushort = 6346;
+pub const DAQmx_AI_Thrmstr_R1: ::std::os::raw::c_ushort = 4193;
+pub const DAQmx_AI_ForceReadFromChan: ::std::os::raw::c_ushort = 6392;
+pub const DAQmx_AI_Current_Units: ::std::os::raw::c_ushort = 1793;
+pub const DAQmx_AI_Current_ACRMS_Units: ::std::os::raw::c_ushort = 6115;
+pub const DAQmx_AI_Strain_Units: ::std::os::raw::c_ushort = 2433;
+pub const DAQmx_AI_StrainGage_ForceReadFromChan: ::std::os::raw::c_ushort =
+    12282;
+pub const DAQmx_AI_StrainGage_GageFactor: ::std::os::raw::c_ushort = 2452;
+pub const DAQmx_AI_StrainGage_PoissonRatio: ::std::os::raw::c_ushort = 2456;
+pub const DAQmx_AI_StrainGage_Cfg: ::std::os::raw::c_ushort = 2434;
+pub const DAQmx_AI_RosetteStrainGage_RosetteType: ::std::os::raw::c_ushort =
+    12286;
+pub const DAQmx_AI_RosetteStrainGage_Orientation: ::std::os::raw::c_ushort =
+    12284;
+pub const DAQmx_AI_RosetteStrainGage_StrainChans: ::std::os::raw::c_ushort =
+    12283;
+pub const DAQmx_AI_RosetteStrainGage_RosetteMeasType: ::std::os::raw::c_ushort
+          =
+    12285;
+pub const DAQmx_AI_Resistance_Units: ::std::os::raw::c_ushort = 2389;
+pub const DAQmx_AI_Freq_Units: ::std::os::raw::c_ushort = 2054;
+pub const DAQmx_AI_Freq_ThreshVoltage: ::std::os::raw::c_ushort = 2069;
+pub const DAQmx_AI_Freq_Hyst: ::std::os::raw::c_ushort = 2068;
+pub const DAQmx_AI_LVDT_Units: ::std::os::raw::c_ushort = 2320;
+pub const DAQmx_AI_LVDT_Sensitivity: ::std::os::raw::c_ushort = 2361;
+pub const DAQmx_AI_LVDT_SensitivityUnits: ::std::os::raw::c_ushort = 8602;
+pub const DAQmx_AI_RVDT_Units: ::std::os::raw::c_ushort = 2167;
+pub const DAQmx_AI_RVDT_Sensitivity: ::std::os::raw::c_ushort = 2307;
+pub const DAQmx_AI_RVDT_SensitivityUnits: ::std::os::raw::c_ushort = 8603;
+pub const DAQmx_AI_EddyCurrentProxProbe_Units: ::std::os::raw::c_ushort =
+    10944;
+pub const DAQmx_AI_EddyCurrentProxProbe_Sensitivity: ::std::os::raw::c_ushort
+          =
+    10942;
+pub const DAQmx_AI_EddyCurrentProxProbe_SensitivityUnits:
+          ::std::os::raw::c_ushort =
+    10943;
+pub const DAQmx_AI_SoundPressure_MaxSoundPressureLvl: ::std::os::raw::c_ushort
+          =
+    8762;
+pub const DAQmx_AI_SoundPressure_Units: ::std::os::raw::c_ushort = 5416;
+pub const DAQmx_AI_SoundPressure_dBRef: ::std::os::raw::c_ushort = 10673;
+pub const DAQmx_AI_Microphone_Sensitivity: ::std::os::raw::c_ushort = 5430;
+pub const DAQmx_AI_Accel_Units: ::std::os::raw::c_ushort = 1651;
+pub const DAQmx_AI_Accel_dBRef: ::std::os::raw::c_ushort = 10674;
+pub const DAQmx_AI_Accel_4WireDCVoltage_Sensitivity: ::std::os::raw::c_ushort
+          =
+    12565;
+pub const DAQmx_AI_Accel_4WireDCVoltage_SensitivityUnits:
+          ::std::os::raw::c_ushort =
+    12566;
+pub const DAQmx_AI_Accel_Sensitivity: ::std::os::raw::c_ushort = 1682;
+pub const DAQmx_AI_Accel_SensitivityUnits: ::std::os::raw::c_ushort = 8604;
+pub const DAQmx_AI_Accel_Charge_Sensitivity: ::std::os::raw::c_ushort = 12563;
+pub const DAQmx_AI_Accel_Charge_SensitivityUnits: ::std::os::raw::c_ushort =
+    12564;
+pub const DAQmx_AI_Velocity_Units: ::std::os::raw::c_ushort = 12276;
+pub const DAQmx_AI_Velocity_IEPESensor_dBRef: ::std::os::raw::c_ushort =
+    12277;
+pub const DAQmx_AI_Velocity_IEPESensor_Sensitivity: ::std::os::raw::c_ushort =
+    12278;
+pub const DAQmx_AI_Velocity_IEPESensor_SensitivityUnits:
+          ::std::os::raw::c_ushort =
+    12279;
+pub const DAQmx_AI_Force_Units: ::std::os::raw::c_ushort = 12149;
+pub const DAQmx_AI_Force_IEPESensor_Sensitivity: ::std::os::raw::c_ushort =
+    12161;
+pub const DAQmx_AI_Force_IEPESensor_SensitivityUnits: ::std::os::raw::c_ushort
+          =
+    12162;
+pub const DAQmx_AI_Pressure_Units: ::std::os::raw::c_ushort = 12150;
+pub const DAQmx_AI_Torque_Units: ::std::os::raw::c_ushort = 12151;
+pub const DAQmx_AI_Bridge_Units: ::std::os::raw::c_ushort = 12178;
+pub const DAQmx_AI_Bridge_ElectricalUnits: ::std::os::raw::c_ushort = 12167;
+pub const DAQmx_AI_Bridge_PhysicalUnits: ::std::os::raw::c_ushort = 12168;
+pub const DAQmx_AI_Bridge_ScaleType: ::std::os::raw::c_ushort = 12169;
+pub const DAQmx_AI_Bridge_TwoPointLin_First_ElectricalVal:
+          ::std::os::raw::c_ushort =
+    12170;
+pub const DAQmx_AI_Bridge_TwoPointLin_First_PhysicalVal:
+          ::std::os::raw::c_ushort =
+    12171;
+pub const DAQmx_AI_Bridge_TwoPointLin_Second_ElectricalVal:
+          ::std::os::raw::c_ushort =
+    12172;
+pub const DAQmx_AI_Bridge_TwoPointLin_Second_PhysicalVal:
+          ::std::os::raw::c_ushort =
+    12173;
+pub const DAQmx_AI_Bridge_Table_ElectricalVals: ::std::os::raw::c_ushort =
+    12174;
+pub const DAQmx_AI_Bridge_Table_PhysicalVals: ::std::os::raw::c_ushort =
+    12175;
+pub const DAQmx_AI_Bridge_Poly_ForwardCoeff: ::std::os::raw::c_ushort = 12176;
+pub const DAQmx_AI_Bridge_Poly_ReverseCoeff: ::std::os::raw::c_ushort = 12177;
+pub const DAQmx_AI_Charge_Units: ::std::os::raw::c_ushort = 12562;
+pub const DAQmx_AI_Is_TEDS: ::std::os::raw::c_ushort = 10627;
+pub const DAQmx_AI_TEDS_Units: ::std::os::raw::c_ushort = 8672;
+pub const DAQmx_AI_Coupling: ::std::os::raw::c_uchar = 100;
+pub const DAQmx_AI_Impedance: ::std::os::raw::c_uchar = 98;
+pub const DAQmx_AI_TermCfg: ::std::os::raw::c_ushort = 4247;
+pub const DAQmx_AI_InputSrc: ::std::os::raw::c_ushort = 8600;
+pub const DAQmx_AI_ResistanceCfg: ::std::os::raw::c_ushort = 6273;
+pub const DAQmx_AI_LeadWireResistance: ::std::os::raw::c_ushort = 6126;
+pub const DAQmx_AI_Bridge_Cfg: ::std::os::raw::c_uchar = 135;
+pub const DAQmx_AI_Bridge_NomResistance: ::std::os::raw::c_ushort = 6124;
+pub const DAQmx_AI_Bridge_InitialVoltage: ::std::os::raw::c_ushort = 6125;
+pub const DAQmx_AI_Bridge_InitialRatio: ::std::os::raw::c_ushort = 12166;
+pub const DAQmx_AI_Bridge_ShuntCal_Enable: ::std::os::raw::c_uchar = 148;
+pub const DAQmx_AI_Bridge_ShuntCal_Select: ::std::os::raw::c_ushort = 8661;
+pub const DAQmx_AI_Bridge_ShuntCal_ShuntCalASrc: ::std::os::raw::c_ushort =
+    12490;
+pub const DAQmx_AI_Bridge_ShuntCal_GainAdjust: ::std::os::raw::c_ushort =
+    6463;
+pub const DAQmx_AI_Bridge_ShuntCal_ShuntCalAResistance:
+          ::std::os::raw::c_ushort =
+    12152;
+pub const DAQmx_AI_Bridge_ShuntCal_ShuntCalAActualResistance:
+          ::std::os::raw::c_ushort =
+    12153;
+pub const DAQmx_AI_Bridge_ShuntCal_ShuntCalBResistance:
+          ::std::os::raw::c_ushort =
+    12154;
+pub const DAQmx_AI_Bridge_ShuntCal_ShuntCalBActualResistance:
+          ::std::os::raw::c_ushort =
+    12155;
+pub const DAQmx_AI_Bridge_Balance_CoarsePot: ::std::os::raw::c_ushort = 6129;
+pub const DAQmx_AI_Bridge_Balance_FinePot: ::std::os::raw::c_ushort = 6388;
+pub const DAQmx_AI_CurrentShunt_Loc: ::std::os::raw::c_ushort = 6130;
+pub const DAQmx_AI_CurrentShunt_Resistance: ::std::os::raw::c_ushort = 6131;
+pub const DAQmx_AI_Excit_Sense: ::std::os::raw::c_ushort = 12541;
+pub const DAQmx_AI_Excit_Src: ::std::os::raw::c_ushort = 6132;
+pub const DAQmx_AI_Excit_Val: ::std::os::raw::c_ushort = 6133;
+pub const DAQmx_AI_Excit_UseForScaling: ::std::os::raw::c_ushort = 6140;
+pub const DAQmx_AI_Excit_UseMultiplexed: ::std::os::raw::c_ushort = 8576;
+pub const DAQmx_AI_Excit_ActualVal: ::std::os::raw::c_ushort = 6275;
+pub const DAQmx_AI_Excit_DCorAC: ::std::os::raw::c_ushort = 6139;
+pub const DAQmx_AI_Excit_VoltageOrCurrent: ::std::os::raw::c_ushort = 6134;
+pub const DAQmx_AI_Excit_IdleOutputBehavior: ::std::os::raw::c_ushort = 12472;
+pub const DAQmx_AI_ACExcit_Freq: ::std::os::raw::c_ushort = 257;
+pub const DAQmx_AI_ACExcit_SyncEnable: ::std::os::raw::c_ushort = 258;
+pub const DAQmx_AI_ACExcit_WireMode: ::std::os::raw::c_ushort = 6349;
+pub const DAQmx_AI_OpenThrmcplDetectEnable: ::std::os::raw::c_ushort = 12146;
+pub const DAQmx_AI_Thrmcpl_LeadOffsetVoltage: ::std::os::raw::c_ushort =
+    12216;
+pub const DAQmx_AI_Atten: ::std::os::raw::c_ushort = 6145;
+pub const DAQmx_AI_ProbeAtten: ::std::os::raw::c_ushort = 10888;
+pub const DAQmx_AI_Lowpass_Enable: ::std::os::raw::c_ushort = 6146;
+pub const DAQmx_AI_Lowpass_CutoffFreq: ::std::os::raw::c_ushort = 6147;
+pub const DAQmx_AI_Lowpass_SwitchCap_ClkSrc: ::std::os::raw::c_ushort = 6276;
+pub const DAQmx_AI_Lowpass_SwitchCap_ExtClkFreq: ::std::os::raw::c_ushort =
+    6277;
+pub const DAQmx_AI_Lowpass_SwitchCap_ExtClkDiv: ::std::os::raw::c_ushort =
+    6278;
+pub const DAQmx_AI_Lowpass_SwitchCap_OutClkDiv: ::std::os::raw::c_ushort =
+    6279;
+pub const DAQmx_AI_DigFltr_Enable: ::std::os::raw::c_ushort = 12477;
+pub const DAQmx_AI_DigFltr_Type: ::std::os::raw::c_ushort = 12478;
+pub const DAQmx_AI_DigFltr_Response: ::std::os::raw::c_ushort = 12479;
+pub const DAQmx_AI_DigFltr_Order: ::std::os::raw::c_ushort = 12480;
+pub const DAQmx_AI_DigFltr_Lowpass_CutoffFreq: ::std::os::raw::c_ushort =
+    12481;
+pub const DAQmx_AI_DigFltr_Highpass_CutoffFreq: ::std::os::raw::c_ushort =
+    12482;
+pub const DAQmx_AI_DigFltr_Bandpass_CenterFreq: ::std::os::raw::c_ushort =
+    12483;
+pub const DAQmx_AI_DigFltr_Bandpass_Width: ::std::os::raw::c_ushort = 12484;
+pub const DAQmx_AI_DigFltr_Notch_CenterFreq: ::std::os::raw::c_ushort = 12485;
+pub const DAQmx_AI_DigFltr_Notch_Width: ::std::os::raw::c_ushort = 12486;
+pub const DAQmx_AI_DigFltr_Coeff: ::std::os::raw::c_ushort = 12487;
+pub const DAQmx_AI_FilterDelay: ::std::os::raw::c_ushort = 12269;
+pub const DAQmx_AI_FilterDelayUnits: ::std::os::raw::c_ushort = 12401;
+pub const DAQmx_AI_RemoveFilterDelay: ::std::os::raw::c_ushort = 12221;
+pub const DAQmx_AI_FilterDelayAdjustment: ::std::os::raw::c_ushort = 12404;
+pub const DAQmx_AI_AveragingWinSize: ::std::os::raw::c_ushort = 12270;
+pub const DAQmx_AI_ResolutionUnits: ::std::os::raw::c_ushort = 5988;
+pub const DAQmx_AI_Resolution: ::std::os::raw::c_ushort = 5989;
+pub const DAQmx_AI_RawSampSize: ::std::os::raw::c_ushort = 8922;
+pub const DAQmx_AI_RawSampJustification: ::std::os::raw::c_uchar = 80;
+pub const DAQmx_AI_ADCTimingMode: ::std::os::raw::c_ushort = 10745;
+pub const DAQmx_AI_ADCCustomTimingMode: ::std::os::raw::c_ushort = 12139;
+pub const DAQmx_AI_Dither_Enable: ::std::os::raw::c_uchar = 104;
+pub const DAQmx_AI_ChanCal_HasValidCalInfo: ::std::os::raw::c_ushort = 8855;
+pub const DAQmx_AI_ChanCal_EnableCal: ::std::os::raw::c_ushort = 8856;
+pub const DAQmx_AI_ChanCal_ApplyCalIfExp: ::std::os::raw::c_ushort = 8857;
+pub const DAQmx_AI_ChanCal_ScaleType: ::std::os::raw::c_ushort = 8860;
+pub const DAQmx_AI_ChanCal_Table_PreScaledVals: ::std::os::raw::c_ushort =
+    8861;
+pub const DAQmx_AI_ChanCal_Table_ScaledVals: ::std::os::raw::c_ushort = 8862;
+pub const DAQmx_AI_ChanCal_Poly_ForwardCoeff: ::std::os::raw::c_ushort = 8863;
+pub const DAQmx_AI_ChanCal_Poly_ReverseCoeff: ::std::os::raw::c_ushort = 8864;
+pub const DAQmx_AI_ChanCal_OperatorName: ::std::os::raw::c_ushort = 8867;
+pub const DAQmx_AI_ChanCal_Desc: ::std::os::raw::c_ushort = 8868;
+pub const DAQmx_AI_ChanCal_Verif_RefVals: ::std::os::raw::c_ushort = 8865;
+pub const DAQmx_AI_ChanCal_Verif_AcqVals: ::std::os::raw::c_ushort = 8866;
+pub const DAQmx_AI_Rng_High: ::std::os::raw::c_ushort = 6165;
+pub const DAQmx_AI_Rng_Low: ::std::os::raw::c_ushort = 6166;
+pub const DAQmx_AI_DCOffset: ::std::os::raw::c_ushort = 10889;
+pub const DAQmx_AI_Gain: ::std::os::raw::c_ushort = 6168;
+pub const DAQmx_AI_SampAndHold_Enable: ::std::os::raw::c_ushort = 6170;
+pub const DAQmx_AI_AutoZeroMode: ::std::os::raw::c_ushort = 5984;
+pub const DAQmx_AI_DataXferMech: ::std::os::raw::c_ushort = 6177;
+pub const DAQmx_AI_DataXferReqCond: ::std::os::raw::c_ushort = 6283;
+pub const DAQmx_AI_DataXferCustomThreshold: ::std::os::raw::c_ushort = 8972;
+pub const DAQmx_AI_UsbXferReqSize: ::std::os::raw::c_ushort = 10894;
+pub const DAQmx_AI_UsbXferReqCount: ::std::os::raw::c_ushort = 12288;
+pub const DAQmx_AI_MemMapEnable: ::std::os::raw::c_ushort = 6284;
+pub const DAQmx_AI_RawDataCompressionType: ::std::os::raw::c_ushort = 8920;
+pub const DAQmx_AI_LossyLSBRemoval_CompressedSampSize:
+          ::std::os::raw::c_ushort =
+    8921;
+pub const DAQmx_AI_DevScalingCoeff: ::std::os::raw::c_ushort = 6448;
+pub const DAQmx_AI_EnhancedAliasRejectionEnable: ::std::os::raw::c_ushort =
+    8852;
+pub const DAQmx_AI_OpenChanDetectEnable: ::std::os::raw::c_ushort = 12543;
+pub const DAQmx_AO_Max: ::std::os::raw::c_ushort = 4486;
+pub const DAQmx_AO_Min: ::std::os::raw::c_ushort = 4487;
+pub const DAQmx_AO_CustomScaleName: ::std::os::raw::c_ushort = 4488;
+pub const DAQmx_AO_OutputType: ::std::os::raw::c_ushort = 4360;
+pub const DAQmx_AO_Voltage_Units: ::std::os::raw::c_ushort = 4484;
+pub const DAQmx_AO_Voltage_CurrentLimit: ::std::os::raw::c_ushort = 10781;
+pub const DAQmx_AO_Current_Units: ::std::os::raw::c_ushort = 4361;
+pub const DAQmx_AO_FuncGen_Type: ::std::os::raw::c_ushort = 10776;
+pub const DAQmx_AO_FuncGen_Freq: ::std::os::raw::c_ushort = 10777;
+pub const DAQmx_AO_FuncGen_Amplitude: ::std::os::raw::c_ushort = 10778;
+pub const DAQmx_AO_FuncGen_Offset: ::std::os::raw::c_ushort = 10779;
+pub const DAQmx_AO_FuncGen_Square_DutyCycle: ::std::os::raw::c_ushort = 10780;
+pub const DAQmx_AO_FuncGen_ModulationType: ::std::os::raw::c_ushort = 10786;
+pub const DAQmx_AO_FuncGen_FMDeviation: ::std::os::raw::c_ushort = 10787;
+pub const DAQmx_AO_OutputImpedance: ::std::os::raw::c_ushort = 5264;
+pub const DAQmx_AO_LoadImpedance: ::std::os::raw::c_ushort = 289;
+pub const DAQmx_AO_IdleOutputBehavior: ::std::os::raw::c_ushort = 8768;
+pub const DAQmx_AO_TermCfg: ::std::os::raw::c_ushort = 6286;
+pub const DAQmx_AO_ResolutionUnits: ::std::os::raw::c_ushort = 6187;
+pub const DAQmx_AO_Resolution: ::std::os::raw::c_ushort = 6188;
+pub const DAQmx_AO_DAC_Rng_High: ::std::os::raw::c_ushort = 6190;
+pub const DAQmx_AO_DAC_Rng_Low: ::std::os::raw::c_ushort = 6189;
+pub const DAQmx_AO_DAC_Ref_ConnToGnd: ::std::os::raw::c_ushort = 304;
+pub const DAQmx_AO_DAC_Ref_AllowConnToGnd: ::std::os::raw::c_ushort = 6192;
+pub const DAQmx_AO_DAC_Ref_Src: ::std::os::raw::c_ushort = 306;
+pub const DAQmx_AO_DAC_Ref_ExtSrc: ::std::os::raw::c_ushort = 8786;
+pub const DAQmx_AO_DAC_Ref_Val: ::std::os::raw::c_ushort = 6194;
+pub const DAQmx_AO_DAC_Offset_Src: ::std::os::raw::c_ushort = 8787;
+pub const DAQmx_AO_DAC_Offset_ExtSrc: ::std::os::raw::c_ushort = 8788;
+pub const DAQmx_AO_DAC_Offset_Val: ::std::os::raw::c_ushort = 8789;
+pub const DAQmx_AO_ReglitchEnable: ::std::os::raw::c_ushort = 307;
+pub const DAQmx_AO_FilterDelay: ::std::os::raw::c_ushort = 12405;
+pub const DAQmx_AO_FilterDelayUnits: ::std::os::raw::c_ushort = 12406;
+pub const DAQmx_AO_FilterDelayAdjustment: ::std::os::raw::c_ushort = 12402;
+pub const DAQmx_AO_Gain: ::std::os::raw::c_ushort = 280;
+pub const DAQmx_AO_UseOnlyOnBrdMem: ::std::os::raw::c_ushort = 6202;
+pub const DAQmx_AO_DataXferMech: ::std::os::raw::c_ushort = 308;
+pub const DAQmx_AO_DataXferReqCond: ::std::os::raw::c_ushort = 6204;
+pub const DAQmx_AO_UsbXferReqSize: ::std::os::raw::c_ushort = 10895;
+pub const DAQmx_AO_UsbXferReqCount: ::std::os::raw::c_ushort = 12289;
+pub const DAQmx_AO_MemMapEnable: ::std::os::raw::c_ushort = 6287;
+pub const DAQmx_AO_DevScalingCoeff: ::std::os::raw::c_ushort = 6449;
+pub const DAQmx_AO_EnhancedImageRejectionEnable: ::std::os::raw::c_ushort =
+    8769;
+pub const DAQmx_DI_InvertLines: ::std::os::raw::c_ushort = 1939;
+pub const DAQmx_DI_NumLines: ::std::os::raw::c_ushort = 8568;
+pub const DAQmx_DI_DigFltr_Enable: ::std::os::raw::c_ushort = 8662;
+pub const DAQmx_DI_DigFltr_MinPulseWidth: ::std::os::raw::c_ushort = 8663;
+pub const DAQmx_DI_DigFltr_EnableBusMode: ::std::os::raw::c_ushort = 12030;
+pub const DAQmx_DI_DigFltr_TimebaseSrc: ::std::os::raw::c_ushort = 11988;
+pub const DAQmx_DI_DigFltr_TimebaseRate: ::std::os::raw::c_ushort = 11989;
+pub const DAQmx_DI_DigSync_Enable: ::std::os::raw::c_ushort = 11990;
+pub const DAQmx_DI_Tristate: ::std::os::raw::c_ushort = 6288;
+pub const DAQmx_DI_LogicFamily: ::std::os::raw::c_ushort = 10605;
+pub const DAQmx_DI_DataXferMech: ::std::os::raw::c_ushort = 8803;
+pub const DAQmx_DI_DataXferReqCond: ::std::os::raw::c_ushort = 8804;
+pub const DAQmx_DI_UsbXferReqSize: ::std::os::raw::c_ushort = 10896;
+pub const DAQmx_DI_UsbXferReqCount: ::std::os::raw::c_ushort = 12290;
+pub const DAQmx_DI_MemMapEnable: ::std::os::raw::c_ushort = 10602;
+pub const DAQmx_DI_AcquireOn: ::std::os::raw::c_ushort = 10598;
+pub const DAQmx_DO_OutputDriveType: ::std::os::raw::c_ushort = 4407;
+pub const DAQmx_DO_InvertLines: ::std::os::raw::c_ushort = 4403;
+pub const DAQmx_DO_NumLines: ::std::os::raw::c_ushort = 8569;
+pub const DAQmx_DO_Tristate: ::std::os::raw::c_ushort = 6387;
+pub const DAQmx_DO_LineStates_StartState: ::std::os::raw::c_ushort = 10610;
+pub const DAQmx_DO_LineStates_PausedState: ::std::os::raw::c_ushort = 10599;
+pub const DAQmx_DO_LineStates_DoneState: ::std::os::raw::c_ushort = 10600;
+pub const DAQmx_DO_LogicFamily: ::std::os::raw::c_ushort = 10606;
+pub const DAQmx_DO_Overcurrent_Limit: ::std::os::raw::c_ushort = 10885;
+pub const DAQmx_DO_Overcurrent_AutoReenable: ::std::os::raw::c_ushort = 10886;
+pub const DAQmx_DO_Overcurrent_ReenablePeriod: ::std::os::raw::c_ushort =
+    10887;
+pub const DAQmx_DO_UseOnlyOnBrdMem: ::std::os::raw::c_ushort = 8805;
+pub const DAQmx_DO_DataXferMech: ::std::os::raw::c_ushort = 8806;
+pub const DAQmx_DO_DataXferReqCond: ::std::os::raw::c_ushort = 8807;
+pub const DAQmx_DO_UsbXferReqSize: ::std::os::raw::c_ushort = 10897;
+pub const DAQmx_DO_UsbXferReqCount: ::std::os::raw::c_ushort = 12291;
+pub const DAQmx_DO_MemMapEnable: ::std::os::raw::c_ushort = 10603;
+pub const DAQmx_DO_GenerateOn: ::std::os::raw::c_ushort = 10601;
+pub const DAQmx_CI_Max: ::std::os::raw::c_ushort = 6300;
+pub const DAQmx_CI_Min: ::std::os::raw::c_ushort = 6301;
+pub const DAQmx_CI_CustomScaleName: ::std::os::raw::c_ushort = 6302;
+pub const DAQmx_CI_MeasType: ::std::os::raw::c_ushort = 6304;
+pub const DAQmx_CI_Freq_Units: ::std::os::raw::c_ushort = 6305;
+pub const DAQmx_CI_Freq_Term: ::std::os::raw::c_ushort = 6306;
+pub const DAQmx_CI_Freq_TermCfg: ::std::os::raw::c_ushort = 12439;
+pub const DAQmx_CI_Freq_LogicLvlBehavior: ::std::os::raw::c_ushort = 12440;
+pub const DAQmx_CI_Freq_DigFltr_Enable: ::std::os::raw::c_ushort = 8679;
+pub const DAQmx_CI_Freq_DigFltr_MinPulseWidth: ::std::os::raw::c_ushort =
+    8680;
+pub const DAQmx_CI_Freq_DigFltr_TimebaseSrc: ::std::os::raw::c_ushort = 8681;
+pub const DAQmx_CI_Freq_DigFltr_TimebaseRate: ::std::os::raw::c_ushort = 8682;
+pub const DAQmx_CI_Freq_DigSync_Enable: ::std::os::raw::c_ushort = 8683;
+pub const DAQmx_CI_Freq_StartingEdge: ::std::os::raw::c_ushort = 1945;
+pub const DAQmx_CI_Freq_MeasMeth: ::std::os::raw::c_ushort = 324;
+pub const DAQmx_CI_Freq_EnableAveraging: ::std::os::raw::c_ushort = 11984;
+pub const DAQmx_CI_Freq_MeasTime: ::std::os::raw::c_ushort = 325;
+pub const DAQmx_CI_Freq_Div: ::std::os::raw::c_ushort = 327;
+pub const DAQmx_CI_Period_Units: ::std::os::raw::c_ushort = 6307;
+pub const DAQmx_CI_Period_Term: ::std::os::raw::c_ushort = 6308;
+pub const DAQmx_CI_Period_TermCfg: ::std::os::raw::c_ushort = 12441;
+pub const DAQmx_CI_Period_LogicLvlBehavior: ::std::os::raw::c_ushort = 12442;
+pub const DAQmx_CI_Period_DigFltr_Enable: ::std::os::raw::c_ushort = 8684;
+pub const DAQmx_CI_Period_DigFltr_MinPulseWidth: ::std::os::raw::c_ushort =
+    8685;
+pub const DAQmx_CI_Period_DigFltr_TimebaseSrc: ::std::os::raw::c_ushort =
+    8686;
+pub const DAQmx_CI_Period_DigFltr_TimebaseRate: ::std::os::raw::c_ushort =
+    8687;
+pub const DAQmx_CI_Period_DigSync_Enable: ::std::os::raw::c_ushort = 8688;
+pub const DAQmx_CI_Period_StartingEdge: ::std::os::raw::c_ushort = 2130;
+pub const DAQmx_CI_Period_MeasMeth: ::std::os::raw::c_ushort = 6444;
+pub const DAQmx_CI_Period_EnableAveraging: ::std::os::raw::c_ushort = 11985;
+pub const DAQmx_CI_Period_MeasTime: ::std::os::raw::c_ushort = 6445;
+pub const DAQmx_CI_Period_Div: ::std::os::raw::c_ushort = 6446;
+pub const DAQmx_CI_CountEdges_Term: ::std::os::raw::c_ushort = 6343;
+pub const DAQmx_CI_CountEdges_TermCfg: ::std::os::raw::c_ushort = 12443;
+pub const DAQmx_CI_CountEdges_LogicLvlBehavior: ::std::os::raw::c_ushort =
+    12444;
+pub const DAQmx_CI_CountEdges_DigFltr_Enable: ::std::os::raw::c_ushort = 8694;
+pub const DAQmx_CI_CountEdges_DigFltr_MinPulseWidth: ::std::os::raw::c_ushort
+          =
+    8695;
+pub const DAQmx_CI_CountEdges_DigFltr_TimebaseSrc: ::std::os::raw::c_ushort =
+    8696;
+pub const DAQmx_CI_CountEdges_DigFltr_TimebaseRate: ::std::os::raw::c_ushort =
+    8697;
+pub const DAQmx_CI_CountEdges_DigSync_Enable: ::std::os::raw::c_ushort = 8698;
+pub const DAQmx_CI_CountEdges_Dir: ::std::os::raw::c_ushort = 1686;
+pub const DAQmx_CI_CountEdges_DirTerm: ::std::os::raw::c_ushort = 8673;
+pub const DAQmx_CI_CountEdges_CountDir_TermCfg: ::std::os::raw::c_ushort =
+    12445;
+pub const DAQmx_CI_CountEdges_CountDir_LogicLvlBehavior:
+          ::std::os::raw::c_ushort =
+    12446;
+pub const DAQmx_CI_CountEdges_CountDir_DigFltr_Enable:
+          ::std::os::raw::c_ushort =
+    8689;
+pub const DAQmx_CI_CountEdges_CountDir_DigFltr_MinPulseWidth:
+          ::std::os::raw::c_ushort =
+    8690;
+pub const DAQmx_CI_CountEdges_CountDir_DigFltr_TimebaseSrc:
+          ::std::os::raw::c_ushort =
+    8691;
+pub const DAQmx_CI_CountEdges_CountDir_DigFltr_TimebaseRate:
+          ::std::os::raw::c_ushort =
+    8692;
+pub const DAQmx_CI_CountEdges_CountDir_DigSync_Enable:
+          ::std::os::raw::c_ushort =
+    8693;
+pub const DAQmx_CI_CountEdges_InitialCnt: ::std::os::raw::c_ushort = 1688;
+pub const DAQmx_CI_CountEdges_ActiveEdge: ::std::os::raw::c_ushort = 1687;
+pub const DAQmx_CI_CountEdges_CountReset_Enable: ::std::os::raw::c_ushort =
+    12207;
+pub const DAQmx_CI_CountEdges_CountReset_ResetCount: ::std::os::raw::c_ushort
+          =
+    12208;
+pub const DAQmx_CI_CountEdges_CountReset_Term: ::std::os::raw::c_ushort =
+    12209;
+pub const DAQmx_CI_CountEdges_CountReset_TermCfg: ::std::os::raw::c_ushort =
+    12447;
+pub const DAQmx_CI_CountEdges_CountReset_LogicLvlBehavior:
+          ::std::os::raw::c_ushort =
+    12448;
+pub const DAQmx_CI_CountEdges_CountReset_DigFltr_Enable:
+          ::std::os::raw::c_ushort =
+    12211;
+pub const DAQmx_CI_CountEdges_CountReset_DigFltr_MinPulseWidth:
+          ::std::os::raw::c_ushort =
+    12212;
+pub const DAQmx_CI_CountEdges_CountReset_DigFltr_TimebaseSrc:
+          ::std::os::raw::c_ushort =
+    12213;
+pub const DAQmx_CI_CountEdges_CountReset_DigFltr_TimebaseRate:
+          ::std::os::raw::c_ushort =
+    12214;
+pub const DAQmx_CI_CountEdges_CountReset_DigSync_Enable:
+          ::std::os::raw::c_ushort =
+    12215;
+pub const DAQmx_CI_CountEdges_CountReset_ActiveEdge: ::std::os::raw::c_ushort
+          =
+    12210;
+pub const DAQmx_CI_CountEdges_Gate_Enable: ::std::os::raw::c_ushort = 12525;
+pub const DAQmx_CI_CountEdges_Gate_Term: ::std::os::raw::c_ushort = 12526;
+pub const DAQmx_CI_CountEdges_Gate_TermCfg: ::std::os::raw::c_ushort = 12527;
+pub const DAQmx_CI_CountEdges_Gate_LogicLvlBehavior: ::std::os::raw::c_ushort
+          =
+    12528;
+pub const DAQmx_CI_CountEdges_Gate_DigFltrEnable: ::std::os::raw::c_ushort =
+    12529;
+pub const DAQmx_CI_CountEdges_Gate_DigFltrMinPulseWidth:
+          ::std::os::raw::c_ushort =
+    12530;
+pub const DAQmx_CI_CountEdges_Gate_DigFltrTimebaseSrc:
+          ::std::os::raw::c_ushort =
+    12531;
+pub const DAQmx_CI_CountEdges_Gate_DigFltrTimebaseRate:
+          ::std::os::raw::c_ushort =
+    12532;
+pub const DAQmx_CI_CountEdges_GateWhen: ::std::os::raw::c_ushort = 12533;
+pub const DAQmx_CI_DutyCycle_Term: ::std::os::raw::c_ushort = 12429;
+pub const DAQmx_CI_DutyCycle_TermCfg: ::std::os::raw::c_ushort = 12449;
+pub const DAQmx_CI_DutyCycle_LogicLvlBehavior: ::std::os::raw::c_ushort =
+    12450;
+pub const DAQmx_CI_DutyCycle_DigFltr_Enable: ::std::os::raw::c_ushort = 12430;
+pub const DAQmx_CI_DutyCycle_DigFltr_MinPulseWidth: ::std::os::raw::c_ushort =
+    12431;
+pub const DAQmx_CI_DutyCycle_DigFltr_TimebaseSrc: ::std::os::raw::c_ushort =
+    12432;
+pub const DAQmx_CI_DutyCycle_DigFltr_TimebaseRate: ::std::os::raw::c_ushort =
+    12433;
+pub const DAQmx_CI_DutyCycle_StartingEdge: ::std::os::raw::c_ushort = 12434;
+pub const DAQmx_CI_AngEncoder_Units: ::std::os::raw::c_ushort = 6310;
+pub const DAQmx_CI_AngEncoder_PulsesPerRev: ::std::os::raw::c_ushort = 2165;
+pub const DAQmx_CI_AngEncoder_InitialAngle: ::std::os::raw::c_ushort = 2177;
+pub const DAQmx_CI_LinEncoder_Units: ::std::os::raw::c_ushort = 6313;
+pub const DAQmx_CI_LinEncoder_DistPerPulse: ::std::os::raw::c_ushort = 2321;
+pub const DAQmx_CI_LinEncoder_InitialPos: ::std::os::raw::c_ushort = 2325;
+pub const DAQmx_CI_Encoder_DecodingType: ::std::os::raw::c_ushort = 8678;
+pub const DAQmx_CI_Encoder_AInputTerm: ::std::os::raw::c_ushort = 8605;
+pub const DAQmx_CI_Encoder_AInputTermCfg: ::std::os::raw::c_ushort = 12451;
+pub const DAQmx_CI_Encoder_AInputLogicLvlBehavior: ::std::os::raw::c_ushort =
+    12452;
+pub const DAQmx_CI_Encoder_AInput_DigFltr_Enable: ::std::os::raw::c_ushort =
+    8699;
+pub const DAQmx_CI_Encoder_AInput_DigFltr_MinPulseWidth:
+          ::std::os::raw::c_ushort =
+    8700;
+pub const DAQmx_CI_Encoder_AInput_DigFltr_TimebaseSrc:
+          ::std::os::raw::c_ushort =
+    8701;
+pub const DAQmx_CI_Encoder_AInput_DigFltr_TimebaseRate:
+          ::std::os::raw::c_ushort =
+    8702;
+pub const DAQmx_CI_Encoder_AInput_DigSync_Enable: ::std::os::raw::c_ushort =
+    8703;
+pub const DAQmx_CI_Encoder_BInputTerm: ::std::os::raw::c_ushort = 8606;
+pub const DAQmx_CI_Encoder_BInputTermCfg: ::std::os::raw::c_ushort = 12453;
+pub const DAQmx_CI_Encoder_BInputLogicLvlBehavior: ::std::os::raw::c_ushort =
+    12454;
+pub const DAQmx_CI_Encoder_BInput_DigFltr_Enable: ::std::os::raw::c_ushort =
+    8704;
+pub const DAQmx_CI_Encoder_BInput_DigFltr_MinPulseWidth:
+          ::std::os::raw::c_ushort =
+    8705;
+pub const DAQmx_CI_Encoder_BInput_DigFltr_TimebaseSrc:
+          ::std::os::raw::c_ushort =
+    8706;
+pub const DAQmx_CI_Encoder_BInput_DigFltr_TimebaseRate:
+          ::std::os::raw::c_ushort =
+    8707;
+pub const DAQmx_CI_Encoder_BInput_DigSync_Enable: ::std::os::raw::c_ushort =
+    8708;
+pub const DAQmx_CI_Encoder_ZInputTerm: ::std::os::raw::c_ushort = 8607;
+pub const DAQmx_CI_Encoder_ZInputTermCfg: ::std::os::raw::c_ushort = 12455;
+pub const DAQmx_CI_Encoder_ZInputLogicLvlBehavior: ::std::os::raw::c_ushort =
+    12456;
+pub const DAQmx_CI_Encoder_ZInput_DigFltr_Enable: ::std::os::raw::c_ushort =
+    8709;
+pub const DAQmx_CI_Encoder_ZInput_DigFltr_MinPulseWidth:
+          ::std::os::raw::c_ushort =
+    8710;
+pub const DAQmx_CI_Encoder_ZInput_DigFltr_TimebaseSrc:
+          ::std::os::raw::c_ushort =
+    8711;
+pub const DAQmx_CI_Encoder_ZInput_DigFltr_TimebaseRate:
+          ::std::os::raw::c_ushort =
+    8712;
+pub const DAQmx_CI_Encoder_ZInput_DigSync_Enable: ::std::os::raw::c_ushort =
+    8713;
+pub const DAQmx_CI_Encoder_ZIndexEnable: ::std::os::raw::c_ushort = 2192;
+pub const DAQmx_CI_Encoder_ZIndexVal: ::std::os::raw::c_ushort = 2184;
+pub const DAQmx_CI_Encoder_ZIndexPhase: ::std::os::raw::c_ushort = 2185;
+pub const DAQmx_CI_PulseWidth_Units: ::std::os::raw::c_ushort = 2083;
+pub const DAQmx_CI_PulseWidth_Term: ::std::os::raw::c_ushort = 6314;
+pub const DAQmx_CI_PulseWidth_TermCfg: ::std::os::raw::c_ushort = 12457;
+pub const DAQmx_CI_PulseWidth_LogicLvlBehavior: ::std::os::raw::c_ushort =
+    12458;
+pub const DAQmx_CI_PulseWidth_DigFltr_Enable: ::std::os::raw::c_ushort = 8714;
+pub const DAQmx_CI_PulseWidth_DigFltr_MinPulseWidth: ::std::os::raw::c_ushort
+          =
+    8715;
+pub const DAQmx_CI_PulseWidth_DigFltr_TimebaseSrc: ::std::os::raw::c_ushort =
+    8716;
+pub const DAQmx_CI_PulseWidth_DigFltr_TimebaseRate: ::std::os::raw::c_ushort =
+    8717;
+pub const DAQmx_CI_PulseWidth_DigSync_Enable: ::std::os::raw::c_ushort = 8718;
+pub const DAQmx_CI_PulseWidth_StartingEdge: ::std::os::raw::c_ushort = 2085;
+pub const DAQmx_CI_Timestamp_Units: ::std::os::raw::c_ushort = 8883;
+pub const DAQmx_CI_Timestamp_InitialSeconds: ::std::os::raw::c_ushort = 8884;
+pub const DAQmx_CI_GPS_SyncMethod: ::std::os::raw::c_ushort = 4242;
+pub const DAQmx_CI_GPS_SyncSrc: ::std::os::raw::c_ushort = 4243;
+pub const DAQmx_CI_Velocity_AngEncoder_Units: ::std::os::raw::c_ushort =
+    12504;
+pub const DAQmx_CI_Velocity_AngEncoder_PulsesPerRev: ::std::os::raw::c_ushort
+          =
+    12505;
+pub const DAQmx_CI_Velocity_LinEncoder_Units: ::std::os::raw::c_ushort =
+    12506;
+pub const DAQmx_CI_Velocity_LinEncoder_DistPerPulse: ::std::os::raw::c_ushort
+          =
+    12507;
+pub const DAQmx_CI_Velocity_Encoder_DecodingType: ::std::os::raw::c_ushort =
+    12508;
+pub const DAQmx_CI_Velocity_Encoder_AInputTerm: ::std::os::raw::c_ushort =
+    12509;
+pub const DAQmx_CI_Velocity_Encoder_AInputTermCfg: ::std::os::raw::c_ushort =
+    12510;
+pub const DAQmx_CI_Velocity_Encoder_AInputLogicLvlBehavior:
+          ::std::os::raw::c_ushort =
+    12511;
+pub const DAQmx_CI_Velocity_Encoder_AInputDigFltr_Enable:
+          ::std::os::raw::c_ushort =
+    12512;
+pub const DAQmx_CI_Velocity_Encoder_AInputDigFltr_MinPulseWidth:
+          ::std::os::raw::c_ushort =
+    12513;
+pub const DAQmx_CI_Velocity_Encoder_AInputDigFltr_TimebaseSrc:
+          ::std::os::raw::c_ushort =
+    12514;
+pub const DAQmx_CI_Velocity_Encoder_AInputDigFltr_TimebaseRate:
+          ::std::os::raw::c_ushort =
+    12515;
+pub const DAQmx_CI_Velocity_Encoder_BInputTerm: ::std::os::raw::c_ushort =
+    12516;
+pub const DAQmx_CI_Velocity_Encoder_BInputTermCfg: ::std::os::raw::c_ushort =
+    12517;
+pub const DAQmx_CI_Velocity_Encoder_BInputLogicLvlBehavior:
+          ::std::os::raw::c_ushort =
+    12518;
+pub const DAQmx_CI_Velocity_Encoder_BInputDigFltr_Enable:
+          ::std::os::raw::c_ushort =
+    12519;
+pub const DAQmx_CI_Velocity_Encoder_BInputDigFltr_MinPulseWidth:
+          ::std::os::raw::c_ushort =
+    12520;
+pub const DAQmx_CI_Velocity_Encoder_BInputDigFltr_TimebaseSrc:
+          ::std::os::raw::c_ushort =
+    12521;
+pub const DAQmx_CI_Velocity_Encoder_BInputDigFltr_TimebaseRate:
+          ::std::os::raw::c_ushort =
+    12522;
+pub const DAQmx_CI_Velocity_MeasTime: ::std::os::raw::c_ushort = 12523;
+pub const DAQmx_CI_Velocity_Div: ::std::os::raw::c_ushort = 12524;
+pub const DAQmx_CI_TwoEdgeSep_Units: ::std::os::raw::c_ushort = 6316;
+pub const DAQmx_CI_TwoEdgeSep_FirstTerm: ::std::os::raw::c_ushort = 6317;
+pub const DAQmx_CI_TwoEdgeSep_FirstTermCfg: ::std::os::raw::c_ushort = 12459;
+pub const DAQmx_CI_TwoEdgeSep_FirstLogicLvlBehavior: ::std::os::raw::c_ushort
+          =
+    12460;
+pub const DAQmx_CI_TwoEdgeSep_First_DigFltr_Enable: ::std::os::raw::c_ushort =
+    8719;
+pub const DAQmx_CI_TwoEdgeSep_First_DigFltr_MinPulseWidth:
+          ::std::os::raw::c_ushort =
+    8720;
+pub const DAQmx_CI_TwoEdgeSep_First_DigFltr_TimebaseSrc:
+          ::std::os::raw::c_ushort =
+    8721;
+pub const DAQmx_CI_TwoEdgeSep_First_DigFltr_TimebaseRate:
+          ::std::os::raw::c_ushort =
+    8722;
+pub const DAQmx_CI_TwoEdgeSep_First_DigSync_Enable: ::std::os::raw::c_ushort =
+    8723;
+pub const DAQmx_CI_TwoEdgeSep_FirstEdge: ::std::os::raw::c_ushort = 2099;
+pub const DAQmx_CI_TwoEdgeSep_SecondTerm: ::std::os::raw::c_ushort = 6318;
+pub const DAQmx_CI_TwoEdgeSep_SecondTermCfg: ::std::os::raw::c_ushort = 12461;
+pub const DAQmx_CI_TwoEdgeSep_SecondLogicLvlBehavior: ::std::os::raw::c_ushort
+          =
+    12462;
+pub const DAQmx_CI_TwoEdgeSep_Second_DigFltr_Enable: ::std::os::raw::c_ushort
+          =
+    8724;
+pub const DAQmx_CI_TwoEdgeSep_Second_DigFltr_MinPulseWidth:
+          ::std::os::raw::c_ushort =
+    8725;
+pub const DAQmx_CI_TwoEdgeSep_Second_DigFltr_TimebaseSrc:
+          ::std::os::raw::c_ushort =
+    8726;
+pub const DAQmx_CI_TwoEdgeSep_Second_DigFltr_TimebaseRate:
+          ::std::os::raw::c_ushort =
+    8727;
+pub const DAQmx_CI_TwoEdgeSep_Second_DigSync_Enable: ::std::os::raw::c_ushort
+          =
+    8728;
+pub const DAQmx_CI_TwoEdgeSep_SecondEdge: ::std::os::raw::c_ushort = 2100;
+pub const DAQmx_CI_SemiPeriod_Units: ::std::os::raw::c_ushort = 6319;
+pub const DAQmx_CI_SemiPeriod_Term: ::std::os::raw::c_ushort = 6320;
+pub const DAQmx_CI_SemiPeriod_TermCfg: ::std::os::raw::c_ushort = 12463;
+pub const DAQmx_CI_SemiPeriod_LogicLvlBehavior: ::std::os::raw::c_ushort =
+    12464;
+pub const DAQmx_CI_SemiPeriod_DigFltr_Enable: ::std::os::raw::c_ushort = 8729;
+pub const DAQmx_CI_SemiPeriod_DigFltr_MinPulseWidth: ::std::os::raw::c_ushort
+          =
+    8730;
+pub const DAQmx_CI_SemiPeriod_DigFltr_TimebaseSrc: ::std::os::raw::c_ushort =
+    8731;
+pub const DAQmx_CI_SemiPeriod_DigFltr_TimebaseRate: ::std::os::raw::c_ushort =
+    8732;
+pub const DAQmx_CI_SemiPeriod_DigSync_Enable: ::std::os::raw::c_ushort = 8733;
+pub const DAQmx_CI_SemiPeriod_StartingEdge: ::std::os::raw::c_ushort = 8958;
+pub const DAQmx_CI_Pulse_Freq_Units: ::std::os::raw::c_ushort = 12043;
+pub const DAQmx_CI_Pulse_Freq_Term: ::std::os::raw::c_ushort = 12036;
+pub const DAQmx_CI_Pulse_Freq_TermCfg: ::std::os::raw::c_ushort = 12465;
+pub const DAQmx_CI_Pulse_Freq_LogicLvlBehavior: ::std::os::raw::c_ushort =
+    12466;
+pub const DAQmx_CI_Pulse_Freq_DigFltr_Enable: ::std::os::raw::c_ushort =
+    12038;
+pub const DAQmx_CI_Pulse_Freq_DigFltr_MinPulseWidth: ::std::os::raw::c_ushort
+          =
+    12039;
+pub const DAQmx_CI_Pulse_Freq_DigFltr_TimebaseSrc: ::std::os::raw::c_ushort =
+    12040;
+pub const DAQmx_CI_Pulse_Freq_DigFltr_TimebaseRate: ::std::os::raw::c_ushort =
+    12041;
+pub const DAQmx_CI_Pulse_Freq_DigSync_Enable: ::std::os::raw::c_ushort =
+    12042;
+pub const DAQmx_CI_Pulse_Freq_Start_Edge: ::std::os::raw::c_ushort = 12037;
+pub const DAQmx_CI_Pulse_Time_Units: ::std::os::raw::c_ushort = 12051;
+pub const DAQmx_CI_Pulse_Time_Term: ::std::os::raw::c_ushort = 12044;
+pub const DAQmx_CI_Pulse_Time_TermCfg: ::std::os::raw::c_ushort = 12467;
+pub const DAQmx_CI_Pulse_Time_LogicLvlBehavior: ::std::os::raw::c_ushort =
+    12468;
+pub const DAQmx_CI_Pulse_Time_DigFltr_Enable: ::std::os::raw::c_ushort =
+    12046;
+pub const DAQmx_CI_Pulse_Time_DigFltr_MinPulseWidth: ::std::os::raw::c_ushort
+          =
+    12047;
+pub const DAQmx_CI_Pulse_Time_DigFltr_TimebaseSrc: ::std::os::raw::c_ushort =
+    12048;
+pub const DAQmx_CI_Pulse_Time_DigFltr_TimebaseRate: ::std::os::raw::c_ushort =
+    12049;
+pub const DAQmx_CI_Pulse_Time_DigSync_Enable: ::std::os::raw::c_ushort =
+    12050;
+pub const DAQmx_CI_Pulse_Time_StartEdge: ::std::os::raw::c_ushort = 12045;
+pub const DAQmx_CI_Pulse_Ticks_Term: ::std::os::raw::c_ushort = 12052;
+pub const DAQmx_CI_Pulse_Ticks_TermCfg: ::std::os::raw::c_ushort = 12469;
+pub const DAQmx_CI_Pulse_Ticks_LogicLvlBehavior: ::std::os::raw::c_ushort =
+    12470;
+pub const DAQmx_CI_Pulse_Ticks_DigFltr_Enable: ::std::os::raw::c_ushort =
+    12054;
+pub const DAQmx_CI_Pulse_Ticks_DigFltr_MinPulseWidth: ::std::os::raw::c_ushort
+          =
+    12055;
+pub const DAQmx_CI_Pulse_Ticks_DigFltr_TimebaseSrc: ::std::os::raw::c_ushort =
+    12056;
+pub const DAQmx_CI_Pulse_Ticks_DigFltr_TimebaseRate: ::std::os::raw::c_ushort
+          =
+    12057;
+pub const DAQmx_CI_Pulse_Ticks_DigSync_Enable: ::std::os::raw::c_ushort =
+    12058;
+pub const DAQmx_CI_Pulse_Ticks_StartEdge: ::std::os::raw::c_ushort = 12053;
+pub const DAQmx_CI_CtrTimebaseSrc: ::std::os::raw::c_ushort = 323;
+pub const DAQmx_CI_CtrTimebaseRate: ::std::os::raw::c_ushort = 6322;
+pub const DAQmx_CI_CtrTimebaseActiveEdge: ::std::os::raw::c_ushort = 322;
+pub const DAQmx_CI_CtrTimebase_DigFltr_Enable: ::std::os::raw::c_ushort =
+    8817;
+pub const DAQmx_CI_CtrTimebase_DigFltr_MinPulseWidth: ::std::os::raw::c_ushort
+          =
+    8818;
+pub const DAQmx_CI_CtrTimebase_DigFltr_TimebaseSrc: ::std::os::raw::c_ushort =
+    8819;
+pub const DAQmx_CI_CtrTimebase_DigFltr_TimebaseRate: ::std::os::raw::c_ushort
+          =
+    8820;
+pub const DAQmx_CI_CtrTimebase_DigSync_Enable: ::std::os::raw::c_ushort =
+    8821;
+pub const DAQmx_CI_ThreshVoltage: ::std::os::raw::c_ushort = 12471;
+pub const DAQmx_CI_Count: ::std::os::raw::c_ushort = 328;
+pub const DAQmx_CI_OutputState: ::std::os::raw::c_ushort = 329;
+pub const DAQmx_CI_TCReached: ::std::os::raw::c_ushort = 336;
+pub const DAQmx_CI_CtrTimebaseMasterTimebaseDiv: ::std::os::raw::c_ushort =
+    6323;
+pub const DAQmx_CI_SampClkOverrunBehavior: ::std::os::raw::c_ushort = 12435;
+pub const DAQmx_CI_SampClkOverrunSentinelVal: ::std::os::raw::c_ushort =
+    12436;
+pub const DAQmx_CI_DataXferMech: ::std::os::raw::c_ushort = 512;
+pub const DAQmx_CI_DataXferReqCond: ::std::os::raw::c_ushort = 12027;
+pub const DAQmx_CI_UsbXferReqSize: ::std::os::raw::c_ushort = 10898;
+pub const DAQmx_CI_UsbXferReqCount: ::std::os::raw::c_ushort = 12292;
+pub const DAQmx_CI_MemMapEnable: ::std::os::raw::c_ushort = 11986;
+pub const DAQmx_CI_NumPossiblyInvalidSamps: ::std::os::raw::c_ushort = 6460;
+pub const DAQmx_CI_DupCountPrevent: ::std::os::raw::c_ushort = 8620;
+pub const DAQmx_CI_Prescaler: ::std::os::raw::c_ushort = 8761;
+pub const DAQmx_CI_MaxMeasPeriod: ::std::os::raw::c_ushort = 12437;
+pub const DAQmx_CO_OutputType: ::std::os::raw::c_ushort = 6325;
+pub const DAQmx_CO_Pulse_IdleState: ::std::os::raw::c_ushort = 4464;
+pub const DAQmx_CO_Pulse_Term: ::std::os::raw::c_ushort = 6369;
+pub const DAQmx_CO_Pulse_Time_Units: ::std::os::raw::c_ushort = 6358;
+pub const DAQmx_CO_Pulse_HighTime: ::std::os::raw::c_ushort = 6330;
+pub const DAQmx_CO_Pulse_LowTime: ::std::os::raw::c_ushort = 6331;
+pub const DAQmx_CO_Pulse_Time_InitialDelay: ::std::os::raw::c_ushort = 6332;
+pub const DAQmx_CO_Pulse_DutyCyc: ::std::os::raw::c_ushort = 4470;
+pub const DAQmx_CO_Pulse_Freq_Units: ::std::os::raw::c_ushort = 6357;
+pub const DAQmx_CO_Pulse_Freq: ::std::os::raw::c_ushort = 4472;
+pub const DAQmx_CO_Pulse_Freq_InitialDelay: ::std::os::raw::c_ushort = 665;
+pub const DAQmx_CO_Pulse_HighTicks: ::std::os::raw::c_ushort = 4457;
+pub const DAQmx_CO_Pulse_LowTicks: ::std::os::raw::c_ushort = 4465;
+pub const DAQmx_CO_Pulse_Ticks_InitialDelay: ::std::os::raw::c_ushort = 664;
+pub const DAQmx_CO_CtrTimebaseSrc: ::std::os::raw::c_ushort = 825;
+pub const DAQmx_CO_CtrTimebaseRate: ::std::os::raw::c_ushort = 6338;
+pub const DAQmx_CO_CtrTimebaseActiveEdge: ::std::os::raw::c_ushort = 833;
+pub const DAQmx_CO_CtrTimebase_DigFltr_Enable: ::std::os::raw::c_ushort =
+    8822;
+pub const DAQmx_CO_CtrTimebase_DigFltr_MinPulseWidth: ::std::os::raw::c_ushort
+          =
+    8823;
+pub const DAQmx_CO_CtrTimebase_DigFltr_TimebaseSrc: ::std::os::raw::c_ushort =
+    8824;
+pub const DAQmx_CO_CtrTimebase_DigFltr_TimebaseRate: ::std::os::raw::c_ushort
+          =
+    8825;
+pub const DAQmx_CO_CtrTimebase_DigSync_Enable: ::std::os::raw::c_ushort =
+    8826;
+pub const DAQmx_CO_Count: ::std::os::raw::c_ushort = 659;
+pub const DAQmx_CO_OutputState: ::std::os::raw::c_ushort = 660;
+pub const DAQmx_CO_AutoIncrCnt: ::std::os::raw::c_ushort = 661;
+pub const DAQmx_CO_CtrTimebaseMasterTimebaseDiv: ::std::os::raw::c_ushort =
+    6339;
+pub const DAQmx_CO_PulseDone: ::std::os::raw::c_ushort = 6414;
+pub const DAQmx_CO_EnableInitialDelayOnRetrigger: ::std::os::raw::c_ushort =
+    11977;
+pub const DAQmx_CO_ConstrainedGenMode: ::std::os::raw::c_ushort = 10738;
+pub const DAQmx_CO_UseOnlyOnBrdMem: ::std::os::raw::c_ushort = 11979;
+pub const DAQmx_CO_DataXferMech: ::std::os::raw::c_ushort = 11980;
+pub const DAQmx_CO_DataXferReqCond: ::std::os::raw::c_ushort = 11981;
+pub const DAQmx_CO_UsbXferReqSize: ::std::os::raw::c_ushort = 10899;
+pub const DAQmx_CO_UsbXferReqCount: ::std::os::raw::c_ushort = 12293;
+pub const DAQmx_CO_MemMapEnable: ::std::os::raw::c_ushort = 11987;
+pub const DAQmx_CO_Prescaler: ::std::os::raw::c_ushort = 8813;
+pub const DAQmx_CO_RdyForNewVal: ::std::os::raw::c_ushort = 8959;
+pub const DAQmx_ChanType: ::std::os::raw::c_ushort = 6271;
+pub const DAQmx_PhysicalChanName: ::std::os::raw::c_ushort = 6389;
+pub const DAQmx_ChanDescr: ::std::os::raw::c_ushort = 6438;
+pub const DAQmx_ChanIsGlobal: ::std::os::raw::c_ushort = 8964;
+pub const DAQmx_Dev_IsSimulated: ::std::os::raw::c_ushort = 8906;
+pub const DAQmx_Dev_ProductCategory: ::std::os::raw::c_ushort = 10665;
+pub const DAQmx_Dev_ProductType: ::std::os::raw::c_ushort = 1585;
+pub const DAQmx_Dev_ProductNum: ::std::os::raw::c_ushort = 8989;
+pub const DAQmx_Dev_SerialNum: ::std::os::raw::c_ushort = 1586;
+pub const DAQmx_Dev_Accessory_ProductTypes: ::std::os::raw::c_ushort = 12141;
+pub const DAQmx_Dev_Accessory_ProductNums: ::std::os::raw::c_ushort = 12142;
+pub const DAQmx_Dev_Accessory_SerialNums: ::std::os::raw::c_ushort = 12143;
+pub const DAQmx_Carrier_SerialNum: ::std::os::raw::c_ushort = 10890;
+pub const DAQmx_Dev_Chassis_ModuleDevNames: ::std::os::raw::c_ushort = 10678;
+pub const DAQmx_Dev_AnlgTrigSupported: ::std::os::raw::c_ushort = 10628;
+pub const DAQmx_Dev_DigTrigSupported: ::std::os::raw::c_ushort = 10629;
+pub const DAQmx_Dev_AI_PhysicalChans: ::std::os::raw::c_ushort = 8990;
+pub const DAQmx_Dev_AI_SupportedMeasTypes: ::std::os::raw::c_ushort = 12242;
+pub const DAQmx_Dev_AI_MaxSingleChanRate: ::std::os::raw::c_ushort = 10636;
+pub const DAQmx_Dev_AI_MaxMultiChanRate: ::std::os::raw::c_ushort = 10637;
+pub const DAQmx_Dev_AI_MinRate: ::std::os::raw::c_ushort = 10638;
+pub const DAQmx_Dev_AI_SimultaneousSamplingSupported: ::std::os::raw::c_ushort
+          =
+    10639;
+pub const DAQmx_Dev_AI_SampModes: ::std::os::raw::c_ushort = 12252;
+pub const DAQmx_Dev_AI_TrigUsage: ::std::os::raw::c_ushort = 10630;
+pub const DAQmx_Dev_AI_VoltageRngs: ::std::os::raw::c_ushort = 10640;
+pub const DAQmx_Dev_AI_VoltageIntExcitDiscreteVals: ::std::os::raw::c_ushort =
+    10697;
+pub const DAQmx_Dev_AI_VoltageIntExcitRangeVals: ::std::os::raw::c_ushort =
+    10698;
+pub const DAQmx_Dev_AI_ChargeRngs: ::std::os::raw::c_ushort = 12561;
+pub const DAQmx_Dev_AI_CurrentRngs: ::std::os::raw::c_ushort = 10641;
+pub const DAQmx_Dev_AI_CurrentIntExcitDiscreteVals: ::std::os::raw::c_ushort =
+    10699;
+pub const DAQmx_Dev_AI_BridgeRngs: ::std::os::raw::c_ushort = 12240;
+pub const DAQmx_Dev_AI_ResistanceRngs: ::std::os::raw::c_ushort = 10773;
+pub const DAQmx_Dev_AI_FreqRngs: ::std::os::raw::c_ushort = 10642;
+pub const DAQmx_Dev_AI_Gains: ::std::os::raw::c_ushort = 10643;
+pub const DAQmx_Dev_AI_Couplings: ::std::os::raw::c_ushort = 10644;
+pub const DAQmx_Dev_AI_LowpassCutoffFreqDiscreteVals: ::std::os::raw::c_ushort
+          =
+    10645;
+pub const DAQmx_Dev_AI_LowpassCutoffFreqRangeVals: ::std::os::raw::c_ushort =
+    10703;
+pub const DAQmx_AI_DigFltr_Types: ::std::os::raw::c_ushort = 12551;
+pub const DAQmx_Dev_AI_DigFltr_LowpassCutoffFreqDiscreteVals:
+          ::std::os::raw::c_ushort =
+    12488;
+pub const DAQmx_Dev_AI_DigFltr_LowpassCutoffFreqRangeVals:
+          ::std::os::raw::c_ushort =
+    12489;
+pub const DAQmx_Dev_AO_PhysicalChans: ::std::os::raw::c_ushort = 8991;
+pub const DAQmx_Dev_AO_SupportedOutputTypes: ::std::os::raw::c_ushort = 12243;
+pub const DAQmx_Dev_AO_SampClkSupported: ::std::os::raw::c_ushort = 10646;
+pub const DAQmx_Dev_AO_SampModes: ::std::os::raw::c_ushort = 12253;
+pub const DAQmx_Dev_AO_MaxRate: ::std::os::raw::c_ushort = 10647;
+pub const DAQmx_Dev_AO_MinRate: ::std::os::raw::c_ushort = 10648;
+pub const DAQmx_Dev_AO_TrigUsage: ::std::os::raw::c_ushort = 10631;
+pub const DAQmx_Dev_AO_VoltageRngs: ::std::os::raw::c_ushort = 10651;
+pub const DAQmx_Dev_AO_CurrentRngs: ::std::os::raw::c_ushort = 10652;
+pub const DAQmx_Dev_AO_Gains: ::std::os::raw::c_ushort = 10653;
+pub const DAQmx_Dev_DI_Lines: ::std::os::raw::c_ushort = 8992;
+pub const DAQmx_Dev_DI_Ports: ::std::os::raw::c_ushort = 8993;
+pub const DAQmx_Dev_DI_MaxRate: ::std::os::raw::c_ushort = 10649;
+pub const DAQmx_Dev_DI_TrigUsage: ::std::os::raw::c_ushort = 10632;
+pub const DAQmx_Dev_DO_Lines: ::std::os::raw::c_ushort = 8994;
+pub const DAQmx_Dev_DO_Ports: ::std::os::raw::c_ushort = 8995;
+pub const DAQmx_Dev_DO_MaxRate: ::std::os::raw::c_ushort = 10650;
+pub const DAQmx_Dev_DO_TrigUsage: ::std::os::raw::c_ushort = 10633;
+pub const DAQmx_Dev_CI_PhysicalChans: ::std::os::raw::c_ushort = 8996;
+pub const DAQmx_Dev_CI_SupportedMeasTypes: ::std::os::raw::c_ushort = 12244;
+pub const DAQmx_Dev_CI_TrigUsage: ::std::os::raw::c_ushort = 10634;
+pub const DAQmx_Dev_CI_SampClkSupported: ::std::os::raw::c_ushort = 10654;
+pub const DAQmx_Dev_CI_SampModes: ::std::os::raw::c_ushort = 12254;
+pub const DAQmx_Dev_CI_MaxSize: ::std::os::raw::c_ushort = 10655;
+pub const DAQmx_Dev_CI_MaxTimebase: ::std::os::raw::c_ushort = 10656;
+pub const DAQmx_Dev_CO_PhysicalChans: ::std::os::raw::c_ushort = 8997;
+pub const DAQmx_Dev_CO_SupportedOutputTypes: ::std::os::raw::c_ushort = 12245;
+pub const DAQmx_Dev_CO_SampClkSupported: ::std::os::raw::c_ushort = 12123;
+pub const DAQmx_Dev_CO_SampModes: ::std::os::raw::c_ushort = 12255;
+pub const DAQmx_Dev_CO_TrigUsage: ::std::os::raw::c_ushort = 10635;
+pub const DAQmx_Dev_CO_MaxSize: ::std::os::raw::c_ushort = 10657;
+pub const DAQmx_Dev_CO_MaxTimebase: ::std::os::raw::c_ushort = 10658;
+pub const DAQmx_Dev_TEDS_HWTEDSSupported: ::std::os::raw::c_ushort = 12246;
+pub const DAQmx_Dev_NumDMAChans: ::std::os::raw::c_ushort = 9020;
+pub const DAQmx_Dev_BusType: ::std::os::raw::c_ushort = 8998;
+pub const DAQmx_Dev_PCI_BusNum: ::std::os::raw::c_ushort = 8999;
+pub const DAQmx_Dev_PCI_DevNum: ::std::os::raw::c_ushort = 9000;
+pub const DAQmx_Dev_PXI_ChassisNum: ::std::os::raw::c_ushort = 9001;
+pub const DAQmx_Dev_PXI_SlotNum: ::std::os::raw::c_ushort = 9002;
+pub const DAQmx_Dev_CompactDAQ_ChassisDevName: ::std::os::raw::c_ushort =
+    10679;
+pub const DAQmx_Dev_CompactDAQ_SlotNum: ::std::os::raw::c_ushort = 10680;
+pub const DAQmx_Dev_TCPIP_Hostname: ::std::os::raw::c_ushort = 10891;
+pub const DAQmx_Dev_TCPIP_EthernetIP: ::std::os::raw::c_ushort = 10892;
+pub const DAQmx_Dev_TCPIP_WirelessIP: ::std::os::raw::c_ushort = 10893;
+pub const DAQmx_Dev_Terminals: ::std::os::raw::c_ushort = 10816;
+pub const DAQmx_Exported_AIConvClk_OutputTerm: ::std::os::raw::c_ushort =
+    5767;
+pub const DAQmx_Exported_AIConvClk_Pulse_Polarity: ::std::os::raw::c_ushort =
+    5768;
+pub const DAQmx_Exported_10MHzRefClk_OutputTerm: ::std::os::raw::c_ushort =
+    8814;
+pub const DAQmx_Exported_20MHzTimebase_OutputTerm: ::std::os::raw::c_ushort =
+    5719;
+pub const DAQmx_Exported_SampClk_OutputBehavior: ::std::os::raw::c_ushort =
+    6251;
+pub const DAQmx_Exported_SampClk_OutputTerm: ::std::os::raw::c_ushort = 5731;
+pub const DAQmx_Exported_SampClk_DelayOffset: ::std::os::raw::c_ushort = 8644;
+pub const DAQmx_Exported_SampClk_Pulse_Polarity: ::std::os::raw::c_ushort =
+    5732;
+pub const DAQmx_Exported_SampClkTimebase_OutputTerm: ::std::os::raw::c_ushort
+          =
+    6393;
+pub const DAQmx_Exported_DividedSampClkTimebase_OutputTerm:
+          ::std::os::raw::c_ushort =
+    8609;
+pub const DAQmx_Exported_AdvTrig_OutputTerm: ::std::os::raw::c_ushort = 5701;
+pub const DAQmx_Exported_AdvTrig_Pulse_Polarity: ::std::os::raw::c_ushort =
+    5702;
+pub const DAQmx_Exported_AdvTrig_Pulse_WidthUnits: ::std::os::raw::c_ushort =
+    5703;
+pub const DAQmx_Exported_AdvTrig_Pulse_Width: ::std::os::raw::c_ushort = 5704;
+pub const DAQmx_Exported_PauseTrig_OutputTerm: ::std::os::raw::c_ushort =
+    5653;
+pub const DAQmx_Exported_PauseTrig_Lvl_ActiveLvl: ::std::os::raw::c_ushort =
+    5654;
+pub const DAQmx_Exported_RefTrig_OutputTerm: ::std::os::raw::c_ushort = 1424;
+pub const DAQmx_Exported_RefTrig_Pulse_Polarity: ::std::os::raw::c_ushort =
+    1425;
+pub const DAQmx_Exported_StartTrig_OutputTerm: ::std::os::raw::c_ushort =
+    1412;
+pub const DAQmx_Exported_StartTrig_Pulse_Polarity: ::std::os::raw::c_ushort =
+    1413;
+pub const DAQmx_Exported_AdvCmpltEvent_OutputTerm: ::std::os::raw::c_ushort =
+    5713;
+pub const DAQmx_Exported_AdvCmpltEvent_Delay: ::std::os::raw::c_ushort = 5975;
+pub const DAQmx_Exported_AdvCmpltEvent_Pulse_Polarity:
+          ::std::os::raw::c_ushort =
+    5714;
+pub const DAQmx_Exported_AdvCmpltEvent_Pulse_Width: ::std::os::raw::c_ushort =
+    5716;
+pub const DAQmx_Exported_AIHoldCmpltEvent_OutputTerm: ::std::os::raw::c_ushort
+          =
+    6381;
+pub const DAQmx_Exported_AIHoldCmpltEvent_PulsePolarity:
+          ::std::os::raw::c_ushort =
+    6382;
+pub const DAQmx_Exported_ChangeDetectEvent_OutputTerm:
+          ::std::os::raw::c_ushort =
+    8599;
+pub const DAQmx_Exported_ChangeDetectEvent_Pulse_Polarity:
+          ::std::os::raw::c_ushort =
+    8963;
+pub const DAQmx_Exported_CtrOutEvent_OutputTerm: ::std::os::raw::c_ushort =
+    5911;
+pub const DAQmx_Exported_CtrOutEvent_OutputBehavior: ::std::os::raw::c_ushort
+          =
+    5967;
+pub const DAQmx_Exported_CtrOutEvent_Pulse_Polarity: ::std::os::raw::c_ushort
+          =
+    5912;
+pub const DAQmx_Exported_CtrOutEvent_Toggle_IdleState:
+          ::std::os::raw::c_ushort =
+    6250;
+pub const DAQmx_Exported_HshkEvent_OutputTerm: ::std::os::raw::c_ushort =
+    8890;
+pub const DAQmx_Exported_HshkEvent_OutputBehavior: ::std::os::raw::c_ushort =
+    8891;
+pub const DAQmx_Exported_HshkEvent_Delay: ::std::os::raw::c_ushort = 8892;
+pub const DAQmx_Exported_HshkEvent_Interlocked_AssertedLvl:
+          ::std::os::raw::c_ushort =
+    8893;
+pub const DAQmx_Exported_HshkEvent_Interlocked_AssertOnStart:
+          ::std::os::raw::c_ushort =
+    8894;
+pub const DAQmx_Exported_HshkEvent_Interlocked_DeassertDelay:
+          ::std::os::raw::c_ushort =
+    8895;
+pub const DAQmx_Exported_HshkEvent_Pulse_Polarity: ::std::os::raw::c_ushort =
+    8896;
+pub const DAQmx_Exported_HshkEvent_Pulse_Width: ::std::os::raw::c_ushort =
+    8897;
+pub const DAQmx_Exported_RdyForXferEvent_OutputTerm: ::std::os::raw::c_ushort
+          =
+    8885;
+pub const DAQmx_Exported_RdyForXferEvent_Lvl_ActiveLvl:
+          ::std::os::raw::c_ushort =
+    8886;
+pub const DAQmx_Exported_RdyForXferEvent_DeassertCond:
+          ::std::os::raw::c_ushort =
+    10595;
+pub const DAQmx_Exported_RdyForXferEvent_DeassertCondCustomThreshold:
+          ::std::os::raw::c_ushort =
+    10596;
+pub const DAQmx_Exported_DataActiveEvent_OutputTerm: ::std::os::raw::c_ushort
+          =
+    5683;
+pub const DAQmx_Exported_DataActiveEvent_Lvl_ActiveLvl:
+          ::std::os::raw::c_ushort =
+    5684;
+pub const DAQmx_Exported_RdyForStartEvent_OutputTerm: ::std::os::raw::c_ushort
+          =
+    5641;
+pub const DAQmx_Exported_RdyForStartEvent_Lvl_ActiveLvl:
+          ::std::os::raw::c_ushort =
+    5969;
+pub const DAQmx_Exported_SyncPulseEvent_OutputTerm: ::std::os::raw::c_ushort =
+    8764;
+pub const DAQmx_Exported_WatchdogExpiredEvent_OutputTerm:
+          ::std::os::raw::c_ushort =
+    8618;
+pub const DAQmx_PersistedChan_Author: ::std::os::raw::c_ushort = 8912;
+pub const DAQmx_PersistedChan_AllowInteractiveEditing:
+          ::std::os::raw::c_ushort =
+    8913;
+pub const DAQmx_PersistedChan_AllowInteractiveDeletion:
+          ::std::os::raw::c_ushort =
+    8914;
+pub const DAQmx_PersistedScale_Author: ::std::os::raw::c_ushort = 8916;
+pub const DAQmx_PersistedScale_AllowInteractiveEditing:
+          ::std::os::raw::c_ushort =
+    8917;
+pub const DAQmx_PersistedScale_AllowInteractiveDeletion:
+          ::std::os::raw::c_ushort =
+    8918;
+pub const DAQmx_PersistedTask_Author: ::std::os::raw::c_ushort = 8908;
+pub const DAQmx_PersistedTask_AllowInteractiveEditing:
+          ::std::os::raw::c_ushort =
+    8909;
+pub const DAQmx_PersistedTask_AllowInteractiveDeletion:
+          ::std::os::raw::c_ushort =
+    8910;
+pub const DAQmx_PhysicalChan_AI_SupportedMeasTypes: ::std::os::raw::c_ushort =
+    12247;
+pub const DAQmx_PhysicalChan_AI_TermCfgs: ::std::os::raw::c_ushort = 9026;
+pub const DAQmx_PhysicalChan_AI_InputSrcs: ::std::os::raw::c_ushort = 12248;
+pub const DAQmx_PhysicalChan_AO_SupportedOutputTypes: ::std::os::raw::c_ushort
+          =
+    12249;
+pub const DAQmx_PhysicalChan_AO_SupportedPowerUpOutputTypes:
+          ::std::os::raw::c_ushort =
+    12366;
+pub const DAQmx_PhysicalChan_AO_TermCfgs: ::std::os::raw::c_ushort = 10659;
+pub const DAQmx_PhysicalChan_AO_ManualControlEnable: ::std::os::raw::c_ushort
+          =
+    10782;
+pub const DAQmx_PhysicalChan_AO_ManualControl_ShortDetected:
+          ::std::os::raw::c_ushort =
+    11971;
+pub const DAQmx_PhysicalChan_AO_ManualControlAmplitude:
+          ::std::os::raw::c_ushort =
+    10783;
+pub const DAQmx_PhysicalChan_AO_ManualControlFreq: ::std::os::raw::c_ushort =
+    10784;
+pub const DAQmx_AO_PowerAmp_ChannelEnable: ::std::os::raw::c_ushort = 12386;
+pub const DAQmx_AO_PowerAmp_ScalingCoeff: ::std::os::raw::c_ushort = 12387;
+pub const DAQmx_AO_PowerAmp_Overcurrent: ::std::os::raw::c_ushort = 12388;
+pub const DAQmx_AO_PowerAmp_Gain: ::std::os::raw::c_ushort = 12389;
+pub const DAQmx_AO_PowerAmp_Offset: ::std::os::raw::c_ushort = 12390;
+pub const DAQmx_PhysicalChan_DI_PortWidth: ::std::os::raw::c_ushort = 10660;
+pub const DAQmx_PhysicalChan_DI_SampClkSupported: ::std::os::raw::c_ushort =
+    10661;
+pub const DAQmx_PhysicalChan_DI_SampModes: ::std::os::raw::c_ushort = 12256;
+pub const DAQmx_PhysicalChan_DI_ChangeDetectSupported:
+          ::std::os::raw::c_ushort =
+    10662;
+pub const DAQmx_PhysicalChan_DO_PortWidth: ::std::os::raw::c_ushort = 10663;
+pub const DAQmx_PhysicalChan_DO_SampClkSupported: ::std::os::raw::c_ushort =
+    10664;
+pub const DAQmx_PhysicalChan_DO_SampModes: ::std::os::raw::c_ushort = 12257;
+pub const DAQmx_PhysicalChan_CI_SupportedMeasTypes: ::std::os::raw::c_ushort =
+    12250;
+pub const DAQmx_PhysicalChan_CO_SupportedOutputTypes: ::std::os::raw::c_ushort
+          =
+    12251;
+pub const DAQmx_PhysicalChan_TEDS_MfgID: ::std::os::raw::c_ushort = 8666;
+pub const DAQmx_PhysicalChan_TEDS_ModelNum: ::std::os::raw::c_ushort = 8667;
+pub const DAQmx_PhysicalChan_TEDS_SerialNum: ::std::os::raw::c_ushort = 8668;
+pub const DAQmx_PhysicalChan_TEDS_VersionNum: ::std::os::raw::c_ushort = 8669;
+pub const DAQmx_PhysicalChan_TEDS_VersionLetter: ::std::os::raw::c_ushort =
+    8670;
+pub const DAQmx_PhysicalChan_TEDS_BitStream: ::std::os::raw::c_ushort = 8671;
+pub const DAQmx_PhysicalChan_TEDS_TemplateIDs: ::std::os::raw::c_ushort =
+    8847;
+pub const DAQmx_Read_RelativeTo: ::std::os::raw::c_ushort = 6410;
+pub const DAQmx_Read_Offset: ::std::os::raw::c_ushort = 6411;
+pub const DAQmx_Read_ChannelsToRead: ::std::os::raw::c_ushort = 6179;
+pub const DAQmx_Read_ReadAllAvailSamp: ::std::os::raw::c_ushort = 4629;
+pub const DAQmx_Read_AutoStart: ::std::os::raw::c_ushort = 6182;
+pub const DAQmx_Read_OverWrite: ::std::os::raw::c_ushort = 4625;
+pub const DAQmx_Logging_FilePath: ::std::os::raw::c_ushort = 11972;
+pub const DAQmx_Logging_Mode: ::std::os::raw::c_ushort = 11973;
+pub const DAQmx_Logging_TDMS_GroupName: ::std::os::raw::c_ushort = 11974;
+pub const DAQmx_Logging_TDMS_Operation: ::std::os::raw::c_ushort = 11975;
+pub const DAQmx_Logging_Pause: ::std::os::raw::c_ushort = 12259;
+pub const DAQmx_Logging_SampsPerFile: ::std::os::raw::c_ushort = 12260;
+pub const DAQmx_Logging_FileWriteSize: ::std::os::raw::c_ushort = 12227;
+pub const DAQmx_Logging_FilePreallocationSize: ::std::os::raw::c_ushort =
+    12230;
+pub const DAQmx_Read_CurrReadPos: ::std::os::raw::c_ushort = 4641;
+pub const DAQmx_Read_AvailSampPerChan: ::std::os::raw::c_ushort = 4643;
+pub const DAQmx_Read_TotalSampPerChanAcquired: ::std::os::raw::c_ushort =
+    6442;
+pub const DAQmx_Read_CommonModeRangeErrorChansExist: ::std::os::raw::c_ushort
+          =
+    10904;
+pub const DAQmx_Read_CommonModeRangeErrorChans: ::std::os::raw::c_ushort =
+    10905;
+pub const DAQmx_Read_ExcitFaultChansExist: ::std::os::raw::c_ushort = 12424;
+pub const DAQmx_Read_ExcitFaultChans: ::std::os::raw::c_ushort = 12425;
+pub const DAQmx_Read_OvercurrentChansExist: ::std::os::raw::c_ushort = 10726;
+pub const DAQmx_Read_OvercurrentChans: ::std::os::raw::c_ushort = 10727;
+pub const DAQmx_Read_OvertemperatureChansExist: ::std::os::raw::c_ushort =
+    12417;
+pub const DAQmx_Read_OvertemperatureChans: ::std::os::raw::c_ushort = 12418;
+pub const DAQmx_Read_OpenChansExist: ::std::os::raw::c_ushort = 12544;
+pub const DAQmx_Read_OpenChans: ::std::os::raw::c_ushort = 12545;
+pub const DAQmx_Read_OpenChansDetails: ::std::os::raw::c_ushort = 12546;
+pub const DAQmx_Read_OpenCurrentLoopChansExist: ::std::os::raw::c_ushort =
+    10761;
+pub const DAQmx_Read_OpenCurrentLoopChans: ::std::os::raw::c_ushort = 10762;
+pub const DAQmx_Read_OpenThrmcplChansExist: ::std::os::raw::c_ushort = 10902;
+pub const DAQmx_Read_OpenThrmcplChans: ::std::os::raw::c_ushort = 10903;
+pub const DAQmx_Read_OverloadedChansExist: ::std::os::raw::c_ushort = 8564;
+pub const DAQmx_Read_OverloadedChans: ::std::os::raw::c_ushort = 8565;
+pub const DAQmx_Read_AccessoryInsertionOrRemovalDetected:
+          ::std::os::raw::c_ushort =
+    12144;
+pub const DAQmx_Read_DevsWithInsertedOrRemovedAccessories:
+          ::std::os::raw::c_ushort =
+    12145;
+pub const DAQmx_Read_ChangeDetect_HasOverflowed: ::std::os::raw::c_ushort =
+    8596;
+pub const DAQmx_Read_RawDataWidth: ::std::os::raw::c_ushort = 8570;
+pub const DAQmx_Read_NumChans: ::std::os::raw::c_ushort = 8571;
+pub const DAQmx_Read_DigitalLines_BytesPerChan: ::std::os::raw::c_ushort =
+    8572;
+pub const DAQmx_Read_WaitMode: ::std::os::raw::c_ushort = 8754;
+pub const DAQmx_Read_SleepTime: ::std::os::raw::c_ushort = 8880;
+pub const DAQmx_RealTime_ConvLateErrorsToWarnings: ::std::os::raw::c_ushort =
+    8942;
+pub const DAQmx_RealTime_NumOfWarmupIters: ::std::os::raw::c_ushort = 8941;
+pub const DAQmx_RealTime_WaitForNextSampClkWaitMode: ::std::os::raw::c_ushort
+          =
+    8943;
+pub const DAQmx_RealTime_ReportMissedSamp: ::std::os::raw::c_ushort = 8985;
+pub const DAQmx_RealTime_WriteRecoveryMode: ::std::os::raw::c_ushort = 8986;
+pub const DAQmx_Scale_Descr: ::std::os::raw::c_ushort = 4646;
+pub const DAQmx_Scale_ScaledUnits: ::std::os::raw::c_ushort = 6427;
+pub const DAQmx_Scale_PreScaledUnits: ::std::os::raw::c_ushort = 6391;
+pub const DAQmx_Scale_Type: ::std::os::raw::c_ushort = 6441;
+pub const DAQmx_Scale_Lin_Slope: ::std::os::raw::c_ushort = 4647;
+pub const DAQmx_Scale_Lin_YIntercept: ::std::os::raw::c_ushort = 4648;
+pub const DAQmx_Scale_Map_ScaledMax: ::std::os::raw::c_ushort = 4649;
+pub const DAQmx_Scale_Map_PreScaledMax: ::std::os::raw::c_ushort = 4657;
+pub const DAQmx_Scale_Map_ScaledMin: ::std::os::raw::c_ushort = 4656;
+pub const DAQmx_Scale_Map_PreScaledMin: ::std::os::raw::c_ushort = 4658;
+pub const DAQmx_Scale_Poly_ForwardCoeff: ::std::os::raw::c_ushort = 4660;
+pub const DAQmx_Scale_Poly_ReverseCoeff: ::std::os::raw::c_ushort = 4661;
+pub const DAQmx_Scale_Table_ScaledVals: ::std::os::raw::c_ushort = 4662;
+pub const DAQmx_Scale_Table_PreScaledVals: ::std::os::raw::c_ushort = 4663;
+pub const DAQmx_SwitchChan_Usage: ::std::os::raw::c_ushort = 6372;
+pub const DAQmx_SwitchChan_AnlgBusSharingEnable: ::std::os::raw::c_ushort =
+    12190;
+pub const DAQmx_SwitchChan_MaxACCarryCurrent: ::std::os::raw::c_ushort = 1608;
+pub const DAQmx_SwitchChan_MaxACSwitchCurrent: ::std::os::raw::c_ushort =
+    1606;
+pub const DAQmx_SwitchChan_MaxACCarryPwr: ::std::os::raw::c_ushort = 1602;
+pub const DAQmx_SwitchChan_MaxACSwitchPwr: ::std::os::raw::c_ushort = 1604;
+pub const DAQmx_SwitchChan_MaxDCCarryCurrent: ::std::os::raw::c_ushort = 1607;
+pub const DAQmx_SwitchChan_MaxDCSwitchCurrent: ::std::os::raw::c_ushort =
+    1605;
+pub const DAQmx_SwitchChan_MaxDCCarryPwr: ::std::os::raw::c_ushort = 1603;
+pub const DAQmx_SwitchChan_MaxDCSwitchPwr: ::std::os::raw::c_ushort = 1609;
+pub const DAQmx_SwitchChan_MaxACVoltage: ::std::os::raw::c_ushort = 1617;
+pub const DAQmx_SwitchChan_MaxDCVoltage: ::std::os::raw::c_ushort = 1616;
+pub const DAQmx_SwitchChan_WireMode: ::std::os::raw::c_ushort = 6373;
+pub const DAQmx_SwitchChan_Bandwidth: ::std::os::raw::c_ushort = 1600;
+pub const DAQmx_SwitchChan_Impedance: ::std::os::raw::c_ushort = 1601;
+pub const DAQmx_SwitchDev_SettlingTime: ::std::os::raw::c_ushort = 4676;
+pub const DAQmx_SwitchDev_AutoConnAnlgBus: ::std::os::raw::c_ushort = 6106;
+pub const DAQmx_SwitchDev_PwrDownLatchRelaysAfterSettling:
+          ::std::os::raw::c_ushort =
+    8923;
+pub const DAQmx_SwitchDev_Settled: ::std::os::raw::c_ushort = 4675;
+pub const DAQmx_SwitchDev_RelayList: ::std::os::raw::c_ushort = 6108;
+pub const DAQmx_SwitchDev_NumRelays: ::std::os::raw::c_ushort = 6374;
+pub const DAQmx_SwitchDev_SwitchChanList: ::std::os::raw::c_ushort = 6375;
+pub const DAQmx_SwitchDev_NumSwitchChans: ::std::os::raw::c_ushort = 6376;
+pub const DAQmx_SwitchDev_NumRows: ::std::os::raw::c_ushort = 6377;
+pub const DAQmx_SwitchDev_NumColumns: ::std::os::raw::c_ushort = 6378;
+pub const DAQmx_SwitchDev_Topology: ::std::os::raw::c_ushort = 6461;
+pub const DAQmx_SwitchDev_Temperature: ::std::os::raw::c_ushort = 12314;
+pub const DAQmx_SwitchScan_BreakMode: ::std::os::raw::c_ushort = 4679;
+pub const DAQmx_SwitchScan_RepeatMode: ::std::os::raw::c_ushort = 4680;
+pub const DAQmx_SwitchScan_WaitingForAdv: ::std::os::raw::c_ushort = 6105;
+pub const DAQmx_Sys_GlobalChans: ::std::os::raw::c_ushort = 4709;
+pub const DAQmx_Sys_Scales: ::std::os::raw::c_ushort = 4710;
+pub const DAQmx_Sys_Tasks: ::std::os::raw::c_ushort = 4711;
+pub const DAQmx_Sys_DevNames: ::std::os::raw::c_ushort = 6459;
+pub const DAQmx_Sys_NIDAQMajorVersion: ::std::os::raw::c_ushort = 4722;
+pub const DAQmx_Sys_NIDAQMinorVersion: ::std::os::raw::c_ushort = 6435;
+pub const DAQmx_Sys_NIDAQUpdateVersion: ::std::os::raw::c_ushort = 12066;
+pub const DAQmx_Task_Name: ::std::os::raw::c_ushort = 4726;
+pub const DAQmx_Task_Channels: ::std::os::raw::c_ushort = 4723;
+pub const DAQmx_Task_NumChans: ::std::os::raw::c_ushort = 8577;
+pub const DAQmx_Task_Devices: ::std::os::raw::c_ushort = 8974;
+pub const DAQmx_Task_NumDevices: ::std::os::raw::c_ushort = 10682;
+pub const DAQmx_Task_Complete: ::std::os::raw::c_ushort = 4724;
+pub const DAQmx_SampQuant_SampMode: ::std::os::raw::c_ushort = 4864;
+pub const DAQmx_SampQuant_SampPerChan: ::std::os::raw::c_ushort = 4880;
+pub const DAQmx_SampTimingType: ::std::os::raw::c_ushort = 4935;
+pub const DAQmx_SampClk_Rate: ::std::os::raw::c_ushort = 4932;
+pub const DAQmx_SampClk_MaxRate: ::std::os::raw::c_ushort = 8904;
+pub const DAQmx_SampClk_Src: ::std::os::raw::c_ushort = 6226;
+pub const DAQmx_SampClk_ActiveEdge: ::std::os::raw::c_ushort = 4865;
+pub const DAQmx_SampClk_OverrunBehavior: ::std::os::raw::c_ushort = 12028;
+pub const DAQmx_SampClk_UnderflowBehavior: ::std::os::raw::c_ushort = 10593;
+pub const DAQmx_SampClk_TimebaseDiv: ::std::os::raw::c_ushort = 6379;
+pub const DAQmx_SampClk_Term: ::std::os::raw::c_ushort = 12059;
+pub const DAQmx_SampClk_Timebase_Rate: ::std::os::raw::c_ushort = 4867;
+pub const DAQmx_SampClk_Timebase_Src: ::std::os::raw::c_ushort = 4872;
+pub const DAQmx_SampClk_Timebase_ActiveEdge: ::std::os::raw::c_ushort = 6380;
+pub const DAQmx_SampClk_Timebase_MasterTimebaseDiv: ::std::os::raw::c_ushort =
+    4869;
+pub const DAQmx_SampClkTimebase_Term: ::std::os::raw::c_ushort = 12060;
+pub const DAQmx_SampClk_DigFltr_Enable: ::std::os::raw::c_ushort = 8734;
+pub const DAQmx_SampClk_DigFltr_MinPulseWidth: ::std::os::raw::c_ushort =
+    8735;
+pub const DAQmx_SampClk_DigFltr_TimebaseSrc: ::std::os::raw::c_ushort = 8736;
+pub const DAQmx_SampClk_DigFltr_TimebaseRate: ::std::os::raw::c_ushort = 8737;
+pub const DAQmx_SampClk_DigSync_Enable: ::std::os::raw::c_ushort = 8738;
+pub const DAQmx_SampClk_WriteWfm_UseInitialWfmDT: ::std::os::raw::c_ushort =
+    12540;
+pub const DAQmx_Hshk_DelayAfterXfer: ::std::os::raw::c_ushort = 8898;
+pub const DAQmx_Hshk_StartCond: ::std::os::raw::c_ushort = 8899;
+pub const DAQmx_Hshk_SampleInputDataWhen: ::std::os::raw::c_ushort = 8900;
+pub const DAQmx_ChangeDetect_DI_RisingEdgePhysicalChans:
+          ::std::os::raw::c_ushort =
+    8597;
+pub const DAQmx_ChangeDetect_DI_FallingEdgePhysicalChans:
+          ::std::os::raw::c_ushort =
+    8598;
+pub const DAQmx_ChangeDetect_DI_Tristate: ::std::os::raw::c_ushort = 12026;
+pub const DAQmx_OnDemand_SimultaneousAOEnable: ::std::os::raw::c_ushort =
+    8608;
+pub const DAQmx_Implicit_UnderflowBehavior: ::std::os::raw::c_ushort = 12029;
+pub const DAQmx_AIConv_Rate: ::std::os::raw::c_ushort = 6216;
+pub const DAQmx_AIConv_MaxRate: ::std::os::raw::c_ushort = 8905;
+pub const DAQmx_AIConv_Src: ::std::os::raw::c_ushort = 5378;
+pub const DAQmx_AIConv_ActiveEdge: ::std::os::raw::c_ushort = 6227;
+pub const DAQmx_AIConv_TimebaseDiv: ::std::os::raw::c_ushort = 4917;
+pub const DAQmx_AIConv_Timebase_Src: ::std::os::raw::c_ushort = 4921;
+pub const DAQmx_DelayFromSampClk_DelayUnits: ::std::os::raw::c_ushort = 4868;
+pub const DAQmx_DelayFromSampClk_Delay: ::std::os::raw::c_ushort = 4887;
+pub const DAQmx_AIConv_DigFltr_Enable: ::std::os::raw::c_ushort = 11996;
+pub const DAQmx_AIConv_DigFltr_MinPulseWidth: ::std::os::raw::c_ushort =
+    11997;
+pub const DAQmx_AIConv_DigFltr_TimebaseSrc: ::std::os::raw::c_ushort = 11998;
+pub const DAQmx_AIConv_DigFltr_TimebaseRate: ::std::os::raw::c_ushort = 11999;
+pub const DAQmx_AIConv_DigSync_Enable: ::std::os::raw::c_ushort = 12000;
+pub const DAQmx_MasterTimebase_Rate: ::std::os::raw::c_ushort = 5269;
+pub const DAQmx_MasterTimebase_Src: ::std::os::raw::c_ushort = 4931;
+pub const DAQmx_RefClk_Rate: ::std::os::raw::c_ushort = 4885;
+pub const DAQmx_RefClk_Src: ::std::os::raw::c_ushort = 4886;
+pub const DAQmx_SyncPulse_Src: ::std::os::raw::c_ushort = 8765;
+pub const DAQmx_SyncPulse_SyncTime: ::std::os::raw::c_ushort = 8766;
+pub const DAQmx_SyncPulse_MinDelayToStart: ::std::os::raw::c_ushort = 8767;
+pub const DAQmx_SyncPulse_ResetTime: ::std::os::raw::c_ushort = 12156;
+pub const DAQmx_SyncPulse_ResetDelay: ::std::os::raw::c_ushort = 12157;
+pub const DAQmx_SyncPulse_Term: ::std::os::raw::c_ushort = 12165;
+pub const DAQmx_SyncClk_Interval: ::std::os::raw::c_ushort = 12158;
+pub const DAQmx_SampTimingEngine: ::std::os::raw::c_ushort = 10790;
+pub const DAQmx_StartTrig_Type: ::std::os::raw::c_ushort = 5011;
+pub const DAQmx_StartTrig_Term: ::std::os::raw::c_ushort = 12062;
+pub const DAQmx_DigEdge_StartTrig_Src: ::std::os::raw::c_ushort = 5127;
+pub const DAQmx_DigEdge_StartTrig_Edge: ::std::os::raw::c_ushort = 5124;
+pub const DAQmx_DigEdge_StartTrig_DigFltr_Enable: ::std::os::raw::c_ushort =
+    8739;
+pub const DAQmx_DigEdge_StartTrig_DigFltr_MinPulseWidth:
+          ::std::os::raw::c_ushort =
+    8740;
+pub const DAQmx_DigEdge_StartTrig_DigFltr_TimebaseSrc:
+          ::std::os::raw::c_ushort =
+    8741;
+pub const DAQmx_DigEdge_StartTrig_DigFltr_TimebaseRate:
+          ::std::os::raw::c_ushort =
+    8742;
+pub const DAQmx_DigEdge_StartTrig_DigSync_Enable: ::std::os::raw::c_ushort =
+    8743;
+pub const DAQmx_DigPattern_StartTrig_Src: ::std::os::raw::c_ushort = 5136;
+pub const DAQmx_DigPattern_StartTrig_Pattern: ::std::os::raw::c_ushort = 8582;
+pub const DAQmx_DigPattern_StartTrig_When: ::std::os::raw::c_ushort = 5137;
+pub const DAQmx_AnlgEdge_StartTrig_Src: ::std::os::raw::c_ushort = 5016;
+pub const DAQmx_AnlgEdge_StartTrig_Slope: ::std::os::raw::c_ushort = 5015;
+pub const DAQmx_AnlgEdge_StartTrig_Lvl: ::std::os::raw::c_ushort = 5014;
+pub const DAQmx_AnlgEdge_StartTrig_Hyst: ::std::os::raw::c_ushort = 5013;
+pub const DAQmx_AnlgEdge_StartTrig_Coupling: ::std::os::raw::c_ushort = 8755;
+pub const DAQmx_AnlgEdge_StartTrig_DigFltr_Enable: ::std::os::raw::c_ushort =
+    12001;
+pub const DAQmx_AnlgEdge_StartTrig_DigFltr_MinPulseWidth:
+          ::std::os::raw::c_ushort =
+    12002;
+pub const DAQmx_AnlgEdge_StartTrig_DigFltr_TimebaseSrc:
+          ::std::os::raw::c_ushort =
+    12003;
+pub const DAQmx_AnlgEdge_StartTrig_DigFltr_TimebaseRate:
+          ::std::os::raw::c_ushort =
+    12004;
+pub const DAQmx_AnlgEdge_StartTrig_DigSync_Enable: ::std::os::raw::c_ushort =
+    12005;
+pub const DAQmx_AnlgWin_StartTrig_Src: ::std::os::raw::c_ushort = 5120;
+pub const DAQmx_AnlgWin_StartTrig_When: ::std::os::raw::c_ushort = 5121;
+pub const DAQmx_AnlgWin_StartTrig_Top: ::std::os::raw::c_ushort = 5123;
+pub const DAQmx_AnlgWin_StartTrig_Btm: ::std::os::raw::c_ushort = 5122;
+pub const DAQmx_AnlgWin_StartTrig_Coupling: ::std::os::raw::c_ushort = 8756;
+pub const DAQmx_AnlgWin_StartTrig_DigFltr_Enable: ::std::os::raw::c_ushort =
+    12031;
+pub const DAQmx_AnlgWin_StartTrig_DigFltr_MinPulseWidth:
+          ::std::os::raw::c_ushort =
+    12032;
+pub const DAQmx_AnlgWin_StartTrig_DigFltr_TimebaseSrc:
+          ::std::os::raw::c_ushort =
+    12033;
+pub const DAQmx_AnlgWin_StartTrig_DigFltr_TimebaseRate:
+          ::std::os::raw::c_ushort =
+    12034;
+pub const DAQmx_AnlgWin_StartTrig_DigSync_Enable: ::std::os::raw::c_ushort =
+    12035;
+pub const DAQmx_StartTrig_Delay: ::std::os::raw::c_ushort = 6230;
+pub const DAQmx_StartTrig_DelayUnits: ::std::os::raw::c_ushort = 6344;
+pub const DAQmx_StartTrig_Retriggerable: ::std::os::raw::c_ushort = 6415;
+pub const DAQmx_RefTrig_Type: ::std::os::raw::c_ushort = 5145;
+pub const DAQmx_RefTrig_PretrigSamples: ::std::os::raw::c_ushort = 5189;
+pub const DAQmx_RefTrig_Term: ::std::os::raw::c_ushort = 12063;
+pub const DAQmx_DigEdge_RefTrig_Src: ::std::os::raw::c_ushort = 5172;
+pub const DAQmx_DigEdge_RefTrig_Edge: ::std::os::raw::c_ushort = 5168;
+pub const DAQmx_DigEdge_RefTrig_DigFltr_Enable: ::std::os::raw::c_ushort =
+    11991;
+pub const DAQmx_DigEdge_RefTrig_DigFltr_MinPulseWidth:
+          ::std::os::raw::c_ushort =
+    11992;
+pub const DAQmx_DigEdge_RefTrig_DigFltr_TimebaseSrc: ::std::os::raw::c_ushort
+          =
+    11993;
+pub const DAQmx_DigEdge_RefTrig_DigFltr_TimebaseRate: ::std::os::raw::c_ushort
+          =
+    11994;
+pub const DAQmx_DigEdge_RefTrig_DigSync_Enable: ::std::os::raw::c_ushort =
+    11995;
+pub const DAQmx_DigPattern_RefTrig_Src: ::std::os::raw::c_ushort = 5175;
+pub const DAQmx_DigPattern_RefTrig_Pattern: ::std::os::raw::c_ushort = 8583;
+pub const DAQmx_DigPattern_RefTrig_When: ::std::os::raw::c_ushort = 5176;
+pub const DAQmx_AnlgEdge_RefTrig_Src: ::std::os::raw::c_ushort = 5156;
+pub const DAQmx_AnlgEdge_RefTrig_Slope: ::std::os::raw::c_ushort = 5155;
+pub const DAQmx_AnlgEdge_RefTrig_Lvl: ::std::os::raw::c_ushort = 5154;
+pub const DAQmx_AnlgEdge_RefTrig_Hyst: ::std::os::raw::c_ushort = 5153;
+pub const DAQmx_AnlgEdge_RefTrig_Coupling: ::std::os::raw::c_ushort = 8757;
+pub const DAQmx_AnlgEdge_RefTrig_DigFltr_Enable: ::std::os::raw::c_ushort =
+    12006;
+pub const DAQmx_AnlgEdge_RefTrig_DigFltr_MinPulseWidth:
+          ::std::os::raw::c_ushort =
+    12007;
+pub const DAQmx_AnlgEdge_RefTrig_DigFltr_TimebaseSrc: ::std::os::raw::c_ushort
+          =
+    12008;
+pub const DAQmx_AnlgEdge_RefTrig_DigFltr_TimebaseRate:
+          ::std::os::raw::c_ushort =
+    12009;
+pub const DAQmx_AnlgEdge_RefTrig_DigSync_Enable: ::std::os::raw::c_ushort =
+    12010;
+pub const DAQmx_AnlgWin_RefTrig_Src: ::std::os::raw::c_ushort = 5158;
+pub const DAQmx_AnlgWin_RefTrig_When: ::std::os::raw::c_ushort = 5159;
+pub const DAQmx_AnlgWin_RefTrig_Top: ::std::os::raw::c_ushort = 5161;
+pub const DAQmx_AnlgWin_RefTrig_Btm: ::std::os::raw::c_ushort = 5160;
+pub const DAQmx_AnlgWin_RefTrig_Coupling: ::std::os::raw::c_ushort = 6231;
+pub const DAQmx_AnlgWin_RefTrig_DigFltr_Enable: ::std::os::raw::c_ushort =
+    12011;
+pub const DAQmx_AnlgWin_RefTrig_DigFltr_MinPulseWidth:
+          ::std::os::raw::c_ushort =
+    12012;
+pub const DAQmx_AnlgWin_RefTrig_DigFltr_TimebaseSrc: ::std::os::raw::c_ushort
+          =
+    12013;
+pub const DAQmx_AnlgWin_RefTrig_DigFltr_TimebaseRate: ::std::os::raw::c_ushort
+          =
+    12014;
+pub const DAQmx_AnlgWin_RefTrig_DigSync_Enable: ::std::os::raw::c_ushort =
+    12015;
+pub const DAQmx_RefTrig_AutoTrigEnable: ::std::os::raw::c_ushort = 11969;
+pub const DAQmx_RefTrig_AutoTriggered: ::std::os::raw::c_ushort = 11970;
+pub const DAQmx_RefTrig_Delay: ::std::os::raw::c_ushort = 5251;
+pub const DAQmx_AdvTrig_Type: ::std::os::raw::c_ushort = 4965;
+pub const DAQmx_DigEdge_AdvTrig_Src: ::std::os::raw::c_ushort = 4962;
+pub const DAQmx_DigEdge_AdvTrig_Edge: ::std::os::raw::c_ushort = 4960;
+pub const DAQmx_DigEdge_AdvTrig_DigFltr_Enable: ::std::os::raw::c_ushort =
+    8760;
+pub const DAQmx_HshkTrig_Type: ::std::os::raw::c_ushort = 8887;
+pub const DAQmx_Interlocked_HshkTrig_Src: ::std::os::raw::c_ushort = 8888;
+pub const DAQmx_Interlocked_HshkTrig_AssertedLvl: ::std::os::raw::c_ushort =
+    8889;
+pub const DAQmx_PauseTrig_Type: ::std::os::raw::c_ushort = 4966;
+pub const DAQmx_PauseTrig_Term: ::std::os::raw::c_ushort = 12064;
+pub const DAQmx_AnlgLvl_PauseTrig_Src: ::std::os::raw::c_ushort = 4976;
+pub const DAQmx_AnlgLvl_PauseTrig_When: ::std::os::raw::c_ushort = 4977;
+pub const DAQmx_AnlgLvl_PauseTrig_Lvl: ::std::os::raw::c_ushort = 4969;
+pub const DAQmx_AnlgLvl_PauseTrig_Hyst: ::std::os::raw::c_ushort = 4968;
+pub const DAQmx_AnlgLvl_PauseTrig_Coupling: ::std::os::raw::c_ushort = 8758;
+pub const DAQmx_AnlgLvl_PauseTrig_DigFltr_Enable: ::std::os::raw::c_ushort =
+    12016;
+pub const DAQmx_AnlgLvl_PauseTrig_DigFltr_MinPulseWidth:
+          ::std::os::raw::c_ushort =
+    12017;
+pub const DAQmx_AnlgLvl_PauseTrig_DigFltr_TimebaseSrc:
+          ::std::os::raw::c_ushort =
+    12018;
+pub const DAQmx_AnlgLvl_PauseTrig_DigFltr_TimebaseRate:
+          ::std::os::raw::c_ushort =
+    12019;
+pub const DAQmx_AnlgLvl_PauseTrig_DigSync_Enable: ::std::os::raw::c_ushort =
+    12020;
+pub const DAQmx_AnlgWin_PauseTrig_Src: ::std::os::raw::c_ushort = 4979;
+pub const DAQmx_AnlgWin_PauseTrig_When: ::std::os::raw::c_ushort = 4980;
+pub const DAQmx_AnlgWin_PauseTrig_Top: ::std::os::raw::c_ushort = 4982;
+pub const DAQmx_AnlgWin_PauseTrig_Btm: ::std::os::raw::c_ushort = 4981;
+pub const DAQmx_AnlgWin_PauseTrig_Coupling: ::std::os::raw::c_ushort = 8759;
+pub const DAQmx_AnlgWin_PauseTrig_DigFltr_Enable: ::std::os::raw::c_ushort =
+    12021;
+pub const DAQmx_AnlgWin_PauseTrig_DigFltr_MinPulseWidth:
+          ::std::os::raw::c_ushort =
+    12022;
+pub const DAQmx_AnlgWin_PauseTrig_DigFltr_TimebaseSrc:
+          ::std::os::raw::c_ushort =
+    12023;
+pub const DAQmx_AnlgWin_PauseTrig_DigFltr_TimebaseRate:
+          ::std::os::raw::c_ushort =
+    12024;
+pub const DAQmx_AnlgWin_PauseTrig_DigSync_Enable: ::std::os::raw::c_ushort =
+    12025;
+pub const DAQmx_DigLvl_PauseTrig_Src: ::std::os::raw::c_ushort = 4985;
+pub const DAQmx_DigLvl_PauseTrig_When: ::std::os::raw::c_ushort = 4992;
+pub const DAQmx_DigLvl_PauseTrig_DigFltr_Enable: ::std::os::raw::c_ushort =
+    8744;
+pub const DAQmx_DigLvl_PauseTrig_DigFltr_MinPulseWidth:
+          ::std::os::raw::c_ushort =
+    8745;
+pub const DAQmx_DigLvl_PauseTrig_DigFltr_TimebaseSrc: ::std::os::raw::c_ushort
+          =
+    8746;
+pub const DAQmx_DigLvl_PauseTrig_DigFltr_TimebaseRate:
+          ::std::os::raw::c_ushort =
+    8747;
+pub const DAQmx_DigLvl_PauseTrig_DigSync_Enable: ::std::os::raw::c_ushort =
+    8748;
+pub const DAQmx_DigPattern_PauseTrig_Src: ::std::os::raw::c_ushort = 8559;
+pub const DAQmx_DigPattern_PauseTrig_Pattern: ::std::os::raw::c_ushort = 8584;
+pub const DAQmx_DigPattern_PauseTrig_When: ::std::os::raw::c_ushort = 8560;
+pub const DAQmx_ArmStartTrig_Type: ::std::os::raw::c_ushort = 5140;
+pub const DAQmx_ArmStart_Term: ::std::os::raw::c_ushort = 12159;
+pub const DAQmx_DigEdge_ArmStartTrig_Src: ::std::os::raw::c_ushort = 5143;
+pub const DAQmx_DigEdge_ArmStartTrig_Edge: ::std::os::raw::c_ushort = 5141;
+pub const DAQmx_DigEdge_ArmStartTrig_DigFltr_Enable: ::std::os::raw::c_ushort
+          =
+    8749;
+pub const DAQmx_DigEdge_ArmStartTrig_DigFltr_MinPulseWidth:
+          ::std::os::raw::c_ushort =
+    8750;
+pub const DAQmx_DigEdge_ArmStartTrig_DigFltr_TimebaseSrc:
+          ::std::os::raw::c_ushort =
+    8751;
+pub const DAQmx_DigEdge_ArmStartTrig_DigFltr_TimebaseRate:
+          ::std::os::raw::c_ushort =
+    8752;
+pub const DAQmx_DigEdge_ArmStartTrig_DigSync_Enable: ::std::os::raw::c_ushort
+          =
+    8753;
+pub const DAQmx_Trigger_SyncType: ::std::os::raw::c_ushort = 12160;
+pub const DAQmx_Watchdog_Timeout: ::std::os::raw::c_ushort = 8617;
+pub const DAQmx_WatchdogExpirTrig_Type: ::std::os::raw::c_ushort = 8611;
+pub const DAQmx_WatchdogExpirTrig_TrigOnNetworkConnLoss:
+          ::std::os::raw::c_ushort =
+    12381;
+pub const DAQmx_DigEdge_WatchdogExpirTrig_Src: ::std::os::raw::c_ushort =
+    8612;
+pub const DAQmx_DigEdge_WatchdogExpirTrig_Edge: ::std::os::raw::c_ushort =
+    8613;
+pub const DAQmx_Watchdog_DO_ExpirState: ::std::os::raw::c_ushort = 8615;
+pub const DAQmx_Watchdog_AO_OutputType: ::std::os::raw::c_ushort = 12382;
+pub const DAQmx_Watchdog_AO_ExpirState: ::std::os::raw::c_ushort = 12383;
+pub const DAQmx_Watchdog_CO_ExpirState: ::std::os::raw::c_ushort = 12384;
+pub const DAQmx_Watchdog_HasExpired: ::std::os::raw::c_ushort = 8616;
+pub const DAQmx_Write_RelativeTo: ::std::os::raw::c_ushort = 6412;
+pub const DAQmx_Write_Offset: ::std::os::raw::c_ushort = 6413;
+pub const DAQmx_Write_RegenMode: ::std::os::raw::c_ushort = 5203;
+pub const DAQmx_Write_CurrWritePos: ::std::os::raw::c_ushort = 5208;
+pub const DAQmx_Write_OvercurrentChansExist: ::std::os::raw::c_ushort = 10728;
+pub const DAQmx_Write_OvercurrentChans: ::std::os::raw::c_ushort = 10729;
+pub const DAQmx_Write_OvertemperatureChansExist: ::std::os::raw::c_ushort =
+    10884;
+pub const DAQmx_Write_OvertemperatureChans: ::std::os::raw::c_ushort = 12419;
+pub const DAQmx_Write_ExternalOvervoltageChansExist: ::std::os::raw::c_ushort
+          =
+    12475;
+pub const DAQmx_Write_ExternalOvervoltageChans: ::std::os::raw::c_ushort =
+    12476;
+pub const DAQmx_Write_OverloadedChansExist: ::std::os::raw::c_ushort = 12420;
+pub const DAQmx_Write_OverloadedChans: ::std::os::raw::c_ushort = 12421;
+pub const DAQmx_Write_OpenCurrentLoopChansExist: ::std::os::raw::c_ushort =
+    10730;
+pub const DAQmx_Write_OpenCurrentLoopChans: ::std::os::raw::c_ushort = 10731;
+pub const DAQmx_Write_PowerSupplyFaultChansExist: ::std::os::raw::c_ushort =
+    10732;
+pub const DAQmx_Write_PowerSupplyFaultChans: ::std::os::raw::c_ushort = 10733;
+pub const DAQmx_Write_SpaceAvail: ::std::os::raw::c_ushort = 5216;
+pub const DAQmx_Write_TotalSampPerChanGenerated: ::std::os::raw::c_ushort =
+    6443;
+pub const DAQmx_Write_AccessoryInsertionOrRemovalDetected:
+          ::std::os::raw::c_ushort =
+    12371;
+pub const DAQmx_Write_DevsWithInsertedOrRemovedAccessories:
+          ::std::os::raw::c_ushort =
+    12372;
+pub const DAQmx_Write_RawDataWidth: ::std::os::raw::c_ushort = 8573;
+pub const DAQmx_Write_NumChans: ::std::os::raw::c_ushort = 8574;
+pub const DAQmx_Write_WaitMode: ::std::os::raw::c_ushort = 8881;
+pub const DAQmx_Write_SleepTime: ::std::os::raw::c_ushort = 8882;
+pub const DAQmx_Write_DigitalLines_BytesPerChan: ::std::os::raw::c_ushort =
+    8575;
+pub const DAQmx_ReadWaitMode: ::std::os::raw::c_ushort = 8754;
+pub const DAQmx_Val_Task_Start: ::std::os::raw::c_uchar = 0;
+pub const DAQmx_Val_Task_Stop: ::std::os::raw::c_uchar = 1;
+pub const DAQmx_Val_Task_Verify: ::std::os::raw::c_uchar = 2;
+pub const DAQmx_Val_Task_Commit: ::std::os::raw::c_uchar = 3;
+pub const DAQmx_Val_Task_Reserve: ::std::os::raw::c_uchar = 4;
+pub const DAQmx_Val_Task_Unreserve: ::std::os::raw::c_uchar = 5;
+pub const DAQmx_Val_Task_Abort: ::std::os::raw::c_uchar = 6;
+pub const DAQmx_Val_SynchronousEventCallbacks: ::std::os::raw::c_uchar = 1;
+pub const DAQmx_Val_Acquired_Into_Buffer: ::std::os::raw::c_uchar = 1;
+pub const DAQmx_Val_Transferred_From_Buffer: ::std::os::raw::c_uchar = 2;
+pub const DAQmx_Val_ResetTimer: ::std::os::raw::c_uchar = 0;
+pub const DAQmx_Val_ClearExpiration: ::std::os::raw::c_uchar = 1;
+pub const DAQmx_Val_ChanPerLine: ::std::os::raw::c_uchar = 0;
+pub const DAQmx_Val_ChanForAllLines: ::std::os::raw::c_uchar = 1;
+pub const DAQmx_Val_GroupByChannel: ::std::os::raw::c_uchar = 0;
+pub const DAQmx_Val_GroupByScanNumber: ::std::os::raw::c_uchar = 1;
+pub const DAQmx_Val_DoNotInvertPolarity: ::std::os::raw::c_uchar = 0;
+pub const DAQmx_Val_InvertPolarity: ::std::os::raw::c_uchar = 1;
+pub const DAQmx_Val_Action_Commit: ::std::os::raw::c_uchar = 0;
+pub const DAQmx_Val_Action_Cancel: ::std::os::raw::c_uchar = 1;
+pub const DAQmx_Val_AdvanceTrigger: ::std::os::raw::c_ushort = 12488;
+pub const DAQmx_Val_Rising: ::std::os::raw::c_ushort = 10280;
+pub const DAQmx_Val_Falling: ::std::os::raw::c_ushort = 10171;
+pub const DAQmx_Val_PathStatus_Available: ::std::os::raw::c_ushort = 10431;
+pub const DAQmx_Val_PathStatus_AlreadyExists: ::std::os::raw::c_ushort =
+    10432;
+pub const DAQmx_Val_PathStatus_Unsupported: ::std::os::raw::c_ushort = 10433;
+pub const DAQmx_Val_PathStatus_ChannelInUse: ::std::os::raw::c_ushort = 10434;
+pub const DAQmx_Val_PathStatus_SourceChannelConflict: ::std::os::raw::c_ushort
+          =
+    10435;
+pub const DAQmx_Val_PathStatus_ChannelReservedForRouting:
+          ::std::os::raw::c_ushort =
+    10436;
+pub const DAQmx_Val_DegC: ::std::os::raw::c_ushort = 10143;
+pub const DAQmx_Val_DegF: ::std::os::raw::c_ushort = 10144;
+pub const DAQmx_Val_Kelvins: ::std::os::raw::c_ushort = 10325;
+pub const DAQmx_Val_DegR: ::std::os::raw::c_ushort = 10145;
+pub const DAQmx_Val_High: ::std::os::raw::c_ushort = 10192;
+pub const DAQmx_Val_Low: ::std::os::raw::c_ushort = 10214;
+pub const DAQmx_Val_Tristate: ::std::os::raw::c_ushort = 10310;
+pub const DAQmx_Val_PullUp: ::std::os::raw::c_ushort = 15950;
+pub const DAQmx_Val_PullDown: ::std::os::raw::c_ushort = 15951;
+pub const DAQmx_Val_ChannelVoltage: ::std::os::raw::c_uchar = 0;
+pub const DAQmx_Val_ChannelCurrent: ::std::os::raw::c_uchar = 1;
+pub const DAQmx_Val_ChannelHighImpedance: ::std::os::raw::c_uchar = 2;
+pub const DAQmx_Val_Open: ::std::os::raw::c_ushort = 10437;
+pub const DAQmx_Val_Closed: ::std::os::raw::c_ushort = 10438;
+pub const DAQmx_Val_Loopback0: ::std::os::raw::c_uchar = 0;
+pub const DAQmx_Val_Loopback180: ::std::os::raw::c_uchar = 1;
+pub const DAQmx_Val_Ground: ::std::os::raw::c_uchar = 2;
+pub const DAQmx_Val_Voltage: ::std::os::raw::c_ushort = 10322;
+pub const DAQmx_Val_Bridge: ::std::os::raw::c_ushort = 15908;
+pub const DAQmx_Val_Current: ::std::os::raw::c_ushort = 10134;
+pub const DAQmx_Val_Diff: ::std::os::raw::c_ushort = 10106;
+pub const DAQmx_Val_PseudoDiff: ::std::os::raw::c_ushort = 12529;
+pub const DAQmx_Val_Charge: ::std::os::raw::c_ushort = 16105;
+pub const DAQmx_Val_A: ::std::os::raw::c_ushort = 12513;
+pub const DAQmx_Val_B: ::std::os::raw::c_ushort = 12514;
+pub const DAQmx_Val_Newtons: ::std::os::raw::c_ushort = 15875;
+pub const DAQmx_Val_Pounds: ::std::os::raw::c_ushort = 15876;
+pub const DAQmx_Val_FromCustomScale: ::std::os::raw::c_ushort = 10065;
+pub const DAQmx_Val_Cfg_Default: ::std::os::raw::c_char = -1;
+pub const DAQmx_Val_Default: ::std::os::raw::c_char = -1;
+pub const DAQmx_Val_Auto: ::std::os::raw::c_char = -1;
+pub const DAQmx_Val_Save_Overwrite: ::std::os::raw::c_uchar = 1;
+pub const DAQmx_Val_Save_AllowInteractiveEditing: ::std::os::raw::c_uchar = 2;
+pub const DAQmx_Val_Save_AllowInteractiveDeletion: ::std::os::raw::c_uchar =
+    4;
+pub const DAQmx_Val_Bit_TriggerUsageTypes_Advance: ::std::os::raw::c_uchar =
+    1;
+pub const DAQmx_Val_Bit_TriggerUsageTypes_Pause: ::std::os::raw::c_uchar = 2;
+pub const DAQmx_Val_Bit_TriggerUsageTypes_Reference: ::std::os::raw::c_uchar =
+    4;
+pub const DAQmx_Val_Bit_TriggerUsageTypes_Start: ::std::os::raw::c_uchar = 8;
+pub const DAQmx_Val_Bit_TriggerUsageTypes_Handshake: ::std::os::raw::c_uchar =
+    16;
+pub const DAQmx_Val_Bit_TriggerUsageTypes_ArmStart: ::std::os::raw::c_uchar =
+    32;
+pub const DAQmx_Val_Bit_CouplingTypes_AC: ::std::os::raw::c_uchar = 1;
+pub const DAQmx_Val_Bit_CouplingTypes_DC: ::std::os::raw::c_uchar = 2;
+pub const DAQmx_Val_Bit_CouplingTypes_Ground: ::std::os::raw::c_uchar = 4;
+pub const DAQmx_Val_Bit_CouplingTypes_HFReject: ::std::os::raw::c_uchar = 8;
+pub const DAQmx_Val_Bit_CouplingTypes_LFReject: ::std::os::raw::c_uchar = 16;
+pub const DAQmx_Val_Bit_CouplingTypes_NoiseReject: ::std::os::raw::c_uchar =
+    32;
+pub const DAQmx_Val_Bit_TermCfg_RSE: ::std::os::raw::c_uchar = 1;
+pub const DAQmx_Val_Bit_TermCfg_NRSE: ::std::os::raw::c_uchar = 2;
+pub const DAQmx_Val_Bit_TermCfg_Diff: ::std::os::raw::c_uchar = 4;
+pub const DAQmx_Val_Bit_TermCfg_PseudoDIFF: ::std::os::raw::c_uchar = 8;
+pub const DAQmx_Val_4Wire: ::std::os::raw::c_uchar = 4;
+pub const DAQmx_Val_5Wire: ::std::os::raw::c_uchar = 5;
+pub const DAQmx_Val_6Wire: ::std::os::raw::c_uchar = 6;
+pub const DAQmx_Val_Automatic: ::std::os::raw::c_ushort = 16097;
+pub const DAQmx_Val_HighResolution: ::std::os::raw::c_ushort = 10195;
+pub const DAQmx_Val_HighSpeed: ::std::os::raw::c_ushort = 14712;
+pub const DAQmx_Val_Best50HzRejection: ::std::os::raw::c_ushort = 14713;
+pub const DAQmx_Val_Best60HzRejection: ::std::os::raw::c_ushort = 14714;
+pub const DAQmx_Val_Custom: ::std::os::raw::c_ushort = 10137;
+pub const DAQmx_Val_VoltageRMS: ::std::os::raw::c_ushort = 10350;
+pub const DAQmx_Val_CurrentRMS: ::std::os::raw::c_ushort = 10351;
+pub const DAQmx_Val_Voltage_CustomWithExcitation: ::std::os::raw::c_ushort =
+    10323;
+pub const DAQmx_Val_Freq_Voltage: ::std::os::raw::c_ushort = 10181;
+pub const DAQmx_Val_Resistance: ::std::os::raw::c_ushort = 10278;
+pub const DAQmx_Val_Temp_TC: ::std::os::raw::c_ushort = 10303;
+pub const DAQmx_Val_Temp_Thrmstr: ::std::os::raw::c_ushort = 10302;
+pub const DAQmx_Val_Temp_RTD: ::std::os::raw::c_ushort = 10301;
+pub const DAQmx_Val_Temp_BuiltInSensor: ::std::os::raw::c_ushort = 10311;
+pub const DAQmx_Val_Strain_Gage: ::std::os::raw::c_ushort = 10300;
+pub const DAQmx_Val_Rosette_Strain_Gage: ::std::os::raw::c_ushort = 15980;
+pub const DAQmx_Val_Position_LVDT: ::std::os::raw::c_ushort = 10352;
+pub const DAQmx_Val_Position_RVDT: ::std::os::raw::c_ushort = 10353;
+pub const DAQmx_Val_Position_EddyCurrentProximityProbe:
+          ::std::os::raw::c_ushort =
+    14835;
+pub const DAQmx_Val_Accelerometer: ::std::os::raw::c_ushort = 10356;
+pub const DAQmx_Val_Acceleration_Charge: ::std::os::raw::c_ushort = 16104;
+pub const DAQmx_Val_Acceleration_4WireDCVoltage: ::std::os::raw::c_ushort =
+    16106;
+pub const DAQmx_Val_Velocity_IEPESensor: ::std::os::raw::c_ushort = 15966;
+pub const DAQmx_Val_Force_Bridge: ::std::os::raw::c_ushort = 15899;
+pub const DAQmx_Val_Force_IEPESensor: ::std::os::raw::c_ushort = 15895;
+pub const DAQmx_Val_Pressure_Bridge: ::std::os::raw::c_ushort = 15902;
+pub const DAQmx_Val_SoundPressure_Microphone: ::std::os::raw::c_ushort =
+    10354;
+pub const DAQmx_Val_Torque_Bridge: ::std::os::raw::c_ushort = 15905;
+pub const DAQmx_Val_TEDS_Sensor: ::std::os::raw::c_ushort = 12531;
+pub const DAQmx_Val_ZeroVolts: ::std::os::raw::c_ushort = 12526;
+pub const DAQmx_Val_HighImpedance: ::std::os::raw::c_ushort = 12527;
+pub const DAQmx_Val_MaintainExistingValue: ::std::os::raw::c_ushort = 12528;
+pub const DAQmx_Val_FuncGen: ::std::os::raw::c_ushort = 14750;
+pub const DAQmx_Val_PicoCoulombsPerG: ::std::os::raw::c_ushort = 16099;
+pub const DAQmx_Val_PicoCoulombsPerMetersPerSecondSquared:
+          ::std::os::raw::c_ushort =
+    16100;
+pub const DAQmx_Val_PicoCoulombsPerInchesPerSecondSquared:
+          ::std::os::raw::c_ushort =
+    16101;
+pub const DAQmx_Val_mVoltsPerG: ::std::os::raw::c_ushort = 12509;
+pub const DAQmx_Val_VoltsPerG: ::std::os::raw::c_ushort = 12510;
+pub const DAQmx_Val_AccelUnit_g: ::std::os::raw::c_ushort = 10186;
+pub const DAQmx_Val_MetersPerSecondSquared: ::std::os::raw::c_ushort = 12470;
+pub const DAQmx_Val_InchesPerSecondSquared: ::std::os::raw::c_ushort = 12471;
+pub const DAQmx_Val_FiniteSamps: ::std::os::raw::c_ushort = 10178;
+pub const DAQmx_Val_ContSamps: ::std::os::raw::c_ushort = 10123;
+pub const DAQmx_Val_HWTimedSinglePoint: ::std::os::raw::c_ushort = 12522;
+pub const DAQmx_Val_AboveLvl: ::std::os::raw::c_ushort = 10093;
+pub const DAQmx_Val_BelowLvl: ::std::os::raw::c_ushort = 10107;
+pub const DAQmx_Val_Degrees: ::std::os::raw::c_ushort = 10146;
+pub const DAQmx_Val_Radians: ::std::os::raw::c_ushort = 10273;
+pub const DAQmx_Val_Ticks: ::std::os::raw::c_ushort = 10304;
+pub const DAQmx_Val_RPM: ::std::os::raw::c_ushort = 16080;
+pub const DAQmx_Val_RadiansPerSecond: ::std::os::raw::c_ushort = 16081;
+pub const DAQmx_Val_DegreesPerSecond: ::std::os::raw::c_ushort = 16082;
+pub const DAQmx_Val_None: ::std::os::raw::c_ushort = 10230;
+pub const DAQmx_Val_Once: ::std::os::raw::c_ushort = 10244;
+pub const DAQmx_Val_EverySample: ::std::os::raw::c_ushort = 10164;
+pub const DAQmx_Val_NoAction: ::std::os::raw::c_ushort = 10227;
+pub const DAQmx_Val_BreakBeforeMake: ::std::os::raw::c_ushort = 10110;
+pub const DAQmx_Val_FullBridge: ::std::os::raw::c_ushort = 10182;
+pub const DAQmx_Val_HalfBridge: ::std::os::raw::c_ushort = 10187;
+pub const DAQmx_Val_QuarterBridge: ::std::os::raw::c_ushort = 10270;
+pub const DAQmx_Val_NoBridge: ::std::os::raw::c_ushort = 10228;
+pub const DAQmx_Val_VoltsPerVolt: ::std::os::raw::c_ushort = 15896;
+pub const DAQmx_Val_mVoltsPerVolt: ::std::os::raw::c_ushort = 15897;
+pub const DAQmx_Val_KilogramForce: ::std::os::raw::c_ushort = 15877;
+pub const DAQmx_Val_Pascals: ::std::os::raw::c_ushort = 10081;
+pub const DAQmx_Val_PoundsPerSquareInch: ::std::os::raw::c_ushort = 15879;
+pub const DAQmx_Val_Bar: ::std::os::raw::c_ushort = 15880;
+pub const DAQmx_Val_NewtonMeters: ::std::os::raw::c_ushort = 15881;
+pub const DAQmx_Val_InchOunces: ::std::os::raw::c_ushort = 15882;
+pub const DAQmx_Val_InchPounds: ::std::os::raw::c_ushort = 15883;
+pub const DAQmx_Val_FootPounds: ::std::os::raw::c_ushort = 15884;
+pub const DAQmx_Val_FromTEDS: ::std::os::raw::c_ushort = 12516;
+pub const DAQmx_Val_PCI: ::std::os::raw::c_ushort = 12582;
+pub const DAQmx_Val_PCIe: ::std::os::raw::c_ushort = 13612;
+pub const DAQmx_Val_PXI: ::std::os::raw::c_ushort = 12583;
+pub const DAQmx_Val_PXIe: ::std::os::raw::c_ushort = 14706;
+pub const DAQmx_Val_SCXI: ::std::os::raw::c_ushort = 12584;
+pub const DAQmx_Val_SCC: ::std::os::raw::c_ushort = 14707;
+pub const DAQmx_Val_PCCard: ::std::os::raw::c_ushort = 12585;
+pub const DAQmx_Val_USB: ::std::os::raw::c_ushort = 12586;
+pub const DAQmx_Val_CompactDAQ: ::std::os::raw::c_ushort = 14637;
+pub const DAQmx_Val_TCPIP: ::std::os::raw::c_ushort = 14828;
+pub const DAQmx_Val_Unknown: ::std::os::raw::c_ushort = 12588;
+pub const DAQmx_Val_SwitchBlock: ::std::os::raw::c_ushort = 15870;
+pub const DAQmx_Val_CountEdges: ::std::os::raw::c_ushort = 10125;
+pub const DAQmx_Val_Freq: ::std::os::raw::c_ushort = 10179;
+pub const DAQmx_Val_Period: ::std::os::raw::c_ushort = 10256;
+pub const DAQmx_Val_PulseWidth: ::std::os::raw::c_ushort = 10359;
+pub const DAQmx_Val_SemiPeriod: ::std::os::raw::c_ushort = 10289;
+pub const DAQmx_Val_PulseFrequency: ::std::os::raw::c_ushort = 15864;
+pub const DAQmx_Val_PulseTime: ::std::os::raw::c_ushort = 15865;
+pub const DAQmx_Val_PulseTicks: ::std::os::raw::c_ushort = 15866;
+pub const DAQmx_Val_DutyCycle: ::std::os::raw::c_ushort = 16070;
+pub const DAQmx_Val_Position_AngEncoder: ::std::os::raw::c_ushort = 10360;
+pub const DAQmx_Val_Position_LinEncoder: ::std::os::raw::c_ushort = 10361;
+pub const DAQmx_Val_Velocity_AngEncoder: ::std::os::raw::c_ushort = 16078;
+pub const DAQmx_Val_Velocity_LinEncoder: ::std::os::raw::c_ushort = 16079;
+pub const DAQmx_Val_TwoEdgeSep: ::std::os::raw::c_ushort = 10267;
+pub const DAQmx_Val_GPS_Timestamp: ::std::os::raw::c_ushort = 10362;
+pub const DAQmx_Val_BuiltIn: ::std::os::raw::c_ushort = 10200;
+pub const DAQmx_Val_ConstVal: ::std::os::raw::c_ushort = 10116;
+pub const DAQmx_Val_Chan: ::std::os::raw::c_ushort = 10113;
+pub const DAQmx_Val_Pulse_Time: ::std::os::raw::c_ushort = 10269;
+pub const DAQmx_Val_Pulse_Freq: ::std::os::raw::c_ushort = 10119;
+pub const DAQmx_Val_Pulse_Ticks: ::std::os::raw::c_ushort = 10268;
+pub const DAQmx_Val_AI: ::std::os::raw::c_ushort = 10100;
+pub const DAQmx_Val_AO: ::std::os::raw::c_ushort = 10102;
+pub const DAQmx_Val_DI: ::std::os::raw::c_ushort = 10151;
+pub const DAQmx_Val_DO: ::std::os::raw::c_ushort = 10153;
+pub const DAQmx_Val_CI: ::std::os::raw::c_ushort = 10131;
+pub const DAQmx_Val_CO: ::std::os::raw::c_ushort = 10132;
+pub const DAQmx_Val_Unconstrained: ::std::os::raw::c_ushort = 14708;
+pub const DAQmx_Val_FixedHighFreq: ::std::os::raw::c_ushort = 14709;
+pub const DAQmx_Val_FixedLowFreq: ::std::os::raw::c_ushort = 14710;
+pub const DAQmx_Val_Fixed50PercentDutyCycle: ::std::os::raw::c_ushort = 14711;
+pub const DAQmx_Val_CountUp: ::std::os::raw::c_ushort = 10128;
+pub const DAQmx_Val_CountDown: ::std::os::raw::c_ushort = 10124;
+pub const DAQmx_Val_ExtControlled: ::std::os::raw::c_ushort = 10326;
+pub const DAQmx_Val_LowFreq1Ctr: ::std::os::raw::c_ushort = 10105;
+pub const DAQmx_Val_HighFreq2Ctr: ::std::os::raw::c_ushort = 10157;
+pub const DAQmx_Val_LargeRng2Ctr: ::std::os::raw::c_ushort = 10205;
+pub const DAQmx_Val_DynAvg: ::std::os::raw::c_ushort = 16065;
+pub const DAQmx_Val_AC: ::std::os::raw::c_ushort = 10045;
+pub const DAQmx_Val_DC: ::std::os::raw::c_ushort = 10050;
+pub const DAQmx_Val_GND: ::std::os::raw::c_ushort = 10066;
+pub const DAQmx_Val_Internal: ::std::os::raw::c_ushort = 10200;
+pub const DAQmx_Val_External: ::std::os::raw::c_ushort = 10167;
+pub const DAQmx_Val_UserProvided: ::std::os::raw::c_ushort = 10167;
+pub const DAQmx_Val_Coulombs: ::std::os::raw::c_ushort = 16102;
+pub const DAQmx_Val_PicoCoulombs: ::std::os::raw::c_ushort = 16103;
+pub const DAQmx_Val_Amps: ::std::os::raw::c_ushort = 10342;
+pub const DAQmx_Val_RightJustified: ::std::os::raw::c_ushort = 10279;
+pub const DAQmx_Val_LeftJustified: ::std::os::raw::c_ushort = 10209;
+pub const DAQmx_Val_DMA: ::std::os::raw::c_ushort = 10054;
+pub const DAQmx_Val_Interrupts: ::std::os::raw::c_ushort = 10204;
+pub const DAQmx_Val_ProgrammedIO: ::std::os::raw::c_ushort = 10264;
+pub const DAQmx_Val_USBbulk: ::std::os::raw::c_ushort = 12590;
+pub const DAQmx_Val_OnbrdMemMoreThanHalfFull: ::std::os::raw::c_ushort =
+    10237;
+pub const DAQmx_Val_OnbrdMemFull: ::std::os::raw::c_ushort = 10236;
+pub const DAQmx_Val_OnbrdMemCustomThreshold: ::std::os::raw::c_ushort = 12577;
+pub const DAQmx_Val_ActiveDrive: ::std::os::raw::c_ushort = 12573;
+pub const DAQmx_Val_OpenCollector: ::std::os::raw::c_ushort = 12574;
+pub const DAQmx_Val_NoChange: ::std::os::raw::c_ushort = 10160;
+pub const DAQmx_Val_PatternMatches: ::std::os::raw::c_ushort = 10254;
+pub const DAQmx_Val_PatternDoesNotMatch: ::std::os::raw::c_ushort = 10253;
+pub const DAQmx_Val_SampClkPeriods: ::std::os::raw::c_ushort = 10286;
+pub const DAQmx_Val_Seconds: ::std::os::raw::c_ushort = 10364;
+pub const DAQmx_Val_SampleClkPeriods: ::std::os::raw::c_ushort = 10286;
+pub const DAQmx_Val_mVoltsPerMil: ::std::os::raw::c_ushort = 14836;
+pub const DAQmx_Val_VoltsPerMil: ::std::os::raw::c_ushort = 14837;
+pub const DAQmx_Val_mVoltsPerMillimeter: ::std::os::raw::c_ushort = 14838;
+pub const DAQmx_Val_VoltsPerMillimeter: ::std::os::raw::c_ushort = 14839;
+pub const DAQmx_Val_mVoltsPerMicron: ::std::os::raw::c_ushort = 14840;
+pub const DAQmx_Val_X1: ::std::os::raw::c_ushort = 10090;
+pub const DAQmx_Val_X2: ::std::os::raw::c_ushort = 10091;
+pub const DAQmx_Val_X4: ::std::os::raw::c_ushort = 10092;
+pub const DAQmx_Val_TwoPulseCounting: ::std::os::raw::c_ushort = 10313;
+pub const DAQmx_Val_AHighBHigh: ::std::os::raw::c_ushort = 10040;
+pub const DAQmx_Val_AHighBLow: ::std::os::raw::c_ushort = 10041;
+pub const DAQmx_Val_ALowBHigh: ::std::os::raw::c_ushort = 10042;
+pub const DAQmx_Val_ALowBLow: ::std::os::raw::c_ushort = 10043;
+pub const DAQmx_Val_Pulse: ::std::os::raw::c_ushort = 10265;
+pub const DAQmx_Val_Toggle: ::std::os::raw::c_ushort = 10307;
+pub const DAQmx_Val_Lvl: ::std::os::raw::c_ushort = 10210;
+pub const DAQmx_Val_Interlocked: ::std::os::raw::c_ushort = 12549;
+pub const DAQmx_Val_Lowpass: ::std::os::raw::c_ushort = 16071;
+pub const DAQmx_Val_Highpass: ::std::os::raw::c_ushort = 16072;
+pub const DAQmx_Val_Bandpass: ::std::os::raw::c_ushort = 16073;
+pub const DAQmx_Val_Notch: ::std::os::raw::c_ushort = 16074;
+pub const DAQmx_Val_ConstantGroupDelay: ::std::os::raw::c_ushort = 16075;
+pub const DAQmx_Val_Butterworth: ::std::os::raw::c_ushort = 16076;
+pub const DAQmx_Val_Elliptical: ::std::os::raw::c_ushort = 16077;
+pub const DAQmx_Val_HardwareDefined: ::std::os::raw::c_ushort = 10191;
+pub const DAQmx_Val_mVoltsPerNewton: ::std::os::raw::c_ushort = 15891;
+pub const DAQmx_Val_mVoltsPerPound: ::std::os::raw::c_ushort = 15892;
+pub const DAQmx_Val_Hz: ::std::os::raw::c_ushort = 10373;
+pub const DAQmx_Val_Sine: ::std::os::raw::c_ushort = 14751;
+pub const DAQmx_Val_Triangle: ::std::os::raw::c_ushort = 14752;
+pub const DAQmx_Val_Square: ::std::os::raw::c_ushort = 14753;
+pub const DAQmx_Val_Sawtooth: ::std::os::raw::c_ushort = 14754;
+pub const DAQmx_Val_IRIGB: ::std::os::raw::c_ushort = 10070;
+pub const DAQmx_Val_PPS: ::std::os::raw::c_ushort = 10080;
+pub const DAQmx_Val_Immediate: ::std::os::raw::c_ushort = 10198;
+pub const DAQmx_Val_WaitForHandshakeTriggerAssert: ::std::os::raw::c_ushort =
+    12550;
+pub const DAQmx_Val_WaitForHandshakeTriggerDeassert: ::std::os::raw::c_ushort
+          =
+    12551;
+pub const DAQmx_Val_OnBrdMemMoreThanHalfFull: ::std::os::raw::c_ushort =
+    10237;
+pub const DAQmx_Val_OnBrdMemNotEmpty: ::std::os::raw::c_ushort = 10241;
+pub const DAQmx_Val_WhenAcqComplete: ::std::os::raw::c_ushort = 12546;
+pub const DAQmx_Val_RSE: ::std::os::raw::c_ushort = 10083;
+pub const DAQmx_Val_NRSE: ::std::os::raw::c_ushort = 10078;
+pub const DAQmx_Val_mVoltsPerVoltPerMillimeter: ::std::os::raw::c_ushort =
+    12506;
+pub const DAQmx_Val_mVoltsPerVoltPerMilliInch: ::std::os::raw::c_ushort =
+    12505;
+pub const DAQmx_Val_Meters: ::std::os::raw::c_ushort = 10219;
+pub const DAQmx_Val_Inches: ::std::os::raw::c_ushort = 10379;
+pub const DAQmx_Val_Off: ::std::os::raw::c_ushort = 10231;
+pub const DAQmx_Val_Log: ::std::os::raw::c_ushort = 15844;
+pub const DAQmx_Val_LogAndRead: ::std::os::raw::c_ushort = 15842;
+pub const DAQmx_Val_OpenOrCreate: ::std::os::raw::c_ushort = 15846;
+pub const DAQmx_Val_CreateOrReplace: ::std::os::raw::c_ushort = 15847;
+pub const DAQmx_Val_Create: ::std::os::raw::c_ushort = 15848;
+pub const DAQmx_Val_2point5V: ::std::os::raw::c_ushort = 14620;
+pub const DAQmx_Val_3point3V: ::std::os::raw::c_ushort = 14621;
+pub const DAQmx_Val_5V: ::std::os::raw::c_ushort = 14619;
+pub const DAQmx_Val_SameAsSampTimebase: ::std::os::raw::c_ushort = 10284;
+pub const DAQmx_Val_SameAsMasterTimebase: ::std::os::raw::c_ushort = 10282;
+pub const DAQmx_Val_100MHzTimebase: ::std::os::raw::c_ushort = 15857;
+pub const DAQmx_Val_80MHzTimebase: ::std::os::raw::c_ushort = 14636;
+pub const DAQmx_Val_20MHzTimebase: ::std::os::raw::c_ushort = 12537;
+pub const DAQmx_Val_8MHzTimebase: ::std::os::raw::c_ushort = 16023;
+pub const DAQmx_Val_AM: ::std::os::raw::c_ushort = 14756;
+pub const DAQmx_Val_FM: ::std::os::raw::c_ushort = 14757;
+pub const DAQmx_Val_OnBrdMemEmpty: ::std::os::raw::c_ushort = 10235;
+pub const DAQmx_Val_OnBrdMemHalfFullOrLess: ::std::os::raw::c_ushort = 10239;
+pub const DAQmx_Val_OnBrdMemNotFull: ::std::os::raw::c_ushort = 10242;
+pub const DAQmx_Val_StopTaskAndError: ::std::os::raw::c_ushort = 15862;
+pub const DAQmx_Val_IgnoreOverruns: ::std::os::raw::c_ushort = 15863;
+pub const DAQmx_Val_OverwriteUnreadSamps: ::std::os::raw::c_ushort = 10252;
+pub const DAQmx_Val_DoNotOverwriteUnreadSamps: ::std::os::raw::c_ushort =
+    10159;
+pub const DAQmx_Val_ActiveHigh: ::std::os::raw::c_ushort = 10095;
+pub const DAQmx_Val_ActiveLow: ::std::os::raw::c_ushort = 10096;
+pub const DAQmx_Val_MSeriesDAQ: ::std::os::raw::c_ushort = 14643;
+pub const DAQmx_Val_XSeriesDAQ: ::std::os::raw::c_ushort = 15858;
+pub const DAQmx_Val_ESeriesDAQ: ::std::os::raw::c_ushort = 14642;
+pub const DAQmx_Val_SSeriesDAQ: ::std::os::raw::c_ushort = 14644;
+pub const DAQmx_Val_BSeriesDAQ: ::std::os::raw::c_ushort = 14662;
+pub const DAQmx_Val_SCSeriesDAQ: ::std::os::raw::c_ushort = 14645;
+pub const DAQmx_Val_USBDAQ: ::std::os::raw::c_ushort = 14646;
+pub const DAQmx_Val_AOSeries: ::std::os::raw::c_ushort = 14647;
+pub const DAQmx_Val_DigitalIO: ::std::os::raw::c_ushort = 14648;
+pub const DAQmx_Val_TIOSeries: ::std::os::raw::c_ushort = 14661;
+pub const DAQmx_Val_DynamicSignalAcquisition: ::std::os::raw::c_ushort =
+    14649;
+pub const DAQmx_Val_Switches: ::std::os::raw::c_ushort = 14650;
+pub const DAQmx_Val_CompactDAQChassis: ::std::os::raw::c_ushort = 14658;
+pub const DAQmx_Val_CSeriesModule: ::std::os::raw::c_ushort = 14659;
+pub const DAQmx_Val_SCXIModule: ::std::os::raw::c_ushort = 14660;
+pub const DAQmx_Val_SCCConnectorBlock: ::std::os::raw::c_ushort = 14704;
+pub const DAQmx_Val_SCCModule: ::std::os::raw::c_ushort = 14705;
+pub const DAQmx_Val_NIELVIS: ::std::os::raw::c_ushort = 14755;
+pub const DAQmx_Val_NetworkDAQ: ::std::os::raw::c_ushort = 14829;
+pub const DAQmx_Val_SCExpress: ::std::os::raw::c_ushort = 15886;
+pub const DAQmx_Val_Pt3750: ::std::os::raw::c_ushort = 12481;
+pub const DAQmx_Val_Pt3851: ::std::os::raw::c_ushort = 10071;
+pub const DAQmx_Val_Pt3911: ::std::os::raw::c_ushort = 12482;
+pub const DAQmx_Val_Pt3916: ::std::os::raw::c_ushort = 10069;
+pub const DAQmx_Val_Pt3920: ::std::os::raw::c_ushort = 10053;
+pub const DAQmx_Val_Pt3928: ::std::os::raw::c_ushort = 12483;
+pub const DAQmx_Val_mVoltsPerVoltPerDegree: ::std::os::raw::c_ushort = 12507;
+pub const DAQmx_Val_mVoltsPerVoltPerRadian: ::std::os::raw::c_ushort = 12508;
+pub const DAQmx_Val_LosslessPacking: ::std::os::raw::c_ushort = 12555;
+pub const DAQmx_Val_LossyLSBRemoval: ::std::os::raw::c_ushort = 12556;
+pub const DAQmx_Val_FirstSample: ::std::os::raw::c_ushort = 10424;
+pub const DAQmx_Val_CurrReadPos: ::std::os::raw::c_ushort = 10425;
+pub const DAQmx_Val_RefTrig: ::std::os::raw::c_ushort = 10426;
+pub const DAQmx_Val_FirstPretrigSamp: ::std::os::raw::c_ushort = 10427;
+pub const DAQmx_Val_MostRecentSamp: ::std::os::raw::c_ushort = 10428;
+pub const DAQmx_Val_AllowRegen: ::std::os::raw::c_ushort = 10097;
+pub const DAQmx_Val_DoNotAllowRegen: ::std::os::raw::c_ushort = 10158;
+pub const DAQmx_Val_2Wire: ::std::os::raw::c_uchar = 2;
+pub const DAQmx_Val_3Wire: ::std::os::raw::c_uchar = 3;
+pub const DAQmx_Val_Ohms: ::std::os::raw::c_ushort = 10384;
+pub const DAQmx_Val_Bits: ::std::os::raw::c_ushort = 10109;
+pub const DAQmx_Val_SCXI1124Range0to1V: ::std::os::raw::c_ushort = 14629;
+pub const DAQmx_Val_SCXI1124Range0to5V: ::std::os::raw::c_ushort = 14630;
+pub const DAQmx_Val_SCXI1124Range0to10V: ::std::os::raw::c_ushort = 14631;
+pub const DAQmx_Val_SCXI1124RangeNeg1to1V: ::std::os::raw::c_ushort = 14632;
+pub const DAQmx_Val_SCXI1124RangeNeg5to5V: ::std::os::raw::c_ushort = 14633;
+pub const DAQmx_Val_SCXI1124RangeNeg10to10V: ::std::os::raw::c_ushort = 14634;
+pub const DAQmx_Val_SCXI1124Range0to20mA: ::std::os::raw::c_ushort = 14635;
+pub const DAQmx_Val_SampClkActiveEdge: ::std::os::raw::c_ushort = 14617;
+pub const DAQmx_Val_SampClkInactiveEdge: ::std::os::raw::c_ushort = 14618;
+pub const DAQmx_Val_HandshakeTriggerAsserts: ::std::os::raw::c_ushort = 12552;
+pub const DAQmx_Val_HandshakeTriggerDeasserts: ::std::os::raw::c_ushort =
+    12553;
+pub const DAQmx_Val_SampClk: ::std::os::raw::c_ushort = 10388;
+pub const DAQmx_Val_BurstHandshake: ::std::os::raw::c_ushort = 12548;
+pub const DAQmx_Val_Handshake: ::std::os::raw::c_ushort = 10389;
+pub const DAQmx_Val_Implicit: ::std::os::raw::c_ushort = 10451;
+pub const DAQmx_Val_OnDemand: ::std::os::raw::c_ushort = 10390;
+pub const DAQmx_Val_ChangeDetection: ::std::os::raw::c_ushort = 12504;
+pub const DAQmx_Val_PipelinedSampClk: ::std::os::raw::c_ushort = 14668;
+pub const DAQmx_Val_Linear: ::std::os::raw::c_ushort = 10447;
+pub const DAQmx_Val_MapRanges: ::std::os::raw::c_ushort = 10448;
+pub const DAQmx_Val_Polynomial: ::std::os::raw::c_ushort = 10449;
+pub const DAQmx_Val_Table: ::std::os::raw::c_ushort = 10450;
+pub const DAQmx_Val_TwoPointLinear: ::std::os::raw::c_ushort = 15898;
+pub const DAQmx_Val_AandB: ::std::os::raw::c_ushort = 12515;
+pub const DAQmx_Val_R1: ::std::os::raw::c_ushort = 12465;
+pub const DAQmx_Val_R2: ::std::os::raw::c_ushort = 12466;
+pub const DAQmx_Val_R3: ::std::os::raw::c_ushort = 12467;
+pub const DAQmx_Val_R4: ::std::os::raw::c_ushort = 14813;
+pub const DAQmx_Val_AIConvertClock: ::std::os::raw::c_ushort = 12484;
+pub const DAQmx_Val_10MHzRefClock: ::std::os::raw::c_ushort = 12536;
+pub const DAQmx_Val_20MHzTimebaseClock: ::std::os::raw::c_ushort = 12486;
+pub const DAQmx_Val_SampleClock: ::std::os::raw::c_ushort = 12487;
+pub const DAQmx_Val_ReferenceTrigger: ::std::os::raw::c_ushort = 12490;
+pub const DAQmx_Val_StartTrigger: ::std::os::raw::c_ushort = 12491;
+pub const DAQmx_Val_AdvCmpltEvent: ::std::os::raw::c_ushort = 12492;
+pub const DAQmx_Val_AIHoldCmpltEvent: ::std::os::raw::c_ushort = 12493;
+pub const DAQmx_Val_CounterOutputEvent: ::std::os::raw::c_ushort = 12494;
+pub const DAQmx_Val_ChangeDetectionEvent: ::std::os::raw::c_ushort = 12511;
+pub const DAQmx_Val_WDTExpiredEvent: ::std::os::raw::c_ushort = 12512;
+pub const DAQmx_Val_SampleCompleteEvent: ::std::os::raw::c_ushort = 12530;
+pub const DAQmx_Val_RisingSlope: ::std::os::raw::c_ushort = 10280;
+pub const DAQmx_Val_FallingSlope: ::std::os::raw::c_ushort = 10171;
+pub const DAQmx_Val_FullBridgeI: ::std::os::raw::c_ushort = 10183;
+pub const DAQmx_Val_FullBridgeII: ::std::os::raw::c_ushort = 10184;
+pub const DAQmx_Val_FullBridgeIII: ::std::os::raw::c_ushort = 10185;
+pub const DAQmx_Val_HalfBridgeI: ::std::os::raw::c_ushort = 10188;
+pub const DAQmx_Val_HalfBridgeII: ::std::os::raw::c_ushort = 10189;
+pub const DAQmx_Val_QuarterBridgeI: ::std::os::raw::c_ushort = 10271;
+pub const DAQmx_Val_QuarterBridgeII: ::std::os::raw::c_ushort = 10272;
+pub const DAQmx_Val_RectangularRosette: ::std::os::raw::c_ushort = 15968;
+pub const DAQmx_Val_DeltaRosette: ::std::os::raw::c_ushort = 15969;
+pub const DAQmx_Val_TeeRosette: ::std::os::raw::c_ushort = 15970;
+pub const DAQmx_Val_PrincipalStrain1: ::std::os::raw::c_ushort = 15971;
+pub const DAQmx_Val_PrincipalStrain2: ::std::os::raw::c_ushort = 15972;
+pub const DAQmx_Val_PrincipalStrainAngle: ::std::os::raw::c_ushort = 15973;
+pub const DAQmx_Val_CartesianStrainX: ::std::os::raw::c_ushort = 15974;
+pub const DAQmx_Val_CartesianStrainY: ::std::os::raw::c_ushort = 15975;
+pub const DAQmx_Val_CartesianShearStrainXY: ::std::os::raw::c_ushort = 15976;
+pub const DAQmx_Val_MaxShearStrain: ::std::os::raw::c_ushort = 15977;
+pub const DAQmx_Val_MaxShearStrainAngle: ::std::os::raw::c_ushort = 15978;
+pub const DAQmx_Val_Strain: ::std::os::raw::c_ushort = 10299;
+pub const DAQmx_Val_Finite: ::std::os::raw::c_ushort = 10172;
+pub const DAQmx_Val_Cont: ::std::os::raw::c_ushort = 10117;
+pub const DAQmx_Val_Source: ::std::os::raw::c_ushort = 10439;
+pub const DAQmx_Val_Load: ::std::os::raw::c_ushort = 10440;
+pub const DAQmx_Val_ReservedForRouting: ::std::os::raw::c_ushort = 10441;
+pub const DAQmx_Val_Master: ::std::os::raw::c_ushort = 15888;
+pub const DAQmx_Val_Slave: ::std::os::raw::c_ushort = 15889;
+pub const DAQmx_Val_J_Type_TC: ::std::os::raw::c_ushort = 10072;
+pub const DAQmx_Val_K_Type_TC: ::std::os::raw::c_ushort = 10073;
+pub const DAQmx_Val_N_Type_TC: ::std::os::raw::c_ushort = 10077;
+pub const DAQmx_Val_R_Type_TC: ::std::os::raw::c_ushort = 10082;
+pub const DAQmx_Val_S_Type_TC: ::std::os::raw::c_ushort = 10085;
+pub const DAQmx_Val_T_Type_TC: ::std::os::raw::c_ushort = 10086;
+pub const DAQmx_Val_B_Type_TC: ::std::os::raw::c_ushort = 10047;
+pub const DAQmx_Val_E_Type_TC: ::std::os::raw::c_ushort = 10055;
+pub const DAQmx_Val_SingleCycle: ::std::os::raw::c_ushort = 14613;
+pub const DAQmx_Val_Multicycle: ::std::os::raw::c_ushort = 14614;
+pub const DAQmx_Val_DigEdge: ::std::os::raw::c_ushort = 10150;
+pub const DAQmx_Val_Software: ::std::os::raw::c_ushort = 10292;
+pub const DAQmx_Val_AnlgLvl: ::std::os::raw::c_ushort = 10101;
+pub const DAQmx_Val_AnlgWin: ::std::os::raw::c_ushort = 10103;
+pub const DAQmx_Val_DigLvl: ::std::os::raw::c_ushort = 10152;
+pub const DAQmx_Val_DigPattern: ::std::os::raw::c_ushort = 10398;
+pub const DAQmx_Val_AnlgEdge: ::std::os::raw::c_ushort = 10099;
+pub const DAQmx_Val_HaltOutputAndError: ::std::os::raw::c_ushort = 14615;
+pub const DAQmx_Val_PauseUntilDataAvailable: ::std::os::raw::c_ushort = 14616;
+pub const DAQmx_Val_Volts: ::std::os::raw::c_ushort = 10348;
+pub const DAQmx_Val_g: ::std::os::raw::c_ushort = 10186;
+pub const DAQmx_Val_MetersPerSecond: ::std::os::raw::c_ushort = 15959;
+pub const DAQmx_Val_InchesPerSecond: ::std::os::raw::c_ushort = 15960;
+pub const DAQmx_Val_MillivoltsPerMillimeterPerSecond: ::std::os::raw::c_ushort
+          =
+    15963;
+pub const DAQmx_Val_MilliVoltsPerInchPerSecond: ::std::os::raw::c_ushort =
+    15964;
+pub const DAQmx_Val_WaitForInterrupt: ::std::os::raw::c_ushort = 12523;
+pub const DAQmx_Val_Poll: ::std::os::raw::c_ushort = 12524;
+pub const DAQmx_Val_Yield: ::std::os::raw::c_ushort = 12525;
+pub const DAQmx_Val_Sleep: ::std::os::raw::c_ushort = 12547;
+pub const DAQmx_Val_EnteringWin: ::std::os::raw::c_ushort = 10163;
+pub const DAQmx_Val_LeavingWin: ::std::os::raw::c_ushort = 10208;
+pub const DAQmx_Val_InsideWin: ::std::os::raw::c_ushort = 10199;
+pub const DAQmx_Val_OutsideWin: ::std::os::raw::c_ushort = 10251;
+pub const DAQmx_Val_WriteToEEPROM: ::std::os::raw::c_ushort = 12538;
+pub const DAQmx_Val_WriteToPROM: ::std::os::raw::c_ushort = 12539;
+pub const DAQmx_Val_DoNotWrite: ::std::os::raw::c_ushort = 12540;
+pub const DAQmx_Val_CurrWritePos: ::std::os::raw::c_ushort = 10430;
+pub const DAQmx_Val_ZeroVoltsOrAmps: ::std::os::raw::c_ushort = 12526;
+pub const DAQmx_Val_RepeatedData: ::std::os::raw::c_ushort = 16062;
+pub const DAQmx_Val_SentinelValue: ::std::os::raw::c_ushort = 16063;
+pub const DAQmx_Val_LogicLevelPullUp: ::std::os::raw::c_ushort = 16064;
+pub const DAQmx_Val_Local: ::std::os::raw::c_ushort = 16095;
+pub const DAQmx_Val_Remote: ::std::os::raw::c_ushort = 16096;
+pub const DAQmxSuccess: ::std::os::raw::c_uchar = 0;
+pub const DAQmxErrorTrigWinTimeoutExpired: ::std::os::raw::c_int = -209832;
+pub const DAQmxErrorInvalidTriggerCfgForDevice: ::std::os::raw::c_int =
+    -209831;
+pub const DAQmxErrorInvalidDataTransferMechanismForDevice:
+          ::std::os::raw::c_int =
+    -209830;
+pub const DAQmxErrorInputFIFOOverflow3: ::std::os::raw::c_int = -209829;
+pub const DAQmxErrorTooManyDevicesForAnalogMultiEdgeTrigCDAQ:
+          ::std::os::raw::c_int =
+    -209828;
+pub const DAQmxErrorTooManyTriggersTypesSpecifiedInTask: ::std::os::raw::c_int
+          =
+    -209827;
+pub const DAQmxErrorMismatchedMultiTriggerConfigValues: ::std::os::raw::c_int
+          =
+    -209826;
+pub const DAQmxErrorInconsistentAODACRangeAcrossTasks: ::std::os::raw::c_int =
+    -209825;
+pub const DAQmxErrorInconsistentDTToWrite: ::std::os::raw::c_int = -209824;
+pub const DAQmxErrorFunctionObsolete: ::std::os::raw::c_int = -209823;
+pub const DAQmxErrorNegativeDurationNotSupported: ::std::os::raw::c_int =
+    -209822;
+pub const DAQmxErrorDurationTooSmall: ::std::os::raw::c_int = -209821;
+pub const DAQmxErrorDurationTooLong: ::std::os::raw::c_int = -209820;
+pub const DAQmxErrorDurationBasedNotSupportedForSpecifiedTimingMode:
+          ::std::os::raw::c_int =
+    -209819;
+pub const DAQmxErrorInvalidLEDState: ::std::os::raw::c_int = -209818;
+pub const DAQmxErrorWatchdogStatesNotUniform: ::std::os::raw::c_int = -209817;
+pub const DAQmxErrorSelfTestFailedPowerSupplyOutOfTolerance:
+          ::std::os::raw::c_int =
+    -209816;
+pub const DAQmxErrorHWTSPMultiSampleWrite: ::std::os::raw::c_int = -209815;
+pub const DAQmxErrorOnboardRegenExceedsChannelLimit: ::std::os::raw::c_int =
+    -209814;
+pub const DAQmxErrorWatchdogChannelExpirationStateNotSpecified:
+          ::std::os::raw::c_int =
+    -209813;
+pub const DAQmxErrorInvalidShuntSourceForCalibration: ::std::os::raw::c_int =
+    -209812;
+pub const DAQmxErrorInvalidShuntSelectForCalibration: ::std::os::raw::c_int =
+    -209811;
+pub const DAQmxErrorInvalidShuntCalibrationConfiguration:
+          ::std::os::raw::c_int =
+    -209810;
+pub const DAQmxErrorBufferedOperationsNotSupportedOnChannelStandalone:
+          ::std::os::raw::c_int =
+    -209809;
+pub const DAQmxErrorFeatureNotAvailableOnAccessory: ::std::os::raw::c_int =
+    -209808;
+pub const DAQmxErrorInconsistentThreshVoltageAcrossTerminals:
+          ::std::os::raw::c_int =
+    -209807;
+pub const DAQmxErrorDAQmxIsNotInstalledOnTarget: ::std::os::raw::c_int =
+    -209806;
+pub const DAQmxErrorCOCannotKeepUpInHWTimedSinglePoint: ::std::os::raw::c_int
+          =
+    -209805;
+pub const DAQmxErrorWaitForNextSampClkDetected3OrMoreSampClks:
+          ::std::os::raw::c_int =
+    -209803;
+pub const DAQmxErrorWaitForNextSampClkDetectedMissedSampClk:
+          ::std::os::raw::c_int =
+    -209802;
+pub const DAQmxErrorWriteNotCompleteBeforeSampClk: ::std::os::raw::c_int =
+    -209801;
+pub const DAQmxErrorReadNotCompleteBeforeSampClk: ::std::os::raw::c_int =
+    -209800;
+pub const DAQmxErrorInconsistentDigitalFilteringAcrossTerminals:
+          ::std::os::raw::c_int =
+    -201510;
+pub const DAQmxErrorInconsistentPullUpCfgAcrossTerminals:
+          ::std::os::raw::c_int =
+    -201509;
+pub const DAQmxErrorInconsistentTermCfgAcrossTerminals: ::std::os::raw::c_int
+          =
+    -201508;
+pub const DAQmxErrorVCXODCMBecameUnlocked: ::std::os::raw::c_int = -201507;
+pub const DAQmxErrorPLLDACUpdateFailed: ::std::os::raw::c_int = -201506;
+pub const DAQmxErrorNoCabledDevice: ::std::os::raw::c_int = -201505;
+pub const DAQmxErrorLostRefClk: ::std::os::raw::c_int = -201504;
+pub const DAQmxErrorCantUseAITimingEngineWithCounters: ::std::os::raw::c_int =
+    -201503;
+pub const DAQmxErrorDACOffsetValNotSet: ::std::os::raw::c_int = -201502;
+pub const DAQmxErrorCalAdjustRefValOutOfRange: ::std::os::raw::c_int =
+    -201501;
+pub const DAQmxErrorChansForCalAdjustMustPerformSetContext:
+          ::std::os::raw::c_int =
+    -201500;
+pub const DAQmxErrorGetCalDataInvalidForCalMode: ::std::os::raw::c_int =
+    -201499;
+pub const DAQmxErrorNoIEPEWithACNotAllowed: ::std::os::raw::c_int = -201498;
+pub const DAQmxErrorSetupCalNeededBeforeGetCalDataPoints:
+          ::std::os::raw::c_int =
+    -201497;
+pub const DAQmxErrorVoltageNotCalibrated: ::std::os::raw::c_int = -201496;
+pub const DAQmxErrorMissingRangeForCalibration: ::std::os::raw::c_int =
+    -201495;
+pub const DAQmxErrorMultipleChansNotSupportedDuringCalAdjust:
+          ::std::os::raw::c_int =
+    -201494;
+pub const DAQmxErrorShuntCalFailedOutOfRange: ::std::os::raw::c_int = -201493;
+pub const DAQmxErrorOperationNotSupportedOnSimulatedDevice:
+          ::std::os::raw::c_int =
+    -201492;
+pub const DAQmxErrorFirmwareVersionSameAsInstalledVersion:
+          ::std::os::raw::c_int =
+    -201491;
+pub const DAQmxErrorFirmwareVersionOlderThanInstalledVersion:
+          ::std::os::raw::c_int =
+    -201490;
+pub const DAQmxErrorFirmwareUpdateInvalidState: ::std::os::raw::c_int =
+    -201489;
+pub const DAQmxErrorFirmwareUpdateInvalidID: ::std::os::raw::c_int = -201488;
+pub const DAQmxErrorFirmwareUpdateAutomaticManagementEnabled:
+          ::std::os::raw::c_int =
+    -201487;
+pub const DAQmxErrorSetupCalibrationNotCalled: ::std::os::raw::c_int =
+    -201486;
+pub const DAQmxErrorCalMeasuredDataSizeVsActualDataSizeMismatch:
+          ::std::os::raw::c_int =
+    -201485;
+pub const DAQmxErrorCDAQMissingDSAMasterForChanExpansion:
+          ::std::os::raw::c_int =
+    -201484;
+pub const DAQmxErrorCDAQMasterNotFoundForChanExpansion: ::std::os::raw::c_int
+          =
+    -201483;
+pub const DAQmxErrorAllChansShouldBeProvidedForCalibration:
+          ::std::os::raw::c_int =
+    -201482;
+pub const DAQmxErrorMustSpecifyExpirationStateForAllLinesInRange:
+          ::std::os::raw::c_int =
+    -201481;
+pub const DAQmxErrorOpenSessionExists: ::std::os::raw::c_int = -201480;
+pub const DAQmxErrorCannotQueryTerminalForSWArmStart: ::std::os::raw::c_int =
+    -201479;
+pub const DAQmxErrorChassisWatchdogTimerExpired: ::std::os::raw::c_int =
+    -201478;
+pub const DAQmxErrorCantReserveWatchdogTaskWhileOtherTasksReserved:
+          ::std::os::raw::c_int =
+    -201477;
+pub const DAQmxErrorCantReserveTaskWhileWatchdogTaskReserving:
+          ::std::os::raw::c_int =
+    -201476;
+pub const DAQmxErrorAuxPowerSourceRequired: ::std::os::raw::c_int = -201475;
+pub const DAQmxErrorDeviceNotSupportedOnLocalSystem: ::std::os::raw::c_int =
+    -201474;
+pub const DAQmxErrorOneTimestampChannelRequiredForCombinedNavigationRead:
+          ::std::os::raw::c_int =
+    -201472;
+pub const DAQmxErrorMultDevsMultPhysChans: ::std::os::raw::c_int = -201471;
+pub const DAQmxErrorInvalidCalAdjustmentPointValues: ::std::os::raw::c_int =
+    -201470;
+pub const DAQmxErrorDifferentDigitizerFromCommunicator: ::std::os::raw::c_int
+          =
+    -201469;
+pub const DAQmxErrorCDAQSyncMasterClockNotPresent: ::std::os::raw::c_int =
+    -201468;
+pub const DAQmxErrorAssociatedChansHaveConflictingProps: ::std::os::raw::c_int
+          =
+    -201467;
+pub const DAQmxErrorAutoConfigBetweenMultipleDeviceStatesInvalid:
+          ::std::os::raw::c_int =
+    -201466;
+pub const DAQmxErrorAutoConfigOfOfflineDevicesInvalid: ::std::os::raw::c_int =
+    -201465;
+pub const DAQmxErrorExternalFIFOFault: ::std::os::raw::c_int = -201464;
+pub const DAQmxErrorConnectionsNotReciprocal: ::std::os::raw::c_int = -201463;
+pub const DAQmxErrorInvalidOutputToInputCDAQSyncConnection:
+          ::std::os::raw::c_int =
+    -201462;
+pub const DAQmxErrorReferenceClockNotPresent: ::std::os::raw::c_int = -201461;
+pub const DAQmxErrorBlankStringExpansionFoundNoSupportedCDAQSyncConnectionDevices:
+          ::std::os::raw::c_int =
+    -201460;
+pub const DAQmxErrorNoDevicesSupportCDAQSyncConnections: ::std::os::raw::c_int
+          =
+    -201459;
+pub const DAQmxErrorInvalidCDAQSyncTimeoutValue: ::std::os::raw::c_int =
+    -201458;
+pub const DAQmxErrorCDAQSyncConnectionToSamePort: ::std::os::raw::c_int =
+    -201457;
+pub const DAQmxErrorDevsWithoutCommonSyncConnectionStrategy:
+          ::std::os::raw::c_int =
+    -201456;
+pub const DAQmxErrorNoCDAQSyncBetweenPhysAndSimulatedDevs:
+          ::std::os::raw::c_int =
+    -201455;
+pub const DAQmxErrorUnableToContainCards: ::std::os::raw::c_int = -201454;
+pub const DAQmxErrorFindDisconnectedBetweenPhysAndSimDeviceStatesInvalid:
+          ::std::os::raw::c_int =
+    -201453;
+pub const DAQmxErrorOperationAborted: ::std::os::raw::c_int = -201452;
+pub const DAQmxErrorTwoPortsRequired: ::std::os::raw::c_int = -201451;
+pub const DAQmxErrorDeviceDoesNotSupportCDAQSyncConnections:
+          ::std::os::raw::c_int =
+    -201450;
+pub const DAQmxErrorInvalidcDAQSyncPortConnectionFormat: ::std::os::raw::c_int
+          =
+    -201449;
+pub const DAQmxErrorRosetteMeasurementsNotSpecified: ::std::os::raw::c_int =
+    -201448;
+pub const DAQmxErrorInvalidNumOfPhysChansForDeltaRosette:
+          ::std::os::raw::c_int =
+    -201447;
+pub const DAQmxErrorInvalidNumOfPhysChansForTeeRosette: ::std::os::raw::c_int
+          =
+    -201446;
+pub const DAQmxErrorRosetteStrainChanNamesNeeded: ::std::os::raw::c_int =
+    -201445;
+pub const DAQmxErrorMultideviceWithOnDemandTiming: ::std::os::raw::c_int =
+    -201444;
+pub const DAQmxErrorFREQOUTCannotProduceDesiredFrequency3:
+          ::std::os::raw::c_int =
+    -201443;
+pub const DAQmxErrorTwoEdgeSeparationSameTerminalSameEdge:
+          ::std::os::raw::c_int =
+    -201442;
+pub const DAQmxErrorDontMixSyncPulseAndSampClkTimebaseOn449x:
+          ::std::os::raw::c_int =
+    -201441;
+pub const DAQmxErrorNeitherRefClkNorSampClkTimebaseConfiguredForDSASync:
+          ::std::os::raw::c_int =
+    -201440;
+pub const DAQmxErrorRetriggeringFiniteCONotAllowed: ::std::os::raw::c_int =
+    -201439;
+pub const DAQmxErrorDeviceRebootedFromWDTTimeout: ::std::os::raw::c_int =
+    -201438;
+pub const DAQmxErrorTimeoutValueExceedsMaximum: ::std::os::raw::c_int =
+    -201437;
+pub const DAQmxErrorSharingDifferentWireModes: ::std::os::raw::c_int =
+    -201436;
+pub const DAQmxErrorCantPrimeWithEmptyBuffer: ::std::os::raw::c_int = -201435;
+pub const DAQmxErrorConfigFailedBecauseWatchdogExpired: ::std::os::raw::c_int
+          =
+    -201434;
+pub const DAQmxErrorWriteFailedBecauseWatchdogChangedLineDirection:
+          ::std::os::raw::c_int =
+    -201433;
+pub const DAQmxErrorMultipleSubsytemCalibration: ::std::os::raw::c_int =
+    -201432;
+pub const DAQmxErrorIncorrectChannelForOffsetAdjustment: ::std::os::raw::c_int
+          =
+    -201431;
+pub const DAQmxErrorInvalidNumRefVoltagesToWrite: ::std::os::raw::c_int =
+    -201430;
+pub const DAQmxErrorStartTrigDelayWithDSAModule: ::std::os::raw::c_int =
+    -201429;
+pub const DAQmxErrorMoreThanOneSyncPulseDetected: ::std::os::raw::c_int =
+    -201428;
+pub const DAQmxErrorDevNotSupportedWithinDAQmxAPI: ::std::os::raw::c_int =
+    -201427;
+pub const DAQmxErrorDevsWithoutSyncStrategies: ::std::os::raw::c_int =
+    -201426;
+pub const DAQmxErrorDevsWithoutCommonSyncStrategy: ::std::os::raw::c_int =
+    -201425;
+pub const DAQmxErrorSyncStrategiesCannotSync: ::std::os::raw::c_int = -201424;
+pub const DAQmxErrorChassisCommunicationInterrupted: ::std::os::raw::c_int =
+    -201423;
+pub const DAQmxErrorUnknownCardPowerProfileInCarrier: ::std::os::raw::c_int =
+    -201422;
+pub const DAQmxErrorAttrNotSupportedOnAccessory: ::std::os::raw::c_int =
+    -201421;
+pub const DAQmxErrorNetworkDeviceReservedByAnotherHost: ::std::os::raw::c_int
+          =
+    -201420;
+pub const DAQmxErrorIncorrectFirmwareFileUploaded: ::std::os::raw::c_int =
+    -201419;
+pub const DAQmxErrorInvalidFirmwareFileUploaded: ::std::os::raw::c_int =
+    -201418;
+pub const DAQmxErrorInTimerTimeoutOnArm: ::std::os::raw::c_int = -201417;
+pub const DAQmxErrorCantExceedSlotRelayDriveLimit: ::std::os::raw::c_int =
+    -201416;
+pub const DAQmxErrorModuleUnsupportedFor9163: ::std::os::raw::c_int = -201415;
+pub const DAQmxErrorConnectionsNotSupported: ::std::os::raw::c_int = -201414;
+pub const DAQmxErrorAccessoryNotPresent: ::std::os::raw::c_int = -201413;
+pub const DAQmxErrorSpecifiedAccessoryChannelsNotPresentOnDevice:
+          ::std::os::raw::c_int =
+    -201412;
+pub const DAQmxErrorConnectionsNotSupportedOnAccessory: ::std::os::raw::c_int
+          =
+    -201411;
+pub const DAQmxErrorRateTooFastForHWTSP: ::std::os::raw::c_int = -201410;
+pub const DAQmxErrorDelayFromSampleClockOutOfRangeForHWTSP:
+          ::std::os::raw::c_int =
+    -201409;
+pub const DAQmxErrorAveragingWhenNotInternalHWTSP: ::std::os::raw::c_int =
+    -201408;
+pub const DAQmxErrorAttributeNotSupportedUnlessHWTSP: ::std::os::raw::c_int =
+    -201407;
+pub const DAQmxErrorFiveVoltDetectFailed: ::std::os::raw::c_int = -201406;
+pub const DAQmxErrorAnalogBusStateInconsistent: ::std::os::raw::c_int =
+    -201405;
+pub const DAQmxErrorCardDetectedDoesNotMatchExpectedCard:
+          ::std::os::raw::c_int =
+    -201404;
+pub const DAQmxErrorLoggingStartNewFileNotCalled: ::std::os::raw::c_int =
+    -201403;
+pub const DAQmxErrorLoggingSampsPerFileNotDivisible: ::std::os::raw::c_int =
+    -201402;
+pub const DAQmxErrorRetrievingNetworkDeviceProperties: ::std::os::raw::c_int =
+    -201401;
+pub const DAQmxErrorFilePreallocationFailed: ::std::os::raw::c_int = -201400;
+pub const DAQmxErrorModuleMismatchInSameTimedTask: ::std::os::raw::c_int =
+    -201399;
+pub const DAQmxErrorInvalidAttributeValuePossiblyDueToOtherAttributeValues:
+          ::std::os::raw::c_int =
+    -201398;
+pub const DAQmxErrorChangeDetectionStoppedToPreventDeviceHang:
+          ::std::os::raw::c_int =
+    -201397;
+pub const DAQmxErrorFilterDelayRemovalNotPosssibleWithAnalogTrigger:
+          ::std::os::raw::c_int =
+    -201396;
+pub const DAQmxErrorNonbufferedOrNoChannels: ::std::os::raw::c_int = -201395;
+pub const DAQmxErrorTristateLogicLevelNotSpecdForEntirePort:
+          ::std::os::raw::c_int =
+    -201394;
+pub const DAQmxErrorTristateLogicLevelNotSupportedOnDigOutChan:
+          ::std::os::raw::c_int =
+    -201393;
+pub const DAQmxErrorTristateLogicLevelNotSupported: ::std::os::raw::c_int =
+    -201392;
+pub const DAQmxErrorIncompleteGainAndCouplingCalAdjustment:
+          ::std::os::raw::c_int =
+    -201391;
+pub const DAQmxErrorNetworkStatusConnectionLost: ::std::os::raw::c_int =
+    -201390;
+pub const DAQmxErrorModuleChangeDuringConnectionLoss: ::std::os::raw::c_int =
+    -201389;
+pub const DAQmxErrorNetworkDeviceNotReservedByHost: ::std::os::raw::c_int =
+    -201388;
+pub const DAQmxErrorDuplicateCalibrationAdjustmentInput: ::std::os::raw::c_int
+          =
+    -201387;
+pub const DAQmxErrorSelfCalFailedContactTechSupport: ::std::os::raw::c_int =
+    -201386;
+pub const DAQmxErrorSelfCalFailedToConverge: ::std::os::raw::c_int = -201385;
+pub const DAQmxErrorUnsupportedSimulatedModuleForSimulatedChassis:
+          ::std::os::raw::c_int =
+    -201384;
+pub const DAQmxErrorLoggingWriteSizeTooBig: ::std::os::raw::c_int = -201383;
+pub const DAQmxErrorLoggingWriteSizeNotDivisible: ::std::os::raw::c_int =
+    -201382;
+pub const DAQmxErrorMyDAQPowerRailFault: ::std::os::raw::c_int = -201381;
+pub const DAQmxErrorDeviceDoesNotSupportThisOperation: ::std::os::raw::c_int =
+    -201380;
+pub const DAQmxErrorNetworkDevicesNotSupportedOnThisPlatform:
+          ::std::os::raw::c_int =
+    -201379;
+pub const DAQmxErrorUnknownFirmwareVersion: ::std::os::raw::c_int = -201378;
+pub const DAQmxErrorFirmwareIsUpdating: ::std::os::raw::c_int = -201377;
+pub const DAQmxErrorAccessoryEEPROMIsCorrupt: ::std::os::raw::c_int = -201376;
+pub const DAQmxErrorThrmcplLeadOffsetNullingCalNotSupported:
+          ::std::os::raw::c_int =
+    -201375;
+pub const DAQmxErrorSelfCalFailedTryExtCal: ::std::os::raw::c_int = -201374;
+pub const DAQmxErrorOutputP2PNotSupportedWithMultithreadedScripts:
+          ::std::os::raw::c_int =
+    -201373;
+pub const DAQmxErrorThrmcplCalibrationChannelsOpen: ::std::os::raw::c_int =
+    -201372;
+pub const DAQmxErrorMDNSServiceInstanceAlreadyInUse: ::std::os::raw::c_int =
+    -201371;
+pub const DAQmxErrorIPAddressAlreadyInUse: ::std::os::raw::c_int = -201370;
+pub const DAQmxErrorHostnameAlreadyInUse: ::std::os::raw::c_int = -201369;
+pub const DAQmxErrorInvalidNumberOfCalAdjustmentPoints: ::std::os::raw::c_int
+          =
+    -201368;
+pub const DAQmxErrorFilterOrDigitalSyncInternalSignal: ::std::os::raw::c_int =
+    -201367;
+pub const DAQmxErrorBadDDSSource: ::std::os::raw::c_int = -201366;
+pub const DAQmxErrorOnboardRegenWithMoreThan16Channels: ::std::os::raw::c_int
+          =
+    -201365;
+pub const DAQmxErrorTriggerTooFast: ::std::os::raw::c_int = -201364;
+pub const DAQmxErrorMinMaxOutsideTableRange: ::std::os::raw::c_int = -201363;
+pub const DAQmxErrorChannelExpansionWithInvalidAnalogTriggerDevice:
+          ::std::os::raw::c_int =
+    -201362;
+pub const DAQmxErrorSyncPulseSrcInvalidForTask: ::std::os::raw::c_int =
+    -201361;
+pub const DAQmxErrorInvalidCarrierSlotNumberSpecd: ::std::os::raw::c_int =
+    -201360;
+pub const DAQmxErrorCardsMustBeInSameCarrier: ::std::os::raw::c_int = -201359;
+pub const DAQmxErrorCardDevCarrierSimMustMatch: ::std::os::raw::c_int =
+    -201358;
+pub const DAQmxErrorDevMustHaveAtLeastOneCard: ::std::os::raw::c_int =
+    -201357;
+pub const DAQmxErrorCardTopologyError: ::std::os::raw::c_int = -201356;
+pub const DAQmxErrorExceededCarrierPowerLimit: ::std::os::raw::c_int =
+    -201355;
+pub const DAQmxErrorCardsIncompatible: ::std::os::raw::c_int = -201354;
+pub const DAQmxErrorAnalogBusNotValid: ::std::os::raw::c_int = -201353;
+pub const DAQmxErrorReservationConflict: ::std::os::raw::c_int = -201352;
+pub const DAQmxErrorMemMappedOnDemandNotSupported: ::std::os::raw::c_int =
+    -201351;
+pub const DAQmxErrorSlaveWithNoStartTriggerConfigured: ::std::os::raw::c_int =
+    -201350;
+pub const DAQmxErrorChannelExpansionWithDifferentTriggerDevices:
+          ::std::os::raw::c_int =
+    -201349;
+pub const DAQmxErrorCounterSyncAndRetriggered: ::std::os::raw::c_int =
+    -201348;
+pub const DAQmxErrorNoExternalSyncPulseDetected: ::std::os::raw::c_int =
+    -201347;
+pub const DAQmxErrorSlaveAndNoExternalSyncPulse: ::std::os::raw::c_int =
+    -201346;
+pub const DAQmxErrorCustomTimingRequiredForAttribute: ::std::os::raw::c_int =
+    -201345;
+pub const DAQmxErrorCustomTimingModeNotSet: ::std::os::raw::c_int = -201344;
+pub const DAQmxErrorAccessoryPowerTripped: ::std::os::raw::c_int = -201343;
+pub const DAQmxErrorUnsupportedAccessory: ::std::os::raw::c_int = -201342;
+pub const DAQmxErrorInvalidAccessoryChange: ::std::os::raw::c_int = -201341;
+pub const DAQmxErrorFirmwareRequiresUpgrade: ::std::os::raw::c_int = -201340;
+pub const DAQmxErrorFastExternalTimebaseNotSupportedForDevice:
+          ::std::os::raw::c_int =
+    -201339;
+pub const DAQmxErrorInvalidShuntLocationForCalibration: ::std::os::raw::c_int
+          =
+    -201338;
+pub const DAQmxErrorDeviceNameTooLong: ::std::os::raw::c_int = -201337;
+pub const DAQmxErrorBridgeScalesUnsupported: ::std::os::raw::c_int = -201336;
+pub const DAQmxErrorMismatchedElecPhysValues: ::std::os::raw::c_int = -201335;
+pub const DAQmxErrorLinearRequiresUniquePoints: ::std::os::raw::c_int =
+    -201334;
+pub const DAQmxErrorMissingRequiredScalingParameter: ::std::os::raw::c_int =
+    -201333;
+pub const DAQmxErrorLoggingNotSupportOnOutputTasks: ::std::os::raw::c_int =
+    -201332;
+pub const DAQmxErrorMemoryMappedHardwareTimedNonBufferedUnsupported:
+          ::std::os::raw::c_int =
+    -201331;
+pub const DAQmxErrorCannotUpdatePulseTrainWithAutoIncrementEnabled:
+          ::std::os::raw::c_int =
+    -201330;
+pub const DAQmxErrorHWTimedSinglePointAndDataXferNotDMA: ::std::os::raw::c_int
+          =
+    -201329;
+pub const DAQmxErrorSCCSecondStageEmpty: ::std::os::raw::c_int = -201328;
+pub const DAQmxErrorSCCInvalidDualStageCombo: ::std::os::raw::c_int = -201327;
+pub const DAQmxErrorSCCInvalidSecondStage: ::std::os::raw::c_int = -201326;
+pub const DAQmxErrorSCCInvalidFirstStage: ::std::os::raw::c_int = -201325;
+pub const DAQmxErrorCounterMultipleSampleClockedChannels:
+          ::std::os::raw::c_int =
+    -201324;
+pub const DAQmxError2CounterMeasurementModeAndSampleClocked:
+          ::std::os::raw::c_int =
+    -201323;
+pub const DAQmxErrorCantHaveBothMemMappedAndNonMemMappedTasks:
+          ::std::os::raw::c_int =
+    -201322;
+pub const DAQmxErrorMemMappedDataReadByAnotherProcess: ::std::os::raw::c_int =
+    -201321;
+pub const DAQmxErrorRetriggeringInvalidForGivenSettings: ::std::os::raw::c_int
+          =
+    -201320;
+pub const DAQmxErrorAIOverrun: ::std::os::raw::c_int = -201319;
+pub const DAQmxErrorCOOverrun: ::std::os::raw::c_int = -201318;
+pub const DAQmxErrorCounterMultipleBufferedChannels: ::std::os::raw::c_int =
+    -201317;
+pub const DAQmxErrorInvalidTimebaseForCOHWTSP: ::std::os::raw::c_int =
+    -201316;
+pub const DAQmxErrorWriteBeforeEvent: ::std::os::raw::c_int = -201315;
+pub const DAQmxErrorCIOverrun: ::std::os::raw::c_int = -201314;
+pub const DAQmxErrorCounterNonResponsiveAndReset: ::std::os::raw::c_int =
+    -201313;
+pub const DAQmxErrorMeasTypeOrChannelNotSupportedForLogging:
+          ::std::os::raw::c_int =
+    -201312;
+pub const DAQmxErrorFileAlreadyOpenedForWrite: ::std::os::raw::c_int =
+    -201311;
+pub const DAQmxErrorTdmsNotFound: ::std::os::raw::c_int = -201310;
+pub const DAQmxErrorGenericFileIO: ::std::os::raw::c_int = -201309;
+pub const DAQmxErrorFiniteSTCCounterNotSupportedForLogging:
+          ::std::os::raw::c_int =
+    -201308;
+pub const DAQmxErrorMeasurementTypeNotSupportedForLogging:
+          ::std::os::raw::c_int =
+    -201307;
+pub const DAQmxErrorFileAlreadyOpened: ::std::os::raw::c_int = -201306;
+pub const DAQmxErrorDiskFull: ::std::os::raw::c_int = -201305;
+pub const DAQmxErrorFilePathInvalid: ::std::os::raw::c_int = -201304;
+pub const DAQmxErrorFileVersionMismatch: ::std::os::raw::c_int = -201303;
+pub const DAQmxErrorFileWriteProtected: ::std::os::raw::c_int = -201302;
+pub const DAQmxErrorReadNotSupportedForLoggingMode: ::std::os::raw::c_int =
+    -201301;
+pub const DAQmxErrorAttributeNotSupportedWhenLogging: ::std::os::raw::c_int =
+    -201300;
+pub const DAQmxErrorLoggingModeNotSupportedNonBuffered: ::std::os::raw::c_int
+          =
+    -201299;
+pub const DAQmxErrorPropertyNotSupportedWithConflictingProperty:
+          ::std::os::raw::c_int =
+    -201298;
+pub const DAQmxErrorParallelSSHOnConnector1: ::std::os::raw::c_int = -201297;
+pub const DAQmxErrorCOOnlyImplicitSampleTimingTypeSupported:
+          ::std::os::raw::c_int =
+    -201296;
+pub const DAQmxErrorCalibrationFailedAOOutOfRange: ::std::os::raw::c_int =
+    -201295;
+pub const DAQmxErrorCalibrationFailedAIOutOfRange: ::std::os::raw::c_int =
+    -201294;
+pub const DAQmxErrorCalPWMLinearityFailed: ::std::os::raw::c_int = -201293;
+pub const DAQmxErrorOverrunUnderflowConfigurationCombo: ::std::os::raw::c_int
+          =
+    -201292;
+pub const DAQmxErrorCannotWriteToFiniteCOTask: ::std::os::raw::c_int =
+    -201291;
+pub const DAQmxErrorNetworkDAQInvalidWEPKeyLength: ::std::os::raw::c_int =
+    -201290;
+pub const DAQmxErrorCalInputsShortedNotSupported: ::std::os::raw::c_int =
+    -201289;
+pub const DAQmxErrorCannotSetPropertyWhenTaskIsReserved: ::std::os::raw::c_int
+          =
+    -201288;
+pub const DAQmxErrorMinus12VFuseBlown: ::std::os::raw::c_int = -201287;
+pub const DAQmxErrorPlus12VFuseBlown: ::std::os::raw::c_int = -201286;
+pub const DAQmxErrorPlus5VFuseBlown: ::std::os::raw::c_int = -201285;
+pub const DAQmxErrorPlus3VFuseBlown: ::std::os::raw::c_int = -201284;
+pub const DAQmxErrorDeviceSerialPortError: ::std::os::raw::c_int = -201283;
+pub const DAQmxErrorPowerUpStateMachineNotDone: ::std::os::raw::c_int =
+    -201282;
+pub const DAQmxErrorTooManyTriggersSpecifiedInTask: ::std::os::raw::c_int =
+    -201281;
+pub const DAQmxErrorVerticalOffsetNotSupportedOnDevice: ::std::os::raw::c_int
+          =
+    -201280;
+pub const DAQmxErrorInvalidCouplingForMeasurementType: ::std::os::raw::c_int =
+    -201279;
+pub const DAQmxErrorDigitalLineUpdateTooFastForDevice: ::std::os::raw::c_int =
+    -201278;
+pub const DAQmxErrorCertificateIsTooBigToTransfer: ::std::os::raw::c_int =
+    -201277;
+pub const DAQmxErrorOnlyPEMOrDERCertiticatesAccepted: ::std::os::raw::c_int =
+    -201276;
+pub const DAQmxErrorCalCouplingNotSupported: ::std::os::raw::c_int = -201275;
+pub const DAQmxErrorDeviceNotSupportedIn64Bit: ::std::os::raw::c_int =
+    -201274;
+pub const DAQmxErrorNetworkDeviceInUse: ::std::os::raw::c_int = -201273;
+pub const DAQmxErrorInvalidIPv4AddressFormat: ::std::os::raw::c_int = -201272;
+pub const DAQmxErrorNetworkProductTypeMismatch: ::std::os::raw::c_int =
+    -201271;
+pub const DAQmxErrorOnlyPEMCertificatesAccepted: ::std::os::raw::c_int =
+    -201270;
+pub const DAQmxErrorCalibrationRequiresPrototypingBoardEnabled:
+          ::std::os::raw::c_int =
+    -201269;
+pub const DAQmxErrorAllCurrentLimitingResourcesAlreadyTaken:
+          ::std::os::raw::c_int =
+    -201268;
+pub const DAQmxErrorUserDefInfoStringBadLength: ::std::os::raw::c_int =
+    -201267;
+pub const DAQmxErrorPropertyNotFound: ::std::os::raw::c_int = -201266;
+pub const DAQmxErrorOverVoltageProtectionActivated: ::std::os::raw::c_int =
+    -201265;
+pub const DAQmxErrorScaledIQWaveformTooLarge: ::std::os::raw::c_int = -201264;
+pub const DAQmxErrorFirmwareFailedToDownload: ::std::os::raw::c_int = -201263;
+pub const DAQmxErrorPropertyNotSupportedForBusType: ::std::os::raw::c_int =
+    -201262;
+pub const DAQmxErrorChangeRateWhileRunningCouldNotBeCompleted:
+          ::std::os::raw::c_int =
+    -201261;
+pub const DAQmxErrorCannotQueryManualControlAttribute: ::std::os::raw::c_int =
+    -201260;
+pub const DAQmxErrorInvalidNetworkConfiguration: ::std::os::raw::c_int =
+    -201259;
+pub const DAQmxErrorInvalidWirelessConfiguration: ::std::os::raw::c_int =
+    -201258;
+pub const DAQmxErrorInvalidWirelessCountryCode: ::std::os::raw::c_int =
+    -201257;
+pub const DAQmxErrorInvalidWirelessChannel: ::std::os::raw::c_int = -201256;
+pub const DAQmxErrorNetworkEEPROMHasChanged: ::std::os::raw::c_int = -201255;
+pub const DAQmxErrorNetworkSerialNumberMismatch: ::std::os::raw::c_int =
+    -201254;
+pub const DAQmxErrorNetworkStatusDown: ::std::os::raw::c_int = -201253;
+pub const DAQmxErrorNetworkTargetUnreachable: ::std::os::raw::c_int = -201252;
+pub const DAQmxErrorNetworkTargetNotFound: ::std::os::raw::c_int = -201251;
+pub const DAQmxErrorNetworkStatusTimedOut: ::std::os::raw::c_int = -201250;
+pub const DAQmxErrorInvalidWirelessSecuritySelection: ::std::os::raw::c_int =
+    -201249;
+pub const DAQmxErrorNetworkDeviceConfigurationLocked: ::std::os::raw::c_int =
+    -201248;
+pub const DAQmxErrorNetworkDAQDeviceNotSupported: ::std::os::raw::c_int =
+    -201247;
+pub const DAQmxErrorNetworkDAQCannotCreateEmptySleeve: ::std::os::raw::c_int =
+    -201246;
+pub const DAQmxErrorUserDefInfoStringTooLong: ::std::os::raw::c_int = -201245;
+pub const DAQmxErrorModuleTypeDoesNotMatchModuleTypeInDestination:
+          ::std::os::raw::c_int =
+    -201244;
+pub const DAQmxErrorInvalidTEDSInterfaceAddress: ::std::os::raw::c_int =
+    -201243;
+pub const DAQmxErrorDevDoesNotSupportSCXIComm: ::std::os::raw::c_int =
+    -201242;
+pub const DAQmxErrorSCXICommDevConnector0MustBeCabledToModule:
+          ::std::os::raw::c_int =
+    -201241;
+pub const DAQmxErrorSCXIModuleDoesNotSupportDigitizationMode:
+          ::std::os::raw::c_int =
+    -201240;
+pub const DAQmxErrorDevDoesNotSupportMultiplexedSCXIDigitizationMode:
+          ::std::os::raw::c_int =
+    -201239;
+pub const DAQmxErrorDevOrDevPhysChanDoesNotSupportSCXIDigitization:
+          ::std::os::raw::c_int =
+    -201238;
+pub const DAQmxErrorInvalidPhysChanName: ::std::os::raw::c_int = -201237;
+pub const DAQmxErrorSCXIChassisCommModeInvalid: ::std::os::raw::c_int =
+    -201236;
+pub const DAQmxErrorRequiredDependencyNotFound: ::std::os::raw::c_int =
+    -201235;
+pub const DAQmxErrorInvalidStorage: ::std::os::raw::c_int = -201234;
+pub const DAQmxErrorInvalidObject: ::std::os::raw::c_int = -201233;
+pub const DAQmxErrorStorageAlteredPriorToSave: ::std::os::raw::c_int =
+    -201232;
+pub const DAQmxErrorTaskDoesNotReferenceLocalChannel: ::std::os::raw::c_int =
+    -201231;
+pub const DAQmxErrorReferencedDevSimMustMatchTarget: ::std::os::raw::c_int =
+    -201230;
+pub const DAQmxErrorProgrammedIOFailsBecauseOfWatchdogTimer:
+          ::std::os::raw::c_int =
+    -201229;
+pub const DAQmxErrorWatchdogTimerFailsBecauseOfProgrammedIO:
+          ::std::os::raw::c_int =
+    -201228;
+pub const DAQmxErrorCantUseThisTimingEngineWithAPort: ::std::os::raw::c_int =
+    -201227;
+pub const DAQmxErrorProgrammedIOConflict: ::std::os::raw::c_int = -201226;
+pub const DAQmxErrorChangeDetectionIncompatibleWithProgrammedIO:
+          ::std::os::raw::c_int =
+    -201225;
+pub const DAQmxErrorTristateNotEnoughLines: ::std::os::raw::c_int = -201224;
+pub const DAQmxErrorTristateConflict: ::std::os::raw::c_int = -201223;
+pub const DAQmxErrorGenerateOrFiniteWaitExpectedBeforeBreakBlock:
+          ::std::os::raw::c_int =
+    -201222;
+pub const DAQmxErrorBreakBlockNotAllowedInLoop: ::std::os::raw::c_int =
+    -201221;
+pub const DAQmxErrorClearTriggerNotAllowedInBreakBlock: ::std::os::raw::c_int
+          =
+    -201220;
+pub const DAQmxErrorNestingNotAllowedInBreakBlock: ::std::os::raw::c_int =
+    -201219;
+pub const DAQmxErrorIfElseBlockNotAllowedInBreakBlock: ::std::os::raw::c_int =
+    -201218;
+pub const DAQmxErrorRepeatUntilTriggerLoopNotAllowedInBreakBlock:
+          ::std::os::raw::c_int =
+    -201217;
+pub const DAQmxErrorWaitUntilTriggerNotAllowedInBreakBlock:
+          ::std::os::raw::c_int =
+    -201216;
+pub const DAQmxErrorMarkerPosInvalidInBreakBlock: ::std::os::raw::c_int =
+    -201215;
+pub const DAQmxErrorInvalidWaitDurationInBreakBlock: ::std::os::raw::c_int =
+    -201214;
+pub const DAQmxErrorInvalidSubsetLengthInBreakBlock: ::std::os::raw::c_int =
+    -201213;
+pub const DAQmxErrorInvalidWaveformLengthInBreakBlock: ::std::os::raw::c_int =
+    -201212;
+pub const DAQmxErrorInvalidWaitDurationBeforeBreakBlock: ::std::os::raw::c_int
+          =
+    -201211;
+pub const DAQmxErrorInvalidSubsetLengthBeforeBreakBlock: ::std::os::raw::c_int
+          =
+    -201210;
+pub const DAQmxErrorInvalidWaveformLengthBeforeBreakBlock:
+          ::std::os::raw::c_int =
+    -201209;
+pub const DAQmxErrorSampleRateTooHighForADCTimingMode: ::std::os::raw::c_int =
+    -201208;
+pub const DAQmxErrorActiveDevNotSupportedWithMultiDevTask:
+          ::std::os::raw::c_int =
+    -201207;
+pub const DAQmxErrorRealDevAndSimDevNotSupportedInSameTask:
+          ::std::os::raw::c_int =
+    -201206;
+pub const DAQmxErrorRTSISimMustMatchDevSim: ::std::os::raw::c_int = -201205;
+pub const DAQmxErrorBridgeShuntCaNotSupported: ::std::os::raw::c_int =
+    -201204;
+pub const DAQmxErrorStrainShuntCaNotSupported: ::std::os::raw::c_int =
+    -201203;
+pub const DAQmxErrorGainTooLargeForGainCalConst: ::std::os::raw::c_int =
+    -201202;
+pub const DAQmxErrorOffsetTooLargeForOffsetCalConst: ::std::os::raw::c_int =
+    -201201;
+pub const DAQmxErrorElvisPrototypingBoardRemoved: ::std::os::raw::c_int =
+    -201200;
+pub const DAQmxErrorElvis2PowerRailFault: ::std::os::raw::c_int = -201199;
+pub const DAQmxErrorElvis2PhysicalChansFault: ::std::os::raw::c_int = -201198;
+pub const DAQmxErrorElvis2PhysicalChansThermalEvent: ::std::os::raw::c_int =
+    -201197;
+pub const DAQmxErrorRXBitErrorRateLimitExceeded: ::std::os::raw::c_int =
+    -201196;
+pub const DAQmxErrorPHYBitErrorRateLimitExceeded: ::std::os::raw::c_int =
+    -201195;
+pub const DAQmxErrorTwoPartAttributeCalledOutOfOrder: ::std::os::raw::c_int =
+    -201194;
+pub const DAQmxErrorInvalidSCXIChassisAddress: ::std::os::raw::c_int =
+    -201193;
+pub const DAQmxErrorCouldNotConnectToRemoteMXS: ::std::os::raw::c_int =
+    -201192;
+pub const DAQmxErrorExcitationStateRequiredForAttributes:
+          ::std::os::raw::c_int =
+    -201191;
+pub const DAQmxErrorDeviceNotUsableUntilUSBReplug: ::std::os::raw::c_int =
+    -201190;
+pub const DAQmxErrorInputFIFOOverflowDuringCalibrationOnFullSpeedUSB:
+          ::std::os::raw::c_int =
+    -201189;
+pub const DAQmxErrorInputFIFOOverflowDuringCalibration: ::std::os::raw::c_int
+          =
+    -201188;
+pub const DAQmxErrorCJCChanConflictsWithNonThermocoupleChan:
+          ::std::os::raw::c_int =
+    -201187;
+pub const DAQmxErrorCommDeviceForPXIBackplaneNotInRightmostSlot:
+          ::std::os::raw::c_int =
+    -201186;
+pub const DAQmxErrorCommDeviceForPXIBackplaneNotInSameChassis:
+          ::std::os::raw::c_int =
+    -201185;
+pub const DAQmxErrorCommDeviceForPXIBackplaneNotPXI: ::std::os::raw::c_int =
+    -201184;
+pub const DAQmxErrorInvalidCalExcitFrequency: ::std::os::raw::c_int = -201183;
+pub const DAQmxErrorInvalidCalExcitVoltage: ::std::os::raw::c_int = -201182;
+pub const DAQmxErrorInvalidAIInputSrc: ::std::os::raw::c_int = -201181;
+pub const DAQmxErrorInvalidCalInputRef: ::std::os::raw::c_int = -201180;
+pub const DAQmxErrordBReferenceValueNotGreaterThanZero: ::std::os::raw::c_int
+          =
+    -201179;
+pub const DAQmxErrorSampleClockRateIsTooFastForSampleClockTiming:
+          ::std::os::raw::c_int =
+    -201178;
+pub const DAQmxErrorDeviceNotUsableUntilColdStart: ::std::os::raw::c_int =
+    -201177;
+pub const DAQmxErrorSampleClockRateIsTooFastForBurstTiming:
+          ::std::os::raw::c_int =
+    -201176;
+pub const DAQmxErrorDevImportFailedAssociatedResourceIDsNotSupported:
+          ::std::os::raw::c_int =
+    -201175;
+pub const DAQmxErrorSCXI1600ImportNotSupported: ::std::os::raw::c_int =
+    -201174;
+pub const DAQmxErrorPowerSupplyConfigurationFailed: ::std::os::raw::c_int =
+    -201173;
+pub const DAQmxErrorIEPEWithDCNotAllowed: ::std::os::raw::c_int = -201172;
+pub const DAQmxErrorMinTempForThermocoupleTypeOutsideAccuracyForPolyScaling:
+          ::std::os::raw::c_int =
+    -201171;
+pub const DAQmxErrorDevImportFailedNoDeviceToOverwriteAndSimulationNotSupported:
+          ::std::os::raw::c_int =
+    -201170;
+pub const DAQmxErrorDevImportFailedDeviceNotSupportedOnDestination:
+          ::std::os::raw::c_int =
+    -201169;
+pub const DAQmxErrorFirmwareIsTooOld: ::std::os::raw::c_int = -201168;
+pub const DAQmxErrorFirmwareCouldntUpdate: ::std::os::raw::c_int = -201167;
+pub const DAQmxErrorFirmwareIsCorrupt: ::std::os::raw::c_int = -201166;
+pub const DAQmxErrorFirmwareTooNew: ::std::os::raw::c_int = -201165;
+pub const DAQmxErrorSampClockCannotBeExportedFromExternalSampClockSrc:
+          ::std::os::raw::c_int =
+    -201164;
+pub const DAQmxErrorPhysChanReservedForInputWhenDesiredForOutput:
+          ::std::os::raw::c_int =
+    -201163;
+pub const DAQmxErrorPhysChanReservedForOutputWhenDesiredForInput:
+          ::std::os::raw::c_int =
+    -201162;
+pub const DAQmxErrorSpecifiedCDAQSlotNotEmpty: ::std::os::raw::c_int =
+    -201161;
+pub const DAQmxErrorDeviceDoesNotSupportSimulation: ::std::os::raw::c_int =
+    -201160;
+pub const DAQmxErrorInvalidCDAQSlotNumberSpecd: ::std::os::raw::c_int =
+    -201159;
+pub const DAQmxErrorCSeriesModSimMustMatchCDAQChassisSim:
+          ::std::os::raw::c_int =
+    -201158;
+pub const DAQmxErrorSCCCabledDevMustNotBeSimWhenSCCCarrierIsNotSim:
+          ::std::os::raw::c_int =
+    -201157;
+pub const DAQmxErrorSCCModSimMustMatchSCCCarrierSim: ::std::os::raw::c_int =
+    -201156;
+pub const DAQmxErrorSCXIModuleDoesNotSupportSimulation: ::std::os::raw::c_int
+          =
+    -201155;
+pub const DAQmxErrorSCXICableDevMustNotBeSimWhenModIsNotSim:
+          ::std::os::raw::c_int =
+    -201154;
+pub const DAQmxErrorSCXIDigitizerSimMustNotBeSimWhenModIsNotSim:
+          ::std::os::raw::c_int =
+    -201153;
+pub const DAQmxErrorSCXIModSimMustMatchSCXIChassisSim: ::std::os::raw::c_int =
+    -201152;
+pub const DAQmxErrorSimPXIDevReqSlotAndChassisSpecd: ::std::os::raw::c_int =
+    -201151;
+pub const DAQmxErrorSimDevConflictWithRealDev: ::std::os::raw::c_int =
+    -201150;
+pub const DAQmxErrorInsufficientDataForCalibration: ::std::os::raw::c_int =
+    -201149;
+pub const DAQmxErrorTriggerChannelMustBeEnabled: ::std::os::raw::c_int =
+    -201148;
+pub const DAQmxErrorCalibrationDataConflictCouldNotBeResolved:
+          ::std::os::raw::c_int =
+    -201147;
+pub const DAQmxErrorSoftwareTooNewForSelfCalibrationData:
+          ::std::os::raw::c_int =
+    -201146;
+pub const DAQmxErrorSoftwareTooNewForExtCalibrationData: ::std::os::raw::c_int
+          =
+    -201145;
+pub const DAQmxErrorSelfCalibrationDataTooNewForSoftware:
+          ::std::os::raw::c_int =
+    -201144;
+pub const DAQmxErrorExtCalibrationDataTooNewForSoftware: ::std::os::raw::c_int
+          =
+    -201143;
+pub const DAQmxErrorSoftwareTooNewForEEPROM: ::std::os::raw::c_int = -201142;
+pub const DAQmxErrorEEPROMTooNewForSoftware: ::std::os::raw::c_int = -201141;
+pub const DAQmxErrorSoftwareTooNewForHardware: ::std::os::raw::c_int =
+    -201140;
+pub const DAQmxErrorHardwareTooNewForSoftware: ::std::os::raw::c_int =
+    -201139;
+pub const DAQmxErrorTaskCannotRestartFirstSampNotAvailToGenerate:
+          ::std::os::raw::c_int =
+    -201138;
+pub const DAQmxErrorOnlyUseStartTrigSrcPrptyWithDevDataLines:
+          ::std::os::raw::c_int =
+    -201137;
+pub const DAQmxErrorOnlyUsePauseTrigSrcPrptyWithDevDataLines:
+          ::std::os::raw::c_int =
+    -201136;
+pub const DAQmxErrorOnlyUseRefTrigSrcPrptyWithDevDataLines:
+          ::std::os::raw::c_int =
+    -201135;
+pub const DAQmxErrorPauseTrigDigPatternSizeDoesNotMatchSrcSize:
+          ::std::os::raw::c_int =
+    -201134;
+pub const DAQmxErrorLineConflictCDAQ: ::std::os::raw::c_int = -201133;
+pub const DAQmxErrorCannotWriteBeyondFinalFiniteSample: ::std::os::raw::c_int
+          =
+    -201132;
+pub const DAQmxErrorRefAndStartTriggerSrcCantBeSame: ::std::os::raw::c_int =
+    -201131;
+pub const DAQmxErrorMemMappingIncompatibleWithPhysChansInTask:
+          ::std::os::raw::c_int =
+    -201130;
+pub const DAQmxErrorOutputDriveTypeMemMappingConflict: ::std::os::raw::c_int =
+    -201129;
+pub const DAQmxErrorCAPIDeviceIndexInvalid: ::std::os::raw::c_int = -201128;
+pub const DAQmxErrorRatiometricDevicesMustUseExcitationForScaling:
+          ::std::os::raw::c_int =
+    -201127;
+pub const DAQmxErrorPropertyRequiresPerDeviceCfg: ::std::os::raw::c_int =
+    -201126;
+pub const DAQmxErrorAICouplingAndAIInputSourceConflict: ::std::os::raw::c_int
+          =
+    -201125;
+pub const DAQmxErrorOnlyOneTaskCanPerformDOMemoryMappingAtATime:
+          ::std::os::raw::c_int =
+    -201124;
+pub const DAQmxErrorTooManyChansForAnalogRefTrigCDAQ: ::std::os::raw::c_int =
+    -201123;
+pub const DAQmxErrorSpecdPropertyValueIsIncompatibleWithSampleTimingType:
+          ::std::os::raw::c_int =
+    -201122;
+pub const DAQmxErrorCPUNotSupportedRequireSSE: ::std::os::raw::c_int =
+    -201121;
+pub const DAQmxErrorSpecdPropertyValueIsIncompatibleWithSampleTimingResponseMode:
+          ::std::os::raw::c_int =
+    -201120;
+pub const DAQmxErrorConflictingNextWriteIsLastAndRegenModeProperties:
+          ::std::os::raw::c_int =
+    -201119;
+pub const DAQmxErrorMStudioOperationDoesNotSupportDeviceContext:
+          ::std::os::raw::c_int =
+    -201118;
+pub const DAQmxErrorPropertyValueInChannelExpansionContextInvalid:
+          ::std::os::raw::c_int =
+    -201117;
+pub const DAQmxErrorHWTimedNonBufferedAONotSupported: ::std::os::raw::c_int =
+    -201116;
+pub const DAQmxErrorWaveformLengthNotMultOfQuantum: ::std::os::raw::c_int =
+    -201115;
+pub const DAQmxErrorDSAExpansionMixedBoardsWrongOrderInPXIChassis:
+          ::std::os::raw::c_int =
+    -201114;
+pub const DAQmxErrorPowerLevelTooLowForOOK: ::std::os::raw::c_int = -201113;
+pub const DAQmxErrorDeviceComponentTestFailure: ::std::os::raw::c_int =
+    -201112;
+pub const DAQmxErrorUserDefinedWfmWithOOKUnsupported: ::std::os::raw::c_int =
+    -201111;
+pub const DAQmxErrorInvalidDigitalModulationUserDefinedWaveform:
+          ::std::os::raw::c_int =
+    -201110;
+pub const DAQmxErrorBothRefInAndRefOutEnabled: ::std::os::raw::c_int =
+    -201109;
+pub const DAQmxErrorBothAnalogAndDigitalModulationEnabled:
+          ::std::os::raw::c_int =
+    -201108;
+pub const DAQmxErrorBufferedOpsNotSupportedInSpecdSlotForCDAQ:
+          ::std::os::raw::c_int =
+    -201107;
+pub const DAQmxErrorPhysChanNotSupportedInSpecdSlotForCDAQ:
+          ::std::os::raw::c_int =
+    -201106;
+pub const DAQmxErrorResourceReservedWithConflictingSettings:
+          ::std::os::raw::c_int =
+    -201105;
+pub const DAQmxErrorInconsistentAnalogTrigSettingsCDAQ: ::std::os::raw::c_int
+          =
+    -201104;
+pub const DAQmxErrorTooManyChansForAnalogPauseTrigCDAQ: ::std::os::raw::c_int
+          =
+    -201103;
+pub const DAQmxErrorAnalogTrigNotFirstInScanListCDAQ: ::std::os::raw::c_int =
+    -201102;
+pub const DAQmxErrorTooManyChansGivenTimingType: ::std::os::raw::c_int =
+    -201101;
+pub const DAQmxErrorSampClkTimebaseDivWithExtSampClk: ::std::os::raw::c_int =
+    -201100;
+pub const DAQmxErrorCantSaveTaskWithPerDeviceTimingProperties:
+          ::std::os::raw::c_int =
+    -201099;
+pub const DAQmxErrorConflictingAutoZeroMode: ::std::os::raw::c_int = -201098;
+pub const DAQmxErrorSampClkRateNotSupportedWithEAREnabled:
+          ::std::os::raw::c_int =
+    -201097;
+pub const DAQmxErrorSampClkTimebaseRateNotSpecd: ::std::os::raw::c_int =
+    -201096;
+pub const DAQmxErrorSessionCorruptedByDLLReload: ::std::os::raw::c_int =
+    -201095;
+pub const DAQmxErrorActiveDevNotSupportedWithChanExpansion:
+          ::std::os::raw::c_int =
+    -201094;
+pub const DAQmxErrorSampClkRateInvalid: ::std::os::raw::c_int = -201093;
+pub const DAQmxErrorExtSyncPulseSrcCannotBeExported: ::std::os::raw::c_int =
+    -201092;
+pub const DAQmxErrorSyncPulseMinDelayToStartNeededForExtSyncPulseSrc:
+          ::std::os::raw::c_int =
+    -201091;
+pub const DAQmxErrorSyncPulseSrcInvalid: ::std::os::raw::c_int = -201090;
+pub const DAQmxErrorSampClkTimebaseRateInvalid: ::std::os::raw::c_int =
+    -201089;
+pub const DAQmxErrorSampClkTimebaseSrcInvalid: ::std::os::raw::c_int =
+    -201088;
+pub const DAQmxErrorSampClkRateMustBeSpecd: ::std::os::raw::c_int = -201087;
+pub const DAQmxErrorInvalidAttributeName: ::std::os::raw::c_int = -201086;
+pub const DAQmxErrorCJCChanNameMustBeSetWhenCJCSrcIsScannableChan:
+          ::std::os::raw::c_int =
+    -201085;
+pub const DAQmxErrorHiddenChanMissingInChansPropertyInCfgFile:
+          ::std::os::raw::c_int =
+    -201084;
+pub const DAQmxErrorChanNamesNotSpecdInCfgFile: ::std::os::raw::c_int =
+    -201083;
+pub const DAQmxErrorDuplicateHiddenChanNamesInCfgFile: ::std::os::raw::c_int =
+    -201082;
+pub const DAQmxErrorDuplicateChanNameInCfgFile: ::std::os::raw::c_int =
+    -201081;
+pub const DAQmxErrorInvalidSCCModuleForSlotSpecd: ::std::os::raw::c_int =
+    -201080;
+pub const DAQmxErrorInvalidSCCSlotNumberSpecd: ::std::os::raw::c_int =
+    -201079;
+pub const DAQmxErrorInvalidSectionIdentifier: ::std::os::raw::c_int = -201078;
+pub const DAQmxErrorInvalidSectionName: ::std::os::raw::c_int = -201077;
+pub const DAQmxErrorDAQmxVersionNotSupported: ::std::os::raw::c_int = -201076;
+pub const DAQmxErrorSWObjectsFoundInFile: ::std::os::raw::c_int = -201075;
+pub const DAQmxErrorHWObjectsFoundInFile: ::std::os::raw::c_int = -201074;
+pub const DAQmxErrorLocalChannelSpecdWithNoParentTask: ::std::os::raw::c_int =
+    -201073;
+pub const DAQmxErrorTaskReferencesMissingLocalChannel: ::std::os::raw::c_int =
+    -201072;
+pub const DAQmxErrorTaskReferencesLocalChannelFromOtherTask:
+          ::std::os::raw::c_int =
+    -201071;
+pub const DAQmxErrorTaskMissingChannelProperty: ::std::os::raw::c_int =
+    -201070;
+pub const DAQmxErrorInvalidLocalChanName: ::std::os::raw::c_int = -201069;
+pub const DAQmxErrorInvalidEscapeCharacterInString: ::std::os::raw::c_int =
+    -201068;
+pub const DAQmxErrorInvalidTableIdentifier: ::std::os::raw::c_int = -201067;
+pub const DAQmxErrorValueFoundInInvalidColumn: ::std::os::raw::c_int =
+    -201066;
+pub const DAQmxErrorMissingStartOfTable: ::std::os::raw::c_int = -201065;
+pub const DAQmxErrorFileMissingRequiredDAQmxHeader: ::std::os::raw::c_int =
+    -201064;
+pub const DAQmxErrorDeviceIDDoesNotMatch: ::std::os::raw::c_int = -201063;
+pub const DAQmxErrorBufferedOperationsNotSupportedOnSelectedLines:
+          ::std::os::raw::c_int =
+    -201062;
+pub const DAQmxErrorPropertyConflictsWithScale: ::std::os::raw::c_int =
+    -201061;
+pub const DAQmxErrorInvalidINIFileSyntax: ::std::os::raw::c_int = -201060;
+pub const DAQmxErrorDeviceInfoFailedPXIChassisNotIdentified:
+          ::std::os::raw::c_int =
+    -201059;
+pub const DAQmxErrorInvalidHWProductNumber: ::std::os::raw::c_int = -201058;
+pub const DAQmxErrorInvalidHWProductType: ::std::os::raw::c_int = -201057;
+pub const DAQmxErrorInvalidNumericFormatSpecd: ::std::os::raw::c_int =
+    -201056;
+pub const DAQmxErrorDuplicatePropertyInObject: ::std::os::raw::c_int =
+    -201055;
+pub const DAQmxErrorInvalidEnumValueSpecd: ::std::os::raw::c_int = -201054;
+pub const DAQmxErrorTEDSSensorPhysicalChannelConflict: ::std::os::raw::c_int =
+    -201053;
+pub const DAQmxErrorTooManyPhysicalChansForTEDSInterfaceSpecd:
+          ::std::os::raw::c_int =
+    -201052;
+pub const DAQmxErrorIncapableTEDSInterfaceControllingDeviceSpecd:
+          ::std::os::raw::c_int =
+    -201051;
+pub const DAQmxErrorSCCCarrierSpecdIsMissing: ::std::os::raw::c_int = -201050;
+pub const DAQmxErrorIncapableSCCDigitizingDeviceSpecd: ::std::os::raw::c_int =
+    -201049;
+pub const DAQmxErrorAccessorySettingNotApplicable: ::std::os::raw::c_int =
+    -201048;
+pub const DAQmxErrorDeviceAndConnectorSpecdAlreadyOccupied:
+          ::std::os::raw::c_int =
+    -201047;
+pub const DAQmxErrorIllegalAccessoryTypeForDeviceSpecd: ::std::os::raw::c_int
+          =
+    -201046;
+pub const DAQmxErrorInvalidDeviceConnectorNumberSpecd: ::std::os::raw::c_int =
+    -201045;
+pub const DAQmxErrorInvalidAccessoryName: ::std::os::raw::c_int = -201044;
+pub const DAQmxErrorMoreThanOneMatchForSpecdDevice: ::std::os::raw::c_int =
+    -201043;
+pub const DAQmxErrorNoMatchForSpecdDevice: ::std::os::raw::c_int = -201042;
+pub const DAQmxErrorProductTypeAndProductNumberConflict: ::std::os::raw::c_int
+          =
+    -201041;
+pub const DAQmxErrorExtraPropertyDetectedInSpecdObject: ::std::os::raw::c_int
+          =
+    -201040;
+pub const DAQmxErrorRequiredPropertyMissing: ::std::os::raw::c_int = -201039;
+pub const DAQmxErrorCantSetAuthorForLocalChan: ::std::os::raw::c_int =
+    -201038;
+pub const DAQmxErrorInvalidTimeValue: ::std::os::raw::c_int = -201037;
+pub const DAQmxErrorInvalidTimeFormat: ::std::os::raw::c_int = -201036;
+pub const DAQmxErrorDigDevChansSpecdInModeOtherThanParallel:
+          ::std::os::raw::c_int =
+    -201035;
+pub const DAQmxErrorCascadeDigitizationModeNotSupported: ::std::os::raw::c_int
+          =
+    -201034;
+pub const DAQmxErrorSpecdSlotAlreadyOccupied: ::std::os::raw::c_int = -201033;
+pub const DAQmxErrorInvalidSCXISlotNumberSpecd: ::std::os::raw::c_int =
+    -201032;
+pub const DAQmxErrorAddressAlreadyInUse: ::std::os::raw::c_int = -201031;
+pub const DAQmxErrorSpecdDeviceDoesNotSupportRTSI: ::std::os::raw::c_int =
+    -201030;
+pub const DAQmxErrorSpecdDeviceIsAlreadyOnRTSIBus: ::std::os::raw::c_int =
+    -201029;
+pub const DAQmxErrorIdentifierInUse: ::std::os::raw::c_int = -201028;
+pub const DAQmxErrorWaitForNextSampleClockOrReadDetected3OrMoreMissedSampClks:
+          ::std::os::raw::c_int =
+    -201027;
+pub const DAQmxErrorHWTimedAndDataXferPIO: ::std::os::raw::c_int = -201026;
+pub const DAQmxErrorNonBufferedAndHWTimed: ::std::os::raw::c_int = -201025;
+pub const DAQmxErrorCTROutSampClkPeriodShorterThanGenPulseTrainPeriodPolled:
+          ::std::os::raw::c_int =
+    -201024;
+pub const DAQmxErrorCTROutSampClkPeriodShorterThanGenPulseTrainPeriod2:
+          ::std::os::raw::c_int =
+    -201023;
+pub const DAQmxErrorCOCannotKeepUpInHWTimedSinglePointPolled:
+          ::std::os::raw::c_int =
+    -201022;
+pub const DAQmxErrorWriteRecoveryCannotKeepUpInHWTimedSinglePoint:
+          ::std::os::raw::c_int =
+    -201021;
+pub const DAQmxErrorNoChangeDetectionOnSelectedLineForDevice:
+          ::std::os::raw::c_int =
+    -201020;
+pub const DAQmxErrorSMIOPauseTriggersNotSupportedWithChannelExpansion:
+          ::std::os::raw::c_int =
+    -201019;
+pub const DAQmxErrorClockMasterForExternalClockNotLongestPipeline:
+          ::std::os::raw::c_int =
+    -201018;
+pub const DAQmxErrorUnsupportedUnicodeByteOrderMarker: ::std::os::raw::c_int =
+    -201017;
+pub const DAQmxErrorTooManyInstructionsInLoopInScript: ::std::os::raw::c_int =
+    -201016;
+pub const DAQmxErrorPLLNotLocked: ::std::os::raw::c_int = -201015;
+pub const DAQmxErrorIfElseBlockNotAllowedInFiniteRepeatLoopInScript:
+          ::std::os::raw::c_int =
+    -201014;
+pub const DAQmxErrorIfElseBlockNotAllowedInConditionalRepeatLoopInScript:
+          ::std::os::raw::c_int =
+    -201013;
+pub const DAQmxErrorClearIsLastInstructionInIfElseBlockInScript:
+          ::std::os::raw::c_int =
+    -201012;
+pub const DAQmxErrorInvalidWaitDurationBeforeIfElseBlockInScript:
+          ::std::os::raw::c_int =
+    -201011;
+pub const DAQmxErrorMarkerPosInvalidBeforeIfElseBlockInScript:
+          ::std::os::raw::c_int =
+    -201010;
+pub const DAQmxErrorInvalidSubsetLengthBeforeIfElseBlockInScript:
+          ::std::os::raw::c_int =
+    -201009;
+pub const DAQmxErrorInvalidWaveformLengthBeforeIfElseBlockInScript:
+          ::std::os::raw::c_int =
+    -201008;
+pub const DAQmxErrorGenerateOrFiniteWaitInstructionExpectedBeforeIfElseBlockInScript:
+          ::std::os::raw::c_int =
+    -201007;
+pub const DAQmxErrorCalPasswordNotSupported: ::std::os::raw::c_int = -201006;
+pub const DAQmxErrorSetupCalNeededBeforeAdjustCal: ::std::os::raw::c_int =
+    -201005;
+pub const DAQmxErrorMultipleChansNotSupportedDuringCalSetup:
+          ::std::os::raw::c_int =
+    -201004;
+pub const DAQmxErrorDevCannotBeAccessed: ::std::os::raw::c_int = -201003;
+pub const DAQmxErrorSampClkRateDoesntMatchSampClkSrc: ::std::os::raw::c_int =
+    -201002;
+pub const DAQmxErrorSampClkRateNotSupportedWithEARDisabled:
+          ::std::os::raw::c_int =
+    -201001;
+pub const DAQmxErrorLabVIEWVersionDoesntSupportDAQmxEvents:
+          ::std::os::raw::c_int =
+    -201000;
+pub const DAQmxErrorCOReadyForNewValNotSupportedWithOnDemand:
+          ::std::os::raw::c_int =
+    -200999;
+pub const DAQmxErrorCIHWTimedSinglePointNotSupportedForMeasType:
+          ::std::os::raw::c_int =
+    -200998;
+pub const DAQmxErrorOnDemandNotSupportedWithHWTimedSinglePoint:
+          ::std::os::raw::c_int =
+    -200997;
+pub const DAQmxErrorHWTimedSinglePointAndDataXferNotProgIO:
+          ::std::os::raw::c_int =
+    -200996;
+pub const DAQmxErrorMemMapAndHWTimedSinglePoint: ::std::os::raw::c_int =
+    -200995;
+pub const DAQmxErrorCannotSetPropertyWhenHWTimedSinglePointTaskIsRunning:
+          ::std::os::raw::c_int =
+    -200994;
+pub const DAQmxErrorCTROutSampClkPeriodShorterThanGenPulseTrainPeriod:
+          ::std::os::raw::c_int =
+    -200993;
+pub const DAQmxErrorTooManyEventsGenerated: ::std::os::raw::c_int = -200992;
+pub const DAQmxErrorMStudioCppRemoveEventsBeforeStop: ::std::os::raw::c_int =
+    -200991;
+pub const DAQmxErrorCAPICannotRegisterSyncEventsFromMultipleThreads:
+          ::std::os::raw::c_int =
+    -200990;
+pub const DAQmxErrorReadWaitNextSampClkWaitMismatchTwo: ::std::os::raw::c_int
+          =
+    -200989;
+pub const DAQmxErrorReadWaitNextSampClkWaitMismatchOne: ::std::os::raw::c_int
+          =
+    -200988;
+pub const DAQmxErrorDAQmxSignalEventTypeNotSupportedByChanTypesOrDevicesInTask:
+          ::std::os::raw::c_int =
+    -200987;
+pub const DAQmxErrorCannotUnregisterDAQmxSoftwareEventWhileTaskIsRunning:
+          ::std::os::raw::c_int =
+    -200986;
+pub const DAQmxErrorAutoStartWriteNotAllowedEventRegistered:
+          ::std::os::raw::c_int =
+    -200985;
+pub const DAQmxErrorAutoStartReadNotAllowedEventRegistered:
+          ::std::os::raw::c_int =
+    -200984;
+pub const DAQmxErrorCannotGetPropertyWhenTaskNotReservedCommittedOrRunning:
+          ::std::os::raw::c_int =
+    -200983;
+pub const DAQmxErrorSignalEventsNotSupportedByDevice: ::std::os::raw::c_int =
+    -200982;
+pub const DAQmxErrorEveryNSamplesAcqIntoBufferEventNotSupportedByDevice:
+          ::std::os::raw::c_int =
+    -200981;
+pub const DAQmxErrorEveryNSampsTransferredFromBufferEventNotSupportedByDevice:
+          ::std::os::raw::c_int =
+    -200980;
+pub const DAQmxErrorCAPISyncEventsTaskStateChangeNotAllowedFromDifferentThread:
+          ::std::os::raw::c_int =
+    -200979;
+pub const DAQmxErrorDAQmxSWEventsWithDifferentCallMechanisms:
+          ::std::os::raw::c_int =
+    -200978;
+pub const DAQmxErrorCantSaveChanWithPolyCalScaleAndAllowInteractiveEdit:
+          ::std::os::raw::c_int =
+    -200977;
+pub const DAQmxErrorChanDoesNotSupportCJC: ::std::os::raw::c_int = -200976;
+pub const DAQmxErrorCOReadyForNewValNotSupportedWithHWTimedSinglePoint:
+          ::std::os::raw::c_int =
+    -200975;
+pub const DAQmxErrorDACAllowConnToGndNotSupportedByDevWhenRefSrcExt:
+          ::std::os::raw::c_int =
+    -200974;
+pub const DAQmxErrorCantGetPropertyTaskNotRunning: ::std::os::raw::c_int =
+    -200973;
+pub const DAQmxErrorCantSetPropertyTaskNotRunning: ::std::os::raw::c_int =
+    -200972;
+pub const DAQmxErrorCantSetPropertyTaskNotRunningCommitted:
+          ::std::os::raw::c_int =
+    -200971;
+pub const DAQmxErrorAIEveryNSampsEventIntervalNotMultipleOf2:
+          ::std::os::raw::c_int =
+    -200970;
+pub const DAQmxErrorInvalidTEDSPhysChanNotAI: ::std::os::raw::c_int = -200969;
+pub const DAQmxErrorCAPICannotPerformTaskOperationInAsyncCallback:
+          ::std::os::raw::c_int =
+    -200968;
+pub const DAQmxErrorEveryNSampsTransferredFromBufferEventAlreadyRegistered:
+          ::std::os::raw::c_int =
+    -200967;
+pub const DAQmxErrorEveryNSampsAcqIntoBufferEventAlreadyRegistered:
+          ::std::os::raw::c_int =
+    -200966;
+pub const DAQmxErrorEveryNSampsTransferredFromBufferNotForInput:
+          ::std::os::raw::c_int =
+    -200965;
+pub const DAQmxErrorEveryNSampsAcqIntoBufferNotForOutput:
+          ::std::os::raw::c_int =
+    -200964;
+pub const DAQmxErrorAOSampTimingTypeDifferentIn2Tasks: ::std::os::raw::c_int =
+    -200963;
+pub const DAQmxErrorCouldNotDownloadFirmwareHWDamaged: ::std::os::raw::c_int =
+    -200962;
+pub const DAQmxErrorCouldNotDownloadFirmwareFileMissingOrDamaged:
+          ::std::os::raw::c_int =
+    -200961;
+pub const DAQmxErrorCannotRegisterDAQmxSoftwareEventWhileTaskIsRunning:
+          ::std::os::raw::c_int =
+    -200960;
+pub const DAQmxErrorDifferentRawDataCompression: ::std::os::raw::c_int =
+    -200959;
+pub const DAQmxErrorConfiguredTEDSInterfaceDevNotDetected:
+          ::std::os::raw::c_int =
+    -200958;
+pub const DAQmxErrorCompressedSampSizeExceedsResolution: ::std::os::raw::c_int
+          =
+    -200957;
+pub const DAQmxErrorChanDoesNotSupportCompression: ::std::os::raw::c_int =
+    -200956;
+pub const DAQmxErrorDifferentRawDataFormats: ::std::os::raw::c_int = -200955;
+pub const DAQmxErrorSampClkOutputTermIncludesStartTrigSrc:
+          ::std::os::raw::c_int =
+    -200954;
+pub const DAQmxErrorStartTrigSrcEqualToSampClkSrc: ::std::os::raw::c_int =
+    -200953;
+pub const DAQmxErrorEventOutputTermIncludesTrigSrc: ::std::os::raw::c_int =
+    -200952;
+pub const DAQmxErrorCOMultipleWritesBetweenSampClks: ::std::os::raw::c_int =
+    -200951;
+pub const DAQmxErrorDoneEventAlreadyRegistered: ::std::os::raw::c_int =
+    -200950;
+pub const DAQmxErrorSignalEventAlreadyRegistered: ::std::os::raw::c_int =
+    -200949;
+pub const DAQmxErrorCannotHaveTimedLoopAndDAQmxSignalEventsInSameTask:
+          ::std::os::raw::c_int =
+    -200948;
+pub const DAQmxErrorNeedLabVIEW711PatchToUseDAQmxEvents: ::std::os::raw::c_int
+          =
+    -200947;
+pub const DAQmxErrorStartFailedDueToWriteFailure: ::std::os::raw::c_int =
+    -200946;
+pub const DAQmxErrorDataXferCustomThresholdNotDMAXferMethodSpecifiedForDev:
+          ::std::os::raw::c_int =
+    -200945;
+pub const DAQmxErrorDataXferRequestConditionNotSpecifiedForCustomThreshold:
+          ::std::os::raw::c_int =
+    -200944;
+pub const DAQmxErrorDataXferCustomThresholdNotSpecified: ::std::os::raw::c_int
+          =
+    -200943;
+pub const DAQmxErrorCAPISyncCallbackNotSupportedOnThisPlatform:
+          ::std::os::raw::c_int =
+    -200942;
+pub const DAQmxErrorCalChanReversePolyCoefNotSpecd: ::std::os::raw::c_int =
+    -200941;
+pub const DAQmxErrorCalChanForwardPolyCoefNotSpecd: ::std::os::raw::c_int =
+    -200940;
+pub const DAQmxErrorChanCalRepeatedNumberInPreScaledVals:
+          ::std::os::raw::c_int =
+    -200939;
+pub const DAQmxErrorChanCalTableNumScaledNotEqualNumPrescaledVals:
+          ::std::os::raw::c_int =
+    -200938;
+pub const DAQmxErrorChanCalTableScaledValsNotSpecd: ::std::os::raw::c_int =
+    -200937;
+pub const DAQmxErrorChanCalTablePreScaledValsNotSpecd: ::std::os::raw::c_int =
+    -200936;
+pub const DAQmxErrorChanCalScaleTypeNotSet: ::std::os::raw::c_int = -200935;
+pub const DAQmxErrorChanCalExpired: ::std::os::raw::c_int = -200934;
+pub const DAQmxErrorChanCalExpirationDateNotSet: ::std::os::raw::c_int =
+    -200933;
+pub const DAQmxError3OutputPortCombinationGivenSampTimingType653x:
+          ::std::os::raw::c_int =
+    -200932;
+pub const DAQmxError3InputPortCombinationGivenSampTimingType653x:
+          ::std::os::raw::c_int =
+    -200931;
+pub const DAQmxError2OutputPortCombinationGivenSampTimingType653x:
+          ::std::os::raw::c_int =
+    -200930;
+pub const DAQmxError2InputPortCombinationGivenSampTimingType653x:
+          ::std::os::raw::c_int =
+    -200929;
+pub const DAQmxErrorPatternMatcherMayBeUsedByOneTrigOnly:
+          ::std::os::raw::c_int =
+    -200928;
+pub const DAQmxErrorNoChansSpecdForPatternSource: ::std::os::raw::c_int =
+    -200927;
+pub const DAQmxErrorChangeDetectionChanNotInTask: ::std::os::raw::c_int =
+    -200926;
+pub const DAQmxErrorChangeDetectionChanNotTristated: ::std::os::raw::c_int =
+    -200925;
+pub const DAQmxErrorWaitModeValueNotSupportedNonBuffered:
+          ::std::os::raw::c_int =
+    -200924;
+pub const DAQmxErrorWaitModePropertyNotSupportedNonBuffered:
+          ::std::os::raw::c_int =
+    -200923;
+pub const DAQmxErrorCantSavePerLineConfigDigChanSoInteractiveEditsAllowed:
+          ::std::os::raw::c_int =
+    -200922;
+pub const DAQmxErrorCantSaveNonPortMultiLineDigChanSoInteractiveEditsAllowed:
+          ::std::os::raw::c_int =
+    -200921;
+pub const DAQmxErrorBufferSizeNotMultipleOfEveryNSampsEventIntervalNoIrqOnDev:
+          ::std::os::raw::c_int =
+    -200920;
+pub const DAQmxErrorGlobalTaskNameAlreadyChanName: ::std::os::raw::c_int =
+    -200919;
+pub const DAQmxErrorGlobalChanNameAlreadyTaskName: ::std::os::raw::c_int =
+    -200918;
+pub const DAQmxErrorAOEveryNSampsEventIntervalNotMultipleOf2:
+          ::std::os::raw::c_int =
+    -200917;
+pub const DAQmxErrorSampleTimebaseDivisorNotSupportedGivenTimingType:
+          ::std::os::raw::c_int =
+    -200916;
+pub const DAQmxErrorHandshakeEventOutputTermNotSupportedGivenTimingType:
+          ::std::os::raw::c_int =
+    -200915;
+pub const DAQmxErrorChangeDetectionOutputTermNotSupportedGivenTimingType:
+          ::std::os::raw::c_int =
+    -200914;
+pub const DAQmxErrorReadyForTransferOutputTermNotSupportedGivenTimingType:
+          ::std::os::raw::c_int =
+    -200913;
+pub const DAQmxErrorRefTrigOutputTermNotSupportedGivenTimingType:
+          ::std::os::raw::c_int =
+    -200912;
+pub const DAQmxErrorStartTrigOutputTermNotSupportedGivenTimingType:
+          ::std::os::raw::c_int =
+    -200911;
+pub const DAQmxErrorSampClockOutputTermNotSupportedGivenTimingType:
+          ::std::os::raw::c_int =
+    -200910;
+pub const DAQmxError20MhzTimebaseNotSupportedGivenTimingType:
+          ::std::os::raw::c_int =
+    -200909;
+pub const DAQmxErrorSampClockSourceNotSupportedGivenTimingType:
+          ::std::os::raw::c_int =
+    -200908;
+pub const DAQmxErrorRefTrigTypeNotSupportedGivenTimingType:
+          ::std::os::raw::c_int =
+    -200907;
+pub const DAQmxErrorPauseTrigTypeNotSupportedGivenTimingType:
+          ::std::os::raw::c_int =
+    -200906;
+pub const DAQmxErrorHandshakeTrigTypeNotSupportedGivenTimingType:
+          ::std::os::raw::c_int =
+    -200905;
+pub const DAQmxErrorStartTrigTypeNotSupportedGivenTimingType:
+          ::std::os::raw::c_int =
+    -200904;
+pub const DAQmxErrorRefClkSrcNotSupported: ::std::os::raw::c_int = -200903;
+pub const DAQmxErrorDataVoltageLowAndHighIncompatible: ::std::os::raw::c_int =
+    -200902;
+pub const DAQmxErrorInvalidCharInDigPatternString: ::std::os::raw::c_int =
+    -200901;
+pub const DAQmxErrorCantUsePort3AloneGivenSampTimingTypeOn653x:
+          ::std::os::raw::c_int =
+    -200900;
+pub const DAQmxErrorCantUsePort1AloneGivenSampTimingTypeOn653x:
+          ::std::os::raw::c_int =
+    -200899;
+pub const DAQmxErrorPartialUseOfPhysicalLinesWithinPortNotSupported653x:
+          ::std::os::raw::c_int =
+    -200898;
+pub const DAQmxErrorPhysicalChanNotSupportedGivenSampTimingType653x:
+          ::std::os::raw::c_int =
+    -200897;
+pub const DAQmxErrorCanExportOnlyDigEdgeTrigs: ::std::os::raw::c_int =
+    -200896;
+pub const DAQmxErrorRefTrigDigPatternSizeDoesNotMatchSourceSize:
+          ::std::os::raw::c_int =
+    -200895;
+pub const DAQmxErrorStartTrigDigPatternSizeDoesNotMatchSourceSize:
+          ::std::os::raw::c_int =
+    -200894;
+pub const DAQmxErrorChangeDetectionRisingAndFallingEdgeChanDontMatch:
+          ::std::os::raw::c_int =
+    -200893;
+pub const DAQmxErrorPhysicalChansForChangeDetectionAndPatternMatch653x:
+          ::std::os::raw::c_int =
+    -200892;
+pub const DAQmxErrorCanExportOnlyOnboardSampClk: ::std::os::raw::c_int =
+    -200891;
+pub const DAQmxErrorInternalSampClkNotRisingEdge: ::std::os::raw::c_int =
+    -200890;
+pub const DAQmxErrorRefTrigDigPatternChanNotInTask: ::std::os::raw::c_int =
+    -200889;
+pub const DAQmxErrorRefTrigDigPatternChanNotTristated: ::std::os::raw::c_int =
+    -200888;
+pub const DAQmxErrorStartTrigDigPatternChanNotInTask: ::std::os::raw::c_int =
+    -200887;
+pub const DAQmxErrorStartTrigDigPatternChanNotTristated: ::std::os::raw::c_int
+          =
+    -200886;
+pub const DAQmxErrorPXIStarAndClock10Sync: ::std::os::raw::c_int = -200885;
+pub const DAQmxErrorGlobalChanCannotBeSavedSoInteractiveEditsAllowed:
+          ::std::os::raw::c_int =
+    -200884;
+pub const DAQmxErrorTaskCannotBeSavedSoInteractiveEditsAllowed:
+          ::std::os::raw::c_int =
+    -200883;
+pub const DAQmxErrorInvalidGlobalChan: ::std::os::raw::c_int = -200882;
+pub const DAQmxErrorEveryNSampsEventAlreadyRegistered: ::std::os::raw::c_int =
+    -200881;
+pub const DAQmxErrorEveryNSampsEventIntervalZeroNotSupported:
+          ::std::os::raw::c_int =
+    -200880;
+pub const DAQmxErrorChanSizeTooBigForU16PortWrite: ::std::os::raw::c_int =
+    -200879;
+pub const DAQmxErrorChanSizeTooBigForU16PortRead: ::std::os::raw::c_int =
+    -200878;
+pub const DAQmxErrorBufferSizeNotMultipleOfEveryNSampsEventIntervalWhenDMA:
+          ::std::os::raw::c_int =
+    -200877;
+pub const DAQmxErrorWriteWhenTaskNotRunningCOTicks: ::std::os::raw::c_int =
+    -200876;
+pub const DAQmxErrorWriteWhenTaskNotRunningCOFreq: ::std::os::raw::c_int =
+    -200875;
+pub const DAQmxErrorWriteWhenTaskNotRunningCOTime: ::std::os::raw::c_int =
+    -200874;
+pub const DAQmxErrorAOMinMaxNotSupportedDACRangeTooSmall:
+          ::std::os::raw::c_int =
+    -200873;
+pub const DAQmxErrorAOMinMaxNotSupportedGivenDACRange: ::std::os::raw::c_int =
+    -200872;
+pub const DAQmxErrorAOMinMaxNotSupportedGivenDACRangeAndOffsetVal:
+          ::std::os::raw::c_int =
+    -200871;
+pub const DAQmxErrorAOMinMaxNotSupportedDACOffsetValInappropriate:
+          ::std::os::raw::c_int =
+    -200870;
+pub const DAQmxErrorAOMinMaxNotSupportedGivenDACOffsetVal:
+          ::std::os::raw::c_int =
+    -200869;
+pub const DAQmxErrorAOMinMaxNotSupportedDACRefValTooSmall:
+          ::std::os::raw::c_int =
+    -200868;
+pub const DAQmxErrorAOMinMaxNotSupportedGivenDACRefVal: ::std::os::raw::c_int
+          =
+    -200867;
+pub const DAQmxErrorAOMinMaxNotSupportedGivenDACRefAndOffsetVal:
+          ::std::os::raw::c_int =
+    -200866;
+pub const DAQmxErrorWhenAcqCompAndNumSampsPerChanExceedsOnBrdBufSize:
+          ::std::os::raw::c_int =
+    -200865;
+pub const DAQmxErrorWhenAcqCompAndNoRefTrig: ::std::os::raw::c_int = -200864;
+pub const DAQmxErrorWaitForNextSampClkNotSupported: ::std::os::raw::c_int =
+    -200863;
+pub const DAQmxErrorDevInUnidentifiedPXIChassis: ::std::os::raw::c_int =
+    -200862;
+pub const DAQmxErrorMaxSoundPressureMicSensitivitRelatedAIPropertiesNotSupportedByDev:
+          ::std::os::raw::c_int =
+    -200861;
+pub const DAQmxErrorMaxSoundPressureAndMicSensitivityNotSupportedByDev:
+          ::std::os::raw::c_int =
+    -200860;
+pub const DAQmxErrorAOBufferSizeZeroForSampClkTimingType:
+          ::std::os::raw::c_int =
+    -200859;
+pub const DAQmxErrorAOCallWriteBeforeStartForSampClkTimingType:
+          ::std::os::raw::c_int =
+    -200858;
+pub const DAQmxErrorInvalidCalLowPassCutoffFreq: ::std::os::raw::c_int =
+    -200857;
+pub const DAQmxErrorSimulationCannotBeDisabledForDevCreatedAsSimulatedDev:
+          ::std::os::raw::c_int =
+    -200856;
+pub const DAQmxErrorCannotAddNewDevsAfterTaskConfiguration:
+          ::std::os::raw::c_int =
+    -200855;
+pub const DAQmxErrorDifftSyncPulseSrcAndSampClkTimebaseSrcDevMultiDevTask:
+          ::std::os::raw::c_int =
+    -200854;
+pub const DAQmxErrorTermWithoutDevInMultiDevTask: ::std::os::raw::c_int =
+    -200853;
+pub const DAQmxErrorSyncNoDevSampClkTimebaseOrSyncPulseInPXISlot2:
+          ::std::os::raw::c_int =
+    -200852;
+pub const DAQmxErrorPhysicalChanNotOnThisConnector: ::std::os::raw::c_int =
+    -200851;
+pub const DAQmxErrorNumSampsToWaitNotGreaterThanZeroInScript:
+          ::std::os::raw::c_int =
+    -200850;
+pub const DAQmxErrorNumSampsToWaitNotMultipleOfAlignmentQuantumInScript:
+          ::std::os::raw::c_int =
+    -200849;
+pub const DAQmxErrorEveryNSamplesEventNotSupportedForNonBufferedTasks:
+          ::std::os::raw::c_int =
+    -200848;
+pub const DAQmxErrorBufferedAndDataXferPIO: ::std::os::raw::c_int = -200847;
+pub const DAQmxErrorCannotWriteWhenAutoStartFalseAndTaskNotRunning:
+          ::std::os::raw::c_int =
+    -200846;
+pub const DAQmxErrorNonBufferedAndDataXferInterrupts: ::std::os::raw::c_int =
+    -200845;
+pub const DAQmxErrorWriteFailedMultipleCtrsWithFREQOUT: ::std::os::raw::c_int
+          =
+    -200844;
+pub const DAQmxErrorReadNotCompleteBefore3SampClkEdges: ::std::os::raw::c_int
+          =
+    -200843;
+pub const DAQmxErrorCtrHWTimedSinglePointAndDataXferNotProgIO:
+          ::std::os::raw::c_int =
+    -200842;
+pub const DAQmxErrorPrescalerNot1ForInputTerminal: ::std::os::raw::c_int =
+    -200841;
+pub const DAQmxErrorPrescalerNot1ForTimebaseSrc: ::std::os::raw::c_int =
+    -200840;
+pub const DAQmxErrorSampClkTimingTypeWhenTristateIsFalse:
+          ::std::os::raw::c_int =
+    -200839;
+pub const DAQmxErrorOutputBufferSizeNotMultOfXferSize: ::std::os::raw::c_int =
+    -200838;
+pub const DAQmxErrorSampPerChanNotMultOfXferSize: ::std::os::raw::c_int =
+    -200837;
+pub const DAQmxErrorWriteToTEDSFailed: ::std::os::raw::c_int = -200836;
+pub const DAQmxErrorSCXIDevNotUsablePowerTurnedOff: ::std::os::raw::c_int =
+    -200835;
+pub const DAQmxErrorCannotReadWhenAutoStartFalseBufSizeZeroAndTaskNotRunning:
+          ::std::os::raw::c_int =
+    -200834;
+pub const DAQmxErrorCannotReadWhenAutoStartFalseHWTimedSinglePtAndTaskNotRunning:
+          ::std::os::raw::c_int =
+    -200833;
+pub const DAQmxErrorCannotReadWhenAutoStartFalseOnDemandAndTaskNotRunning:
+          ::std::os::raw::c_int =
+    -200832;
+pub const DAQmxErrorSimultaneousAOWhenNotOnDemandTiming: ::std::os::raw::c_int
+          =
+    -200831;
+pub const DAQmxErrorMemMapAndSimultaneousAO: ::std::os::raw::c_int = -200830;
+pub const DAQmxErrorWriteFailedMultipleCOOutputTypes: ::std::os::raw::c_int =
+    -200829;
+pub const DAQmxErrorWriteToTEDSNotSupportedOnRT: ::std::os::raw::c_int =
+    -200828;
+pub const DAQmxErrorVirtualTEDSDataFileError: ::std::os::raw::c_int = -200827;
+pub const DAQmxErrorTEDSSensorDataError: ::std::os::raw::c_int = -200826;
+pub const DAQmxErrorDataSizeMoreThanSizeOfEEPROMOnTEDS: ::std::os::raw::c_int
+          =
+    -200825;
+pub const DAQmxErrorPROMOnTEDSContainsBasicTEDSData: ::std::os::raw::c_int =
+    -200824;
+pub const DAQmxErrorPROMOnTEDSAlreadyWritten: ::std::os::raw::c_int = -200823;
+pub const DAQmxErrorTEDSDoesNotContainPROM: ::std::os::raw::c_int = -200822;
+pub const DAQmxErrorHWTimedSinglePointNotSupportedAI: ::std::os::raw::c_int =
+    -200821;
+pub const DAQmxErrorHWTimedSinglePointOddNumChansInAITask:
+          ::std::os::raw::c_int =
+    -200820;
+pub const DAQmxErrorCantUseOnlyOnBoardMemWithProgrammedIO:
+          ::std::os::raw::c_int =
+    -200819;
+pub const DAQmxErrorSwitchDevShutDownDueToHighTemp: ::std::os::raw::c_int =
+    -200818;
+pub const DAQmxErrorExcitationNotSupportedWhenTermCfgDiff:
+          ::std::os::raw::c_int =
+    -200817;
+pub const DAQmxErrorTEDSMinElecValGEMaxElecVal: ::std::os::raw::c_int =
+    -200816;
+pub const DAQmxErrorTEDSMinPhysValGEMaxPhysVal: ::std::os::raw::c_int =
+    -200815;
+pub const DAQmxErrorCIOnboardClockNotSupportedAsInputTerm:
+          ::std::os::raw::c_int =
+    -200814;
+pub const DAQmxErrorInvalidSampModeForPositionMeas: ::std::os::raw::c_int =
+    -200813;
+pub const DAQmxErrorTrigWhenAOHWTimedSinglePtSampMode: ::std::os::raw::c_int =
+    -200812;
+pub const DAQmxErrorDAQmxCantUseStringDueToUnknownChar: ::std::os::raw::c_int
+          =
+    -200811;
+pub const DAQmxErrorDAQmxCantRetrieveStringDueToUnknownChar:
+          ::std::os::raw::c_int =
+    -200810;
+pub const DAQmxErrorClearTEDSNotSupportedOnRT: ::std::os::raw::c_int =
+    -200809;
+pub const DAQmxErrorCfgTEDSNotSupportedOnRT: ::std::os::raw::c_int = -200808;
+pub const DAQmxErrorProgFilterClkCfgdToDifferentMinPulseWidthBySameTask1PerDev:
+          ::std::os::raw::c_int =
+    -200807;
+pub const DAQmxErrorProgFilterClkCfgdToDifferentMinPulseWidthByAnotherTask1PerDev:
+          ::std::os::raw::c_int =
+    -200806;
+pub const DAQmxErrorNoLastExtCalDateTimeLastExtCalNotDAQmx:
+          ::std::os::raw::c_int =
+    -200804;
+pub const DAQmxErrorCannotWriteNotStartedAutoStartFalseNotOnDemandHWTimedSglPt:
+          ::std::os::raw::c_int =
+    -200803;
+pub const DAQmxErrorCannotWriteNotStartedAutoStartFalseNotOnDemandBufSizeZero:
+          ::std::os::raw::c_int =
+    -200802;
+pub const DAQmxErrorCOInvalidTimingSrcDueToSignal: ::std::os::raw::c_int =
+    -200801;
+pub const DAQmxErrorCIInvalidTimingSrcForSampClkDueToSampTimingType:
+          ::std::os::raw::c_int =
+    -200800;
+pub const DAQmxErrorCIInvalidTimingSrcForEventCntDueToSampMode:
+          ::std::os::raw::c_int =
+    -200799;
+pub const DAQmxErrorNoChangeDetectOnNonInputDigLineForDev:
+          ::std::os::raw::c_int =
+    -200798;
+pub const DAQmxErrorEmptyStringTermNameNotSupported: ::std::os::raw::c_int =
+    -200797;
+pub const DAQmxErrorMemMapEnabledForHWTimedNonBufferedAO:
+          ::std::os::raw::c_int =
+    -200796;
+pub const DAQmxErrorDevOnboardMemOverflowDuringHWTimedNonBufferedGen:
+          ::std::os::raw::c_int =
+    -200795;
+pub const DAQmxErrorCODAQmxWriteMultipleChans: ::std::os::raw::c_int =
+    -200794;
+pub const DAQmxErrorCantMaintainExistingValueAOSync: ::std::os::raw::c_int =
+    -200793;
+pub const DAQmxErrorMStudioMultiplePhysChansNotSupported:
+          ::std::os::raw::c_int =
+    -200792;
+pub const DAQmxErrorCantConfigureTEDSForChan: ::std::os::raw::c_int = -200791;
+pub const DAQmxErrorWriteDataTypeTooSmall: ::std::os::raw::c_int = -200790;
+pub const DAQmxErrorReadDataTypeTooSmall: ::std::os::raw::c_int = -200789;
+pub const DAQmxErrorMeasuredBridgeOffsetTooHigh: ::std::os::raw::c_int =
+    -200788;
+pub const DAQmxErrorStartTrigConflictWithCOHWTimedSinglePt:
+          ::std::os::raw::c_int =
+    -200787;
+pub const DAQmxErrorSampClkRateExtSampClkTimebaseRateMismatch:
+          ::std::os::raw::c_int =
+    -200786;
+pub const DAQmxErrorInvalidTimingSrcDueToSampTimingType: ::std::os::raw::c_int
+          =
+    -200785;
+pub const DAQmxErrorVirtualTEDSFileNotFound: ::std::os::raw::c_int = -200784;
+pub const DAQmxErrorMStudioNoForwardPolyScaleCoeffs: ::std::os::raw::c_int =
+    -200783;
+pub const DAQmxErrorMStudioNoReversePolyScaleCoeffs: ::std::os::raw::c_int =
+    -200782;
+pub const DAQmxErrorMStudioNoPolyScaleCoeffsUseCalc: ::std::os::raw::c_int =
+    -200781;
+pub const DAQmxErrorMStudioNoForwardPolyScaleCoeffsUseCalc:
+          ::std::os::raw::c_int =
+    -200780;
+pub const DAQmxErrorMStudioNoReversePolyScaleCoeffsUseCalc:
+          ::std::os::raw::c_int =
+    -200779;
+pub const DAQmxErrorCOSampModeSampTimingTypeSampClkConflict:
+          ::std::os::raw::c_int =
+    -200778;
+pub const DAQmxErrorDevCannotProduceMinPulseWidth: ::std::os::raw::c_int =
+    -200777;
+pub const DAQmxErrorCannotProduceMinPulseWidthGivenPropertyValues:
+          ::std::os::raw::c_int =
+    -200776;
+pub const DAQmxErrorTermCfgdToDifferentMinPulseWidthByAnotherTask:
+          ::std::os::raw::c_int =
+    -200775;
+pub const DAQmxErrorTermCfgdToDifferentMinPulseWidthByAnotherProperty:
+          ::std::os::raw::c_int =
+    -200774;
+pub const DAQmxErrorDigSyncNotAvailableOnTerm: ::std::os::raw::c_int =
+    -200773;
+pub const DAQmxErrorDigFilterNotAvailableOnTerm: ::std::os::raw::c_int =
+    -200772;
+pub const DAQmxErrorDigFilterEnabledMinPulseWidthNotCfg: ::std::os::raw::c_int
+          =
+    -200771;
+pub const DAQmxErrorDigFilterAndSyncBothEnabled: ::std::os::raw::c_int =
+    -200770;
+pub const DAQmxErrorHWTimedSinglePointAOAndDataXferNotProgIO:
+          ::std::os::raw::c_int =
+    -200769;
+pub const DAQmxErrorNonBufferedAOAndDataXferNotProgIO: ::std::os::raw::c_int =
+    -200768;
+pub const DAQmxErrorProgIODataXferForBufferedAO: ::std::os::raw::c_int =
+    -200767;
+pub const DAQmxErrorTEDSLegacyTemplateIDInvalidOrUnsupported:
+          ::std::os::raw::c_int =
+    -200766;
+pub const DAQmxErrorTEDSMappingMethodInvalidOrUnsupported:
+          ::std::os::raw::c_int =
+    -200765;
+pub const DAQmxErrorTEDSLinearMappingSlopeZero: ::std::os::raw::c_int =
+    -200764;
+pub const DAQmxErrorAIInputBufferSizeNotMultOfXferSize: ::std::os::raw::c_int
+          =
+    -200763;
+pub const DAQmxErrorNoSyncPulseExtSampClkTimebase: ::std::os::raw::c_int =
+    -200762;
+pub const DAQmxErrorNoSyncPulseAnotherTaskRunning: ::std::os::raw::c_int =
+    -200761;
+pub const DAQmxErrorAOMinMaxNotInGainRange: ::std::os::raw::c_int = -200760;
+pub const DAQmxErrorAOMinMaxNotInDACRange: ::std::os::raw::c_int = -200759;
+pub const DAQmxErrorDevOnlySupportsSampClkTimingAO: ::std::os::raw::c_int =
+    -200758;
+pub const DAQmxErrorDevOnlySupportsSampClkTimingAI: ::std::os::raw::c_int =
+    -200757;
+pub const DAQmxErrorTEDSIncompatibleSensorAndMeasType: ::std::os::raw::c_int =
+    -200756;
+pub const DAQmxErrorTEDSMultipleCalTemplatesNotSupported:
+          ::std::os::raw::c_int =
+    -200755;
+pub const DAQmxErrorTEDSTemplateParametersNotSupported: ::std::os::raw::c_int
+          =
+    -200754;
+pub const DAQmxErrorParsingTEDSData: ::std::os::raw::c_int = -200753;
+pub const DAQmxErrorMultipleActivePhysChansNotSupported: ::std::os::raw::c_int
+          =
+    -200752;
+pub const DAQmxErrorNoChansSpecdForChangeDetect: ::std::os::raw::c_int =
+    -200751;
+pub const DAQmxErrorInvalidCalVoltageForGivenGain: ::std::os::raw::c_int =
+    -200750;
+pub const DAQmxErrorInvalidCalGain: ::std::os::raw::c_int = -200749;
+pub const DAQmxErrorMultipleWritesBetweenSampClks: ::std::os::raw::c_int =
+    -200748;
+pub const DAQmxErrorInvalidAcqTypeForFREQOUT: ::std::os::raw::c_int = -200747;
+pub const DAQmxErrorSuitableTimebaseNotFoundTimeCombo2: ::std::os::raw::c_int
+          =
+    -200746;
+pub const DAQmxErrorSuitableTimebaseNotFoundFrequencyCombo2:
+          ::std::os::raw::c_int =
+    -200745;
+pub const DAQmxErrorRefClkRateRefClkSrcMismatch: ::std::os::raw::c_int =
+    -200744;
+pub const DAQmxErrorNoTEDSTerminalBlock: ::std::os::raw::c_int = -200743;
+pub const DAQmxErrorCorruptedTEDSMemory: ::std::os::raw::c_int = -200742;
+pub const DAQmxErrorTEDSNotSupported: ::std::os::raw::c_int = -200741;
+pub const DAQmxErrorTimingSrcTaskStartedBeforeTimedLoop: ::std::os::raw::c_int
+          =
+    -200740;
+pub const DAQmxErrorPropertyNotSupportedForTimingSrc: ::std::os::raw::c_int =
+    -200739;
+pub const DAQmxErrorTimingSrcDoesNotExist: ::std::os::raw::c_int = -200738;
+pub const DAQmxErrorInputBufferSizeNotEqualSampsPerChanForFiniteSampMode:
+          ::std::os::raw::c_int =
+    -200737;
+pub const DAQmxErrorFREQOUTCannotProduceDesiredFrequency2:
+          ::std::os::raw::c_int =
+    -200736;
+pub const DAQmxErrorExtRefClkRateNotSpecified: ::std::os::raw::c_int =
+    -200735;
+pub const DAQmxErrorDeviceDoesNotSupportDMADataXferForNonBufferedAcq:
+          ::std::os::raw::c_int =
+    -200734;
+pub const DAQmxErrorDigFilterMinPulseWidthSetWhenTristateIsFalse:
+          ::std::os::raw::c_int =
+    -200733;
+pub const DAQmxErrorDigFilterEnableSetWhenTristateIsFalse:
+          ::std::os::raw::c_int =
+    -200732;
+pub const DAQmxErrorNoHWTimingWithOnDemand: ::std::os::raw::c_int = -200731;
+pub const DAQmxErrorCannotDetectChangesWhenTristateIsFalse:
+          ::std::os::raw::c_int =
+    -200730;
+pub const DAQmxErrorCannotHandshakeWhenTristateIsFalse: ::std::os::raw::c_int
+          =
+    -200729;
+pub const DAQmxErrorLinesUsedForStaticInputNotForHandshakingControl:
+          ::std::os::raw::c_int =
+    -200728;
+pub const DAQmxErrorLinesUsedForHandshakingControlNotForStaticInput:
+          ::std::os::raw::c_int =
+    -200727;
+pub const DAQmxErrorLinesUsedForStaticInputNotForHandshakingInput:
+          ::std::os::raw::c_int =
+    -200726;
+pub const DAQmxErrorLinesUsedForHandshakingInputNotForStaticInput:
+          ::std::os::raw::c_int =
+    -200725;
+pub const DAQmxErrorDifferentDITristateValsForChansInTask:
+          ::std::os::raw::c_int =
+    -200724;
+pub const DAQmxErrorTimebaseCalFreqVarianceTooLarge: ::std::os::raw::c_int =
+    -200723;
+pub const DAQmxErrorTimebaseCalFailedToConverge: ::std::os::raw::c_int =
+    -200722;
+pub const DAQmxErrorInadequateResolutionForTimebaseCal: ::std::os::raw::c_int
+          =
+    -200721;
+pub const DAQmxErrorInvalidAOGainCalConst: ::std::os::raw::c_int = -200720;
+pub const DAQmxErrorInvalidAOOffsetCalConst: ::std::os::raw::c_int = -200719;
+pub const DAQmxErrorInvalidAIGainCalConst: ::std::os::raw::c_int = -200718;
+pub const DAQmxErrorInvalidAIOffsetCalConst: ::std::os::raw::c_int = -200717;
+pub const DAQmxErrorDigOutputOverrun: ::std::os::raw::c_int = -200716;
+pub const DAQmxErrorDigInputOverrun: ::std::os::raw::c_int = -200715;
+pub const DAQmxErrorAcqStoppedDriverCantXferDataFastEnough:
+          ::std::os::raw::c_int =
+    -200714;
+pub const DAQmxErrorChansCantAppearInSameTask: ::std::os::raw::c_int =
+    -200713;
+pub const DAQmxErrorInputCfgFailedBecauseWatchdogExpired:
+          ::std::os::raw::c_int =
+    -200712;
+pub const DAQmxErrorAnalogTrigChanNotExternal: ::std::os::raw::c_int =
+    -200711;
+pub const DAQmxErrorTooManyChansForInternalAIInputSrc: ::std::os::raw::c_int =
+    -200710;
+pub const DAQmxErrorTEDSSensorNotDetected: ::std::os::raw::c_int = -200709;
+pub const DAQmxErrorPrptyGetSpecdActiveItemFailedDueToDifftValues:
+          ::std::os::raw::c_int =
+    -200708;
+pub const DAQmxErrorRoutingDestTermPXIClk10InNotInSlot2: ::std::os::raw::c_int
+          =
+    -200706;
+pub const DAQmxErrorRoutingDestTermPXIStarXNotInSlot2: ::std::os::raw::c_int =
+    -200705;
+pub const DAQmxErrorRoutingSrcTermPXIStarXNotInSlot2: ::std::os::raw::c_int =
+    -200704;
+pub const DAQmxErrorRoutingSrcTermPXIStarInSlot16AndAbove:
+          ::std::os::raw::c_int =
+    -200703;
+pub const DAQmxErrorRoutingDestTermPXIStarInSlot16AndAbove:
+          ::std::os::raw::c_int =
+    -200702;
+pub const DAQmxErrorRoutingDestTermPXIStarInSlot2: ::std::os::raw::c_int =
+    -200701;
+pub const DAQmxErrorRoutingSrcTermPXIStarInSlot2: ::std::os::raw::c_int =
+    -200700;
+pub const DAQmxErrorRoutingDestTermPXIChassisNotIdentified:
+          ::std::os::raw::c_int =
+    -200699;
+pub const DAQmxErrorRoutingSrcTermPXIChassisNotIdentified:
+          ::std::os::raw::c_int =
+    -200698;
+pub const DAQmxErrorFailedToAcquireCalData: ::std::os::raw::c_int = -200697;
+pub const DAQmxErrorBridgeOffsetNullingCalNotSupported: ::std::os::raw::c_int
+          =
+    -200696;
+pub const DAQmxErrorAIMaxNotSpecified: ::std::os::raw::c_int = -200695;
+pub const DAQmxErrorAIMinNotSpecified: ::std::os::raw::c_int = -200694;
+pub const DAQmxErrorOddTotalBufferSizeToWrite: ::std::os::raw::c_int =
+    -200693;
+pub const DAQmxErrorOddTotalNumSampsToWrite: ::std::os::raw::c_int = -200692;
+pub const DAQmxErrorBufferWithWaitMode: ::std::os::raw::c_int = -200691;
+pub const DAQmxErrorBufferWithHWTimedSinglePointSampMode:
+          ::std::os::raw::c_int =
+    -200690;
+pub const DAQmxErrorCOWritePulseLowTicksNotSupported: ::std::os::raw::c_int =
+    -200689;
+pub const DAQmxErrorCOWritePulseHighTicksNotSupported: ::std::os::raw::c_int =
+    -200688;
+pub const DAQmxErrorCOWritePulseLowTimeOutOfRange: ::std::os::raw::c_int =
+    -200687;
+pub const DAQmxErrorCOWritePulseHighTimeOutOfRange: ::std::os::raw::c_int =
+    -200686;
+pub const DAQmxErrorCOWriteFreqOutOfRange: ::std::os::raw::c_int = -200685;
+pub const DAQmxErrorCOWriteDutyCycleOutOfRange: ::std::os::raw::c_int =
+    -200684;
+pub const DAQmxErrorInvalidInstallation: ::std::os::raw::c_int = -200683;
+pub const DAQmxErrorRefTrigMasterSessionUnavailable: ::std::os::raw::c_int =
+    -200682;
+pub const DAQmxErrorRouteFailedBecauseWatchdogExpired: ::std::os::raw::c_int =
+    -200681;
+pub const DAQmxErrorDeviceShutDownDueToHighTemp: ::std::os::raw::c_int =
+    -200680;
+pub const DAQmxErrorNoMemMapWhenHWTimedSinglePoint: ::std::os::raw::c_int =
+    -200679;
+pub const DAQmxErrorWriteFailedBecauseWatchdogExpired: ::std::os::raw::c_int =
+    -200678;
+pub const DAQmxErrorDifftInternalAIInputSrcs: ::std::os::raw::c_int = -200677;
+pub const DAQmxErrorDifftAIInputSrcInOneChanGroup: ::std::os::raw::c_int =
+    -200676;
+pub const DAQmxErrorInternalAIInputSrcInMultChanGroups: ::std::os::raw::c_int
+          =
+    -200675;
+pub const DAQmxErrorSwitchOpFailedDueToPrevError: ::std::os::raw::c_int =
+    -200674;
+pub const DAQmxErrorWroteMultiSampsUsingSingleSampWrite: ::std::os::raw::c_int
+          =
+    -200673;
+pub const DAQmxErrorMismatchedInputArraySizes: ::std::os::raw::c_int =
+    -200672;
+pub const DAQmxErrorCantExceedRelayDriveLimit: ::std::os::raw::c_int =
+    -200671;
+pub const DAQmxErrorDACRngLowNotEqualToMinusRefVal: ::std::os::raw::c_int =
+    -200670;
+pub const DAQmxErrorCantAllowConnectDACToGnd: ::std::os::raw::c_int = -200669;
+pub const DAQmxErrorWatchdogTimeoutOutOfRangeAndNotSpecialVal:
+          ::std::os::raw::c_int =
+    -200668;
+pub const DAQmxErrorNoWatchdogOutputOnPortReservedForInput:
+          ::std::os::raw::c_int =
+    -200667;
+pub const DAQmxErrorNoInputOnPortCfgdForWatchdogOutput: ::std::os::raw::c_int
+          =
+    -200666;
+pub const DAQmxErrorWatchdogExpirationStateNotEqualForLinesInPort:
+          ::std::os::raw::c_int =
+    -200665;
+pub const DAQmxErrorCannotPerformOpWhenTaskNotReserved: ::std::os::raw::c_int
+          =
+    -200664;
+pub const DAQmxErrorPowerupStateNotSupported: ::std::os::raw::c_int = -200663;
+pub const DAQmxErrorWatchdogTimerNotSupported: ::std::os::raw::c_int =
+    -200662;
+pub const DAQmxErrorOpNotSupportedWhenRefClkSrcNone: ::std::os::raw::c_int =
+    -200661;
+pub const DAQmxErrorSampClkRateUnavailable: ::std::os::raw::c_int = -200660;
+pub const DAQmxErrorPrptyGetSpecdSingleActiveChanFailedDueToDifftVals:
+          ::std::os::raw::c_int =
+    -200659;
+pub const DAQmxErrorPrptyGetImpliedActiveChanFailedDueToDifftVals:
+          ::std::os::raw::c_int =
+    -200658;
+pub const DAQmxErrorPrptyGetSpecdActiveChanFailedDueToDifftVals:
+          ::std::os::raw::c_int =
+    -200657;
+pub const DAQmxErrorNoRegenWhenUsingBrdMem: ::std::os::raw::c_int = -200656;
+pub const DAQmxErrorNonbufferedReadMoreThanSampsPerChan: ::std::os::raw::c_int
+          =
+    -200655;
+pub const DAQmxErrorWatchdogExpirationTristateNotSpecdForEntirePort:
+          ::std::os::raw::c_int =
+    -200654;
+pub const DAQmxErrorPowerupTristateNotSpecdForEntirePort:
+          ::std::os::raw::c_int =
+    -200653;
+pub const DAQmxErrorPowerupStateNotSpecdForEntirePort: ::std::os::raw::c_int =
+    -200652;
+pub const DAQmxErrorCantSetWatchdogExpirationOnDigInChan:
+          ::std::os::raw::c_int =
+    -200651;
+pub const DAQmxErrorCantSetPowerupStateOnDigInChan: ::std::os::raw::c_int =
+    -200650;
+pub const DAQmxErrorPhysChanNotInTask: ::std::os::raw::c_int = -200649;
+pub const DAQmxErrorPhysChanDevNotInTask: ::std::os::raw::c_int = -200648;
+pub const DAQmxErrorDigInputNotSupported: ::std::os::raw::c_int = -200647;
+pub const DAQmxErrorDigFilterIntervalNotEqualForLines: ::std::os::raw::c_int =
+    -200646;
+pub const DAQmxErrorDigFilterIntervalAlreadyCfgd: ::std::os::raw::c_int =
+    -200645;
+pub const DAQmxErrorCantResetExpiredWatchdog: ::std::os::raw::c_int = -200644;
+pub const DAQmxErrorActiveChanTooManyLinesSpecdWhenGettingPrpty:
+          ::std::os::raw::c_int =
+    -200643;
+pub const DAQmxErrorActiveChanNotSpecdWhenGetting1LinePrpty:
+          ::std::os::raw::c_int =
+    -200642;
+pub const DAQmxErrorDigPrptyCannotBeSetPerLine: ::std::os::raw::c_int =
+    -200641;
+pub const DAQmxErrorSendAdvCmpltAfterWaitForTrigInScanlist:
+          ::std::os::raw::c_int =
+    -200640;
+pub const DAQmxErrorDisconnectionRequiredInScanlist: ::std::os::raw::c_int =
+    -200639;
+pub const DAQmxErrorTwoWaitForTrigsAfterConnectionInScanlist:
+          ::std::os::raw::c_int =
+    -200638;
+pub const DAQmxErrorActionSeparatorRequiredAfterBreakingConnectionInScanlist:
+          ::std::os::raw::c_int =
+    -200637;
+pub const DAQmxErrorConnectionInScanlistMustWaitForTrig: ::std::os::raw::c_int
+          =
+    -200636;
+pub const DAQmxErrorActionNotSupportedTaskNotWatchdog: ::std::os::raw::c_int =
+    -200635;
+pub const DAQmxErrorWfmNameSameAsScriptName: ::std::os::raw::c_int = -200634;
+pub const DAQmxErrorScriptNameSameAsWfmName: ::std::os::raw::c_int = -200633;
+pub const DAQmxErrorDSFStopClock: ::std::os::raw::c_int = -200632;
+pub const DAQmxErrorDSFReadyForStartClock: ::std::os::raw::c_int = -200631;
+pub const DAQmxErrorWriteOffsetNotMultOfIncr: ::std::os::raw::c_int = -200630;
+pub const DAQmxErrorDifferentPrptyValsNotSupportedOnDev: ::std::os::raw::c_int
+          =
+    -200629;
+pub const DAQmxErrorRefAndPauseTrigConfigured: ::std::os::raw::c_int =
+    -200628;
+pub const DAQmxErrorFailedToEnableHighSpeedInputClock: ::std::os::raw::c_int =
+    -200627;
+pub const DAQmxErrorEmptyPhysChanInPowerUpStatesArray: ::std::os::raw::c_int =
+    -200626;
+pub const DAQmxErrorActivePhysChanTooManyLinesSpecdWhenGettingPrpty:
+          ::std::os::raw::c_int =
+    -200625;
+pub const DAQmxErrorActivePhysChanNotSpecdWhenGetting1LinePrpty:
+          ::std::os::raw::c_int =
+    -200624;
+pub const DAQmxErrorPXIDevTempCausedShutDown: ::std::os::raw::c_int = -200623;
+pub const DAQmxErrorInvalidNumSampsToWrite: ::std::os::raw::c_int = -200622;
+pub const DAQmxErrorOutputFIFOUnderflow2: ::std::os::raw::c_int = -200621;
+pub const DAQmxErrorRepeatedAIPhysicalChan: ::std::os::raw::c_int = -200620;
+pub const DAQmxErrorMultScanOpsInOneChassis: ::std::os::raw::c_int = -200619;
+pub const DAQmxErrorInvalidAIChanOrder: ::std::os::raw::c_int = -200618;
+pub const DAQmxErrorReversePowerProtectionActivated: ::std::os::raw::c_int =
+    -200617;
+pub const DAQmxErrorInvalidAsynOpHandle: ::std::os::raw::c_int = -200616;
+pub const DAQmxErrorFailedToEnableHighSpeedOutput: ::std::os::raw::c_int =
+    -200615;
+pub const DAQmxErrorCannotReadPastEndOfRecord: ::std::os::raw::c_int =
+    -200614;
+pub const DAQmxErrorAcqStoppedToPreventInputBufferOverwriteOneDataXferMech:
+          ::std::os::raw::c_int =
+    -200613;
+pub const DAQmxErrorZeroBasedChanIndexInvalid: ::std::os::raw::c_int =
+    -200612;
+pub const DAQmxErrorNoChansOfGivenTypeInTask: ::std::os::raw::c_int = -200611;
+pub const DAQmxErrorSampClkSrcInvalidForOutputValidForInput:
+          ::std::os::raw::c_int =
+    -200610;
+pub const DAQmxErrorOutputBufSizeTooSmallToStartGen: ::std::os::raw::c_int =
+    -200609;
+pub const DAQmxErrorInputBufSizeTooSmallToStartAcq: ::std::os::raw::c_int =
+    -200608;
+pub const DAQmxErrorExportTwoSignalsOnSameTerminal: ::std::os::raw::c_int =
+    -200607;
+pub const DAQmxErrorChanIndexInvalid: ::std::os::raw::c_int = -200606;
+pub const DAQmxErrorRangeSyntaxNumberTooBig: ::std::os::raw::c_int = -200605;
+pub const DAQmxErrorNULLPtr: ::std::os::raw::c_int = -200604;
+pub const DAQmxErrorScaledMinEqualMax: ::std::os::raw::c_int = -200603;
+pub const DAQmxErrorPreScaledMinEqualMax: ::std::os::raw::c_int = -200602;
+pub const DAQmxErrorPropertyNotSupportedForScaleType: ::std::os::raw::c_int =
+    -200601;
+pub const DAQmxErrorChannelNameGenerationNumberTooBig: ::std::os::raw::c_int =
+    -200600;
+pub const DAQmxErrorRepeatedNumberInScaledValues: ::std::os::raw::c_int =
+    -200599;
+pub const DAQmxErrorRepeatedNumberInPreScaledValues: ::std::os::raw::c_int =
+    -200598;
+pub const DAQmxErrorLinesAlreadyReservedForOutput: ::std::os::raw::c_int =
+    -200597;
+pub const DAQmxErrorSwitchOperationChansSpanMultipleDevsInList:
+          ::std::os::raw::c_int =
+    -200596;
+pub const DAQmxErrorInvalidIDInListAtBeginningOfSwitchOperation:
+          ::std::os::raw::c_int =
+    -200595;
+pub const DAQmxErrorMStudioInvalidPolyDirection: ::std::os::raw::c_int =
+    -200594;
+pub const DAQmxErrorMStudioPropertyGetWhileTaskNotVerified:
+          ::std::os::raw::c_int =
+    -200593;
+pub const DAQmxErrorRangeWithTooManyObjects: ::std::os::raw::c_int = -200592;
+pub const DAQmxErrorCppDotNetAPINegativeBufferSize: ::std::os::raw::c_int =
+    -200591;
+pub const DAQmxErrorCppCantRemoveInvalidEventHandler: ::std::os::raw::c_int =
+    -200590;
+pub const DAQmxErrorCppCantRemoveEventHandlerTwice: ::std::os::raw::c_int =
+    -200589;
+pub const DAQmxErrorCppCantRemoveOtherObjectsEventHandler:
+          ::std::os::raw::c_int =
+    -200588;
+pub const DAQmxErrorDigLinesReservedOrUnavailable: ::std::os::raw::c_int =
+    -200587;
+pub const DAQmxErrorDSFFailedToResetStream: ::std::os::raw::c_int = -200586;
+pub const DAQmxErrorDSFReadyForOutputNotAsserted: ::std::os::raw::c_int =
+    -200585;
+pub const DAQmxErrorSampToWritePerChanNotMultipleOfIncr: ::std::os::raw::c_int
+          =
+    -200584;
+pub const DAQmxErrorAOPropertiesCauseVoltageBelowMin: ::std::os::raw::c_int =
+    -200583;
+pub const DAQmxErrorAOPropertiesCauseVoltageOverMax: ::std::os::raw::c_int =
+    -200582;
+pub const DAQmxErrorPropertyNotSupportedWhenRefClkSrcNone:
+          ::std::os::raw::c_int =
+    -200581;
+pub const DAQmxErrorAIMaxTooSmall: ::std::os::raw::c_int = -200580;
+pub const DAQmxErrorAIMaxTooLarge: ::std::os::raw::c_int = -200579;
+pub const DAQmxErrorAIMinTooSmall: ::std::os::raw::c_int = -200578;
+pub const DAQmxErrorAIMinTooLarge: ::std::os::raw::c_int = -200577;
+pub const DAQmxErrorBuiltInCJCSrcNotSupported: ::std::os::raw::c_int =
+    -200576;
+pub const DAQmxErrorTooManyPostTrigSampsPerChan: ::std::os::raw::c_int =
+    -200575;
+pub const DAQmxErrorTrigLineNotFoundSingleDevRoute: ::std::os::raw::c_int =
+    -200574;
+pub const DAQmxErrorDifferentInternalAIInputSources: ::std::os::raw::c_int =
+    -200573;
+pub const DAQmxErrorDifferentAIInputSrcInOneChanGroup: ::std::os::raw::c_int =
+    -200572;
+pub const DAQmxErrorInternalAIInputSrcInMultipleChanGroups:
+          ::std::os::raw::c_int =
+    -200571;
+pub const DAQmxErrorCAPIChanIndexInvalid: ::std::os::raw::c_int = -200570;
+pub const DAQmxErrorCollectionDoesNotMatchChanType: ::std::os::raw::c_int =
+    -200569;
+pub const DAQmxErrorOutputCantStartChangedRegenerationMode:
+          ::std::os::raw::c_int =
+    -200568;
+pub const DAQmxErrorOutputCantStartChangedBufferSize: ::std::os::raw::c_int =
+    -200567;
+pub const DAQmxErrorChanSizeTooBigForU32PortWrite: ::std::os::raw::c_int =
+    -200566;
+pub const DAQmxErrorChanSizeTooBigForU8PortWrite: ::std::os::raw::c_int =
+    -200565;
+pub const DAQmxErrorChanSizeTooBigForU32PortRead: ::std::os::raw::c_int =
+    -200564;
+pub const DAQmxErrorChanSizeTooBigForU8PortRead: ::std::os::raw::c_int =
+    -200563;
+pub const DAQmxErrorInvalidDigDataWrite: ::std::os::raw::c_int = -200562;
+pub const DAQmxErrorInvalidAODataWrite: ::std::os::raw::c_int = -200561;
+pub const DAQmxErrorWaitUntilDoneDoesNotIndicateDone: ::std::os::raw::c_int =
+    -200560;
+pub const DAQmxErrorMultiChanTypesInTask: ::std::os::raw::c_int = -200559;
+pub const DAQmxErrorMultiDevsInTask: ::std::os::raw::c_int = -200558;
+pub const DAQmxErrorCannotSetPropertyWhenTaskRunning: ::std::os::raw::c_int =
+    -200557;
+pub const DAQmxErrorCannotGetPropertyWhenTaskNotCommittedOrRunning:
+          ::std::os::raw::c_int =
+    -200556;
+pub const DAQmxErrorLeadingUnderscoreInString: ::std::os::raw::c_int =
+    -200555;
+pub const DAQmxErrorTrailingSpaceInString: ::std::os::raw::c_int = -200554;
+pub const DAQmxErrorLeadingSpaceInString: ::std::os::raw::c_int = -200553;
+pub const DAQmxErrorInvalidCharInString: ::std::os::raw::c_int = -200552;
+pub const DAQmxErrorDLLBecameUnlocked: ::std::os::raw::c_int = -200551;
+pub const DAQmxErrorDLLLock: ::std::os::raw::c_int = -200550;
+pub const DAQmxErrorSelfCalConstsInvalid: ::std::os::raw::c_int = -200549;
+pub const DAQmxErrorInvalidTrigCouplingExceptForExtTrigChan:
+          ::std::os::raw::c_int =
+    -200548;
+pub const DAQmxErrorWriteFailsBufferSizeAutoConfigured: ::std::os::raw::c_int
+          =
+    -200547;
+pub const DAQmxErrorExtCalAdjustExtRefVoltageFailed: ::std::os::raw::c_int =
+    -200546;
+pub const DAQmxErrorSelfCalFailedExtNoiseOrRefVoltageOutOfCal:
+          ::std::os::raw::c_int =
+    -200545;
+pub const DAQmxErrorExtCalTemperatureNotDAQmx: ::std::os::raw::c_int =
+    -200544;
+pub const DAQmxErrorExtCalDateTimeNotDAQmx: ::std::os::raw::c_int = -200543;
+pub const DAQmxErrorSelfCalTemperatureNotDAQmx: ::std::os::raw::c_int =
+    -200542;
+pub const DAQmxErrorSelfCalDateTimeNotDAQmx: ::std::os::raw::c_int = -200541;
+pub const DAQmxErrorDACRefValNotSet: ::std::os::raw::c_int = -200540;
+pub const DAQmxErrorAnalogMultiSampWriteNotSupported: ::std::os::raw::c_int =
+    -200539;
+pub const DAQmxErrorInvalidActionInControlTask: ::std::os::raw::c_int =
+    -200538;
+pub const DAQmxErrorPolyCoeffsInconsistent: ::std::os::raw::c_int = -200537;
+pub const DAQmxErrorSensorValTooLow: ::std::os::raw::c_int = -200536;
+pub const DAQmxErrorSensorValTooHigh: ::std::os::raw::c_int = -200535;
+pub const DAQmxErrorWaveformNameTooLong: ::std::os::raw::c_int = -200534;
+pub const DAQmxErrorIdentifierTooLongInScript: ::std::os::raw::c_int =
+    -200533;
+pub const DAQmxErrorUnexpectedIDFollowingSwitchChanName: ::std::os::raw::c_int
+          =
+    -200532;
+pub const DAQmxErrorRelayNameNotSpecifiedInList: ::std::os::raw::c_int =
+    -200531;
+pub const DAQmxErrorUnexpectedIDFollowingRelayNameInList:
+          ::std::os::raw::c_int =
+    -200530;
+pub const DAQmxErrorUnexpectedIDFollowingSwitchOpInList: ::std::os::raw::c_int
+          =
+    -200529;
+pub const DAQmxErrorInvalidLineGrouping: ::std::os::raw::c_int = -200528;
+pub const DAQmxErrorCtrMinMax: ::std::os::raw::c_int = -200527;
+pub const DAQmxErrorWriteChanTypeMismatch: ::std::os::raw::c_int = -200526;
+pub const DAQmxErrorReadChanTypeMismatch: ::std::os::raw::c_int = -200525;
+pub const DAQmxErrorWriteNumChansMismatch: ::std::os::raw::c_int = -200524;
+pub const DAQmxErrorOneChanReadForMultiChanTask: ::std::os::raw::c_int =
+    -200523;
+pub const DAQmxErrorCannotSelfCalDuringExtCal: ::std::os::raw::c_int =
+    -200522;
+pub const DAQmxErrorMeasCalAdjustOscillatorPhaseDAC: ::std::os::raw::c_int =
+    -200521;
+pub const DAQmxErrorInvalidCalConstCalADCAdjustment: ::std::os::raw::c_int =
+    -200520;
+pub const DAQmxErrorInvalidCalConstOscillatorFreqDACValue:
+          ::std::os::raw::c_int =
+    -200519;
+pub const DAQmxErrorInvalidCalConstOscillatorPhaseDACValue:
+          ::std::os::raw::c_int =
+    -200518;
+pub const DAQmxErrorInvalidCalConstOffsetDACValue: ::std::os::raw::c_int =
+    -200517;
+pub const DAQmxErrorInvalidCalConstGainDACValue: ::std::os::raw::c_int =
+    -200516;
+pub const DAQmxErrorInvalidNumCalADCReadsToAverage: ::std::os::raw::c_int =
+    -200515;
+pub const DAQmxErrorInvalidCfgCalAdjustDirectPathOutputImpedance:
+          ::std::os::raw::c_int =
+    -200514;
+pub const DAQmxErrorInvalidCfgCalAdjustMainPathOutputImpedance:
+          ::std::os::raw::c_int =
+    -200513;
+pub const DAQmxErrorInvalidCfgCalAdjustMainPathPostAmpGainAndOffset:
+          ::std::os::raw::c_int =
+    -200512;
+pub const DAQmxErrorInvalidCfgCalAdjustMainPathPreAmpGain:
+          ::std::os::raw::c_int =
+    -200511;
+pub const DAQmxErrorInvalidCfgCalAdjustMainPreAmpOffset: ::std::os::raw::c_int
+          =
+    -200510;
+pub const DAQmxErrorMeasCalAdjustCalADC: ::std::os::raw::c_int = -200509;
+pub const DAQmxErrorMeasCalAdjustOscillatorFrequency: ::std::os::raw::c_int =
+    -200508;
+pub const DAQmxErrorMeasCalAdjustDirectPathOutputImpedance:
+          ::std::os::raw::c_int =
+    -200507;
+pub const DAQmxErrorMeasCalAdjustMainPathOutputImpedance:
+          ::std::os::raw::c_int =
+    -200506;
+pub const DAQmxErrorMeasCalAdjustDirectPathGain: ::std::os::raw::c_int =
+    -200505;
+pub const DAQmxErrorMeasCalAdjustMainPathPostAmpGainAndOffset:
+          ::std::os::raw::c_int =
+    -200504;
+pub const DAQmxErrorMeasCalAdjustMainPathPreAmpGain: ::std::os::raw::c_int =
+    -200503;
+pub const DAQmxErrorMeasCalAdjustMainPathPreAmpOffset: ::std::os::raw::c_int =
+    -200502;
+pub const DAQmxErrorInvalidDateTimeInEEPROM: ::std::os::raw::c_int = -200501;
+pub const DAQmxErrorUnableToLocateErrorResources: ::std::os::raw::c_int =
+    -200500;
+pub const DAQmxErrorDotNetAPINotUnsigned32BitNumber: ::std::os::raw::c_int =
+    -200499;
+pub const DAQmxErrorInvalidRangeOfObjectsSyntaxInString: ::std::os::raw::c_int
+          =
+    -200498;
+pub const DAQmxErrorAttemptToEnableLineNotPreviouslyDisabled:
+          ::std::os::raw::c_int =
+    -200497;
+pub const DAQmxErrorInvalidCharInPattern: ::std::os::raw::c_int = -200496;
+pub const DAQmxErrorIntermediateBufferFull: ::std::os::raw::c_int = -200495;
+pub const DAQmxErrorLoadTaskFailsBecauseNoTimingOnDev: ::std::os::raw::c_int =
+    -200494;
+pub const DAQmxErrorCAPIReservedParamNotNULLNorEmpty: ::std::os::raw::c_int =
+    -200493;
+pub const DAQmxErrorCAPIReservedParamNotNULL: ::std::os::raw::c_int = -200492;
+pub const DAQmxErrorCAPIReservedParamNotZero: ::std::os::raw::c_int = -200491;
+pub const DAQmxErrorSampleValueOutOfRange: ::std::os::raw::c_int = -200490;
+pub const DAQmxErrorChanAlreadyInTask: ::std::os::raw::c_int = -200489;
+pub const DAQmxErrorVirtualChanDoesNotExist: ::std::os::raw::c_int = -200488;
+pub const DAQmxErrorChanNotInTask: ::std::os::raw::c_int = -200486;
+pub const DAQmxErrorTaskNotInDataNeighborhood: ::std::os::raw::c_int =
+    -200485;
+pub const DAQmxErrorCantSaveTaskWithoutReplace: ::std::os::raw::c_int =
+    -200484;
+pub const DAQmxErrorCantSaveChanWithoutReplace: ::std::os::raw::c_int =
+    -200483;
+pub const DAQmxErrorDevNotInTask: ::std::os::raw::c_int = -200482;
+pub const DAQmxErrorDevAlreadyInTask: ::std::os::raw::c_int = -200481;
+pub const DAQmxErrorCanNotPerformOpWhileTaskRunning: ::std::os::raw::c_int =
+    -200479;
+pub const DAQmxErrorCanNotPerformOpWhenNoChansInTask: ::std::os::raw::c_int =
+    -200478;
+pub const DAQmxErrorCanNotPerformOpWhenNoDevInTask: ::std::os::raw::c_int =
+    -200477;
+pub const DAQmxErrorCannotPerformOpWhenTaskNotRunning: ::std::os::raw::c_int =
+    -200475;
+pub const DAQmxErrorOperationTimedOut: ::std::os::raw::c_int = -200474;
+pub const DAQmxErrorCannotReadWhenAutoStartFalseAndTaskNotRunningOrCommitted:
+          ::std::os::raw::c_int =
+    -200473;
+pub const DAQmxErrorCannotWriteWhenAutoStartFalseAndTaskNotRunningOrCommitted:
+          ::std::os::raw::c_int =
+    -200472;
+pub const DAQmxErrorTaskVersionNew: ::std::os::raw::c_int = -200470;
+pub const DAQmxErrorChanVersionNew: ::std::os::raw::c_int = -200469;
+pub const DAQmxErrorEmptyString: ::std::os::raw::c_int = -200467;
+pub const DAQmxErrorChannelSizeTooBigForPortReadType: ::std::os::raw::c_int =
+    -200466;
+pub const DAQmxErrorChannelSizeTooBigForPortWriteType: ::std::os::raw::c_int =
+    -200465;
+pub const DAQmxErrorExpectedNumberOfChannelsVerificationFailed:
+          ::std::os::raw::c_int =
+    -200464;
+pub const DAQmxErrorNumLinesMismatchInReadOrWrite: ::std::os::raw::c_int =
+    -200463;
+pub const DAQmxErrorOutputBufferEmpty: ::std::os::raw::c_int = -200462;
+pub const DAQmxErrorInvalidChanName: ::std::os::raw::c_int = -200461;
+pub const DAQmxErrorReadNoInputChansInTask: ::std::os::raw::c_int = -200460;
+pub const DAQmxErrorWriteNoOutputChansInTask: ::std::os::raw::c_int = -200459;
+pub const DAQmxErrorPropertyNotSupportedNotInputTask: ::std::os::raw::c_int =
+    -200457;
+pub const DAQmxErrorPropertyNotSupportedNotOutputTask: ::std::os::raw::c_int =
+    -200456;
+pub const DAQmxErrorGetPropertyNotInputBufferedTask: ::std::os::raw::c_int =
+    -200455;
+pub const DAQmxErrorGetPropertyNotOutputBufferedTask: ::std::os::raw::c_int =
+    -200454;
+pub const DAQmxErrorInvalidTimeoutVal: ::std::os::raw::c_int = -200453;
+pub const DAQmxErrorAttributeNotSupportedInTaskContext: ::std::os::raw::c_int
+          =
+    -200452;
+pub const DAQmxErrorAttributeNotQueryableUnlessTaskIsCommitted:
+          ::std::os::raw::c_int =
+    -200451;
+pub const DAQmxErrorAttributeNotSettableWhenTaskIsRunning:
+          ::std::os::raw::c_int =
+    -200450;
+pub const DAQmxErrorDACRngLowNotMinusRefValNorZero: ::std::os::raw::c_int =
+    -200449;
+pub const DAQmxErrorDACRngHighNotEqualRefVal: ::std::os::raw::c_int = -200448;
+pub const DAQmxErrorUnitsNotFromCustomScale: ::std::os::raw::c_int = -200447;
+pub const DAQmxErrorInvalidVoltageReadingDuringExtCal: ::std::os::raw::c_int =
+    -200446;
+pub const DAQmxErrorCalFunctionNotSupported: ::std::os::raw::c_int = -200445;
+pub const DAQmxErrorInvalidPhysicalChanForCal: ::std::os::raw::c_int =
+    -200444;
+pub const DAQmxErrorExtCalNotComplete: ::std::os::raw::c_int = -200443;
+pub const DAQmxErrorCantSyncToExtStimulusFreqDuringCal: ::std::os::raw::c_int
+          =
+    -200442;
+pub const DAQmxErrorUnableToDetectExtStimulusFreqDuringCal:
+          ::std::os::raw::c_int =
+    -200441;
+pub const DAQmxErrorInvalidCloseAction: ::std::os::raw::c_int = -200440;
+pub const DAQmxErrorExtCalFunctionOutsideExtCalSession: ::std::os::raw::c_int
+          =
+    -200439;
+pub const DAQmxErrorInvalidCalArea: ::std::os::raw::c_int = -200438;
+pub const DAQmxErrorExtCalConstsInvalid: ::std::os::raw::c_int = -200437;
+pub const DAQmxErrorStartTrigDelayWithExtSampClk: ::std::os::raw::c_int =
+    -200436;
+pub const DAQmxErrorDelayFromSampClkWithExtConv: ::std::os::raw::c_int =
+    -200435;
+pub const DAQmxErrorFewerThan2PreScaledVals: ::std::os::raw::c_int = -200434;
+pub const DAQmxErrorFewerThan2ScaledValues: ::std::os::raw::c_int = -200433;
+pub const DAQmxErrorPhysChanOutputType: ::std::os::raw::c_int = -200432;
+pub const DAQmxErrorPhysChanMeasType: ::std::os::raw::c_int = -200431;
+pub const DAQmxErrorInvalidPhysChanType: ::std::os::raw::c_int = -200430;
+pub const DAQmxErrorLabVIEWEmptyTaskOrChans: ::std::os::raw::c_int = -200429;
+pub const DAQmxErrorLabVIEWInvalidTaskOrChans: ::std::os::raw::c_int =
+    -200428;
+pub const DAQmxErrorInvalidRefClkRate: ::std::os::raw::c_int = -200427;
+pub const DAQmxErrorInvalidExtTrigImpedance: ::std::os::raw::c_int = -200426;
+pub const DAQmxErrorHystTrigLevelAIMax: ::std::os::raw::c_int = -200425;
+pub const DAQmxErrorLineNumIncompatibleWithVideoSignalFormat:
+          ::std::os::raw::c_int =
+    -200424;
+pub const DAQmxErrorTrigWindowAIMinAIMaxCombo: ::std::os::raw::c_int =
+    -200423;
+pub const DAQmxErrorTrigAIMinAIMax: ::std::os::raw::c_int = -200422;
+pub const DAQmxErrorHystTrigLevelAIMin: ::std::os::raw::c_int = -200421;
+pub const DAQmxErrorInvalidSampRateConsiderRIS: ::std::os::raw::c_int =
+    -200420;
+pub const DAQmxErrorInvalidReadPosDuringRIS: ::std::os::raw::c_int = -200419;
+pub const DAQmxErrorImmedTrigDuringRISMode: ::std::os::raw::c_int = -200418;
+pub const DAQmxErrorTDCNotEnabledDuringRISMode: ::std::os::raw::c_int =
+    -200417;
+pub const DAQmxErrorMultiRecWithRIS: ::std::os::raw::c_int = -200416;
+pub const DAQmxErrorInvalidRefClkSrc: ::std::os::raw::c_int = -200415;
+pub const DAQmxErrorInvalidSampClkSrc: ::std::os::raw::c_int = -200414;
+pub const DAQmxErrorInsufficientOnBoardMemForNumRecsAndSamps:
+          ::std::os::raw::c_int =
+    -200413;
+pub const DAQmxErrorInvalidAIAttenuation: ::std::os::raw::c_int = -200412;
+pub const DAQmxErrorACCouplingNotAllowedWith50OhmImpedance:
+          ::std::os::raw::c_int =
+    -200411;
+pub const DAQmxErrorInvalidRecordNum: ::std::os::raw::c_int = -200410;
+pub const DAQmxErrorZeroSlopeLinearScale: ::std::os::raw::c_int = -200409;
+pub const DAQmxErrorZeroReversePolyScaleCoeffs: ::std::os::raw::c_int =
+    -200408;
+pub const DAQmxErrorZeroForwardPolyScaleCoeffs: ::std::os::raw::c_int =
+    -200407;
+pub const DAQmxErrorNoReversePolyScaleCoeffs: ::std::os::raw::c_int = -200406;
+pub const DAQmxErrorNoForwardPolyScaleCoeffs: ::std::os::raw::c_int = -200405;
+pub const DAQmxErrorNoPolyScaleCoeffs: ::std::os::raw::c_int = -200404;
+pub const DAQmxErrorReversePolyOrderLessThanNumPtsToCompute:
+          ::std::os::raw::c_int =
+    -200403;
+pub const DAQmxErrorReversePolyOrderNotPositive: ::std::os::raw::c_int =
+    -200402;
+pub const DAQmxErrorNumPtsToComputeNotPositive: ::std::os::raw::c_int =
+    -200401;
+pub const DAQmxErrorWaveformLengthNotMultipleOfIncr: ::std::os::raw::c_int =
+    -200400;
+pub const DAQmxErrorCAPINoExtendedErrorInfoAvailable: ::std::os::raw::c_int =
+    -200399;
+pub const DAQmxErrorCVIFunctionNotFoundInDAQmxDLL: ::std::os::raw::c_int =
+    -200398;
+pub const DAQmxErrorCVIFailedToLoadDAQmxDLL: ::std::os::raw::c_int = -200397;
+pub const DAQmxErrorNoCommonTrigLineForImmedRoute: ::std::os::raw::c_int =
+    -200396;
+pub const DAQmxErrorNoCommonTrigLineForTaskRoute: ::std::os::raw::c_int =
+    -200395;
+pub const DAQmxErrorF64PrptyValNotUnsignedInt: ::std::os::raw::c_int =
+    -200394;
+pub const DAQmxErrorRegisterNotWritable: ::std::os::raw::c_int = -200393;
+pub const DAQmxErrorInvalidOutputVoltageAtSampClkRate: ::std::os::raw::c_int =
+    -200392;
+pub const DAQmxErrorStrobePhaseShiftDCMBecameUnlocked: ::std::os::raw::c_int =
+    -200391;
+pub const DAQmxErrorDrivePhaseShiftDCMBecameUnlocked: ::std::os::raw::c_int =
+    -200390;
+pub const DAQmxErrorClkOutPhaseShiftDCMBecameUnlocked: ::std::os::raw::c_int =
+    -200389;
+pub const DAQmxErrorOutputBoardClkDCMBecameUnlocked: ::std::os::raw::c_int =
+    -200388;
+pub const DAQmxErrorInputBoardClkDCMBecameUnlocked: ::std::os::raw::c_int =
+    -200387;
+pub const DAQmxErrorInternalClkDCMBecameUnlocked: ::std::os::raw::c_int =
+    -200386;
+pub const DAQmxErrorDCMLock: ::std::os::raw::c_int = -200385;
+pub const DAQmxErrorDataLineReservedForDynamicOutput: ::std::os::raw::c_int =
+    -200384;
+pub const DAQmxErrorInvalidRefClkSrcGivenSampClkSrc: ::std::os::raw::c_int =
+    -200383;
+pub const DAQmxErrorNoPatternMatcherAvailable: ::std::os::raw::c_int =
+    -200382;
+pub const DAQmxErrorInvalidDelaySampRateBelowPhaseShiftDCMThresh:
+          ::std::os::raw::c_int =
+    -200381;
+pub const DAQmxErrorStrainGageCalibration: ::std::os::raw::c_int = -200380;
+pub const DAQmxErrorInvalidExtClockFreqAndDivCombo: ::std::os::raw::c_int =
+    -200379;
+pub const DAQmxErrorCustomScaleDoesNotExist: ::std::os::raw::c_int = -200378;
+pub const DAQmxErrorOnlyFrontEndChanOpsDuringScan: ::std::os::raw::c_int =
+    -200377;
+pub const DAQmxErrorInvalidOptionForDigitalPortChannel: ::std::os::raw::c_int
+          =
+    -200376;
+pub const DAQmxErrorUnsupportedSignalTypeExportSignal: ::std::os::raw::c_int =
+    -200375;
+pub const DAQmxErrorInvalidSignalTypeExportSignal: ::std::os::raw::c_int =
+    -200374;
+pub const DAQmxErrorUnsupportedTrigTypeSendsSWTrig: ::std::os::raw::c_int =
+    -200373;
+pub const DAQmxErrorInvalidTrigTypeSendsSWTrig: ::std::os::raw::c_int =
+    -200372;
+pub const DAQmxErrorRepeatedPhysicalChan: ::std::os::raw::c_int = -200371;
+pub const DAQmxErrorResourcesInUseForRouteInTask: ::std::os::raw::c_int =
+    -200370;
+pub const DAQmxErrorResourcesInUseForRoute: ::std::os::raw::c_int = -200369;
+pub const DAQmxErrorRouteNotSupportedByHW: ::std::os::raw::c_int = -200368;
+pub const DAQmxErrorResourcesInUseForExportSignalPolarity:
+          ::std::os::raw::c_int =
+    -200367;
+pub const DAQmxErrorResourcesInUseForInversionInTask: ::std::os::raw::c_int =
+    -200366;
+pub const DAQmxErrorResourcesInUseForInversion: ::std::os::raw::c_int =
+    -200365;
+pub const DAQmxErrorExportSignalPolarityNotSupportedByHW:
+          ::std::os::raw::c_int =
+    -200364;
+pub const DAQmxErrorInversionNotSupportedByHW: ::std::os::raw::c_int =
+    -200363;
+pub const DAQmxErrorOverloadedChansExistNotRead: ::std::os::raw::c_int =
+    -200362;
+pub const DAQmxErrorInputFIFOOverflow2: ::std::os::raw::c_int = -200361;
+pub const DAQmxErrorCJCChanNotSpecd: ::std::os::raw::c_int = -200360;
+pub const DAQmxErrorCtrExportSignalNotPossible: ::std::os::raw::c_int =
+    -200359;
+pub const DAQmxErrorRefTrigWhenContinuous: ::std::os::raw::c_int = -200358;
+pub const DAQmxErrorIncompatibleSensorOutputAndDeviceInputRanges:
+          ::std::os::raw::c_int =
+    -200357;
+pub const DAQmxErrorCustomScaleNameUsed: ::std::os::raw::c_int = -200356;
+pub const DAQmxErrorPropertyValNotSupportedByHW: ::std::os::raw::c_int =
+    -200355;
+pub const DAQmxErrorPropertyValNotValidTermName: ::std::os::raw::c_int =
+    -200354;
+pub const DAQmxErrorResourcesInUseForProperty: ::std::os::raw::c_int =
+    -200353;
+pub const DAQmxErrorCJCChanAlreadyUsed: ::std::os::raw::c_int = -200352;
+pub const DAQmxErrorForwardPolynomialCoefNotSpecd: ::std::os::raw::c_int =
+    -200351;
+pub const DAQmxErrorTableScaleNumPreScaledAndScaledValsNotEqual:
+          ::std::os::raw::c_int =
+    -200350;
+pub const DAQmxErrorTableScalePreScaledValsNotSpecd: ::std::os::raw::c_int =
+    -200349;
+pub const DAQmxErrorTableScaleScaledValsNotSpecd: ::std::os::raw::c_int =
+    -200348;
+pub const DAQmxErrorIntermediateBufferSizeNotMultipleOfIncr:
+          ::std::os::raw::c_int =
+    -200347;
+pub const DAQmxErrorEventPulseWidthOutOfRange: ::std::os::raw::c_int =
+    -200346;
+pub const DAQmxErrorEventDelayOutOfRange: ::std::os::raw::c_int = -200345;
+pub const DAQmxErrorSampPerChanNotMultipleOfIncr: ::std::os::raw::c_int =
+    -200344;
+pub const DAQmxErrorCannotCalculateNumSampsTaskNotStarted:
+          ::std::os::raw::c_int =
+    -200343;
+pub const DAQmxErrorScriptNotInMem: ::std::os::raw::c_int = -200342;
+pub const DAQmxErrorOnboardMemTooSmall: ::std::os::raw::c_int = -200341;
+pub const DAQmxErrorReadAllAvailableDataWithoutBuffer: ::std::os::raw::c_int =
+    -200340;
+pub const DAQmxErrorPulseActiveAtStart: ::std::os::raw::c_int = -200339;
+pub const DAQmxErrorCalTempNotSupported: ::std::os::raw::c_int = -200338;
+pub const DAQmxErrorDelayFromSampClkTooLong: ::std::os::raw::c_int = -200337;
+pub const DAQmxErrorDelayFromSampClkTooShort: ::std::os::raw::c_int = -200336;
+pub const DAQmxErrorAIConvRateTooHigh: ::std::os::raw::c_int = -200335;
+pub const DAQmxErrorDelayFromStartTrigTooLong: ::std::os::raw::c_int =
+    -200334;
+pub const DAQmxErrorDelayFromStartTrigTooShort: ::std::os::raw::c_int =
+    -200333;
+pub const DAQmxErrorSampRateTooHigh: ::std::os::raw::c_int = -200332;
+pub const DAQmxErrorSampRateTooLow: ::std::os::raw::c_int = -200331;
+pub const DAQmxErrorPFI0UsedForAnalogAndDigitalSrc: ::std::os::raw::c_int =
+    -200330;
+pub const DAQmxErrorPrimingCfgFIFO: ::std::os::raw::c_int = -200329;
+pub const DAQmxErrorCannotOpenTopologyCfgFile: ::std::os::raw::c_int =
+    -200328;
+pub const DAQmxErrorInvalidDTInsideWfmDataType: ::std::os::raw::c_int =
+    -200327;
+pub const DAQmxErrorRouteSrcAndDestSame: ::std::os::raw::c_int = -200326;
+pub const DAQmxErrorReversePolynomialCoefNotSpecd: ::std::os::raw::c_int =
+    -200325;
+pub const DAQmxErrorDevAbsentOrUnavailable: ::std::os::raw::c_int = -200324;
+pub const DAQmxErrorNoAdvTrigForMultiDevScan: ::std::os::raw::c_int = -200323;
+pub const DAQmxErrorInterruptsInsufficientDataXferMech: ::std::os::raw::c_int
+          =
+    -200322;
+pub const DAQmxErrorInvalidAttentuationBasedOnMinMax: ::std::os::raw::c_int =
+    -200321;
+pub const DAQmxErrorCabledModuleCannotRouteSSH: ::std::os::raw::c_int =
+    -200320;
+pub const DAQmxErrorCabledModuleCannotRouteConvClk: ::std::os::raw::c_int =
+    -200319;
+pub const DAQmxErrorInvalidExcitValForScaling: ::std::os::raw::c_int =
+    -200318;
+pub const DAQmxErrorNoDevMemForScript: ::std::os::raw::c_int = -200317;
+pub const DAQmxErrorScriptDataUnderflow: ::std::os::raw::c_int = -200316;
+pub const DAQmxErrorNoDevMemForWaveform: ::std::os::raw::c_int = -200315;
+pub const DAQmxErrorStreamDCMBecameUnlocked: ::std::os::raw::c_int = -200314;
+pub const DAQmxErrorStreamDCMLock: ::std::os::raw::c_int = -200313;
+pub const DAQmxErrorWaveformNotInMem: ::std::os::raw::c_int = -200312;
+pub const DAQmxErrorWaveformWriteOutOfBounds: ::std::os::raw::c_int = -200311;
+pub const DAQmxErrorWaveformPreviouslyAllocated: ::std::os::raw::c_int =
+    -200310;
+pub const DAQmxErrorSampClkTbMasterTbDivNotAppropriateForSampTbSrc:
+          ::std::os::raw::c_int =
+    -200309;
+pub const DAQmxErrorSampTbRateSampTbSrcMismatch: ::std::os::raw::c_int =
+    -200308;
+pub const DAQmxErrorMasterTbRateMasterTbSrcMismatch: ::std::os::raw::c_int =
+    -200307;
+pub const DAQmxErrorSampsPerChanTooBig: ::std::os::raw::c_int = -200306;
+pub const DAQmxErrorFinitePulseTrainNotPossible: ::std::os::raw::c_int =
+    -200305;
+pub const DAQmxErrorExtMasterTimebaseRateNotSpecified: ::std::os::raw::c_int =
+    -200304;
+pub const DAQmxErrorExtSampClkSrcNotSpecified: ::std::os::raw::c_int =
+    -200303;
+pub const DAQmxErrorInputSignalSlowerThanMeasTime: ::std::os::raw::c_int =
+    -200302;
+pub const DAQmxErrorCannotUpdatePulseGenProperty: ::std::os::raw::c_int =
+    -200301;
+pub const DAQmxErrorInvalidTimingType: ::std::os::raw::c_int = -200300;
+pub const DAQmxErrorPropertyUnavailWhenUsingOnboardMemory:
+          ::std::os::raw::c_int =
+    -200297;
+pub const DAQmxErrorCannotWriteAfterStartWithOnboardMemory:
+          ::std::os::raw::c_int =
+    -200295;
+pub const DAQmxErrorNotEnoughSampsWrittenForInitialXferRqstCondition:
+          ::std::os::raw::c_int =
+    -200294;
+pub const DAQmxErrorNoMoreSpace: ::std::os::raw::c_int = -200293;
+pub const DAQmxErrorSamplesCanNotYetBeWritten: ::std::os::raw::c_int =
+    -200292;
+pub const DAQmxErrorGenStoppedToPreventIntermediateBufferRegenOfOldSamples:
+          ::std::os::raw::c_int =
+    -200291;
+pub const DAQmxErrorGenStoppedToPreventRegenOfOldSamples:
+          ::std::os::raw::c_int =
+    -200290;
+pub const DAQmxErrorSamplesNoLongerWriteable: ::std::os::raw::c_int = -200289;
+pub const DAQmxErrorSamplesWillNeverBeGenerated: ::std::os::raw::c_int =
+    -200288;
+pub const DAQmxErrorNegativeWriteSampleNumber: ::std::os::raw::c_int =
+    -200287;
+pub const DAQmxErrorNoAcqStarted: ::std::os::raw::c_int = -200286;
+pub const DAQmxErrorSamplesNotYetAvailable: ::std::os::raw::c_int = -200284;
+pub const DAQmxErrorAcqStoppedToPreventIntermediateBufferOverflow:
+          ::std::os::raw::c_int =
+    -200283;
+pub const DAQmxErrorNoRefTrigConfigured: ::std::os::raw::c_int = -200282;
+pub const DAQmxErrorCannotReadRelativeToRefTrigUntilDone:
+          ::std::os::raw::c_int =
+    -200281;
+pub const DAQmxErrorSamplesNoLongerAvailable: ::std::os::raw::c_int = -200279;
+pub const DAQmxErrorSamplesWillNeverBeAvailable: ::std::os::raw::c_int =
+    -200278;
+pub const DAQmxErrorNegativeReadSampleNumber: ::std::os::raw::c_int = -200277;
+pub const DAQmxErrorExternalSampClkAndRefClkThruSameTerm:
+          ::std::os::raw::c_int =
+    -200276;
+pub const DAQmxErrorExtSampClkRateTooLowForClkIn: ::std::os::raw::c_int =
+    -200275;
+pub const DAQmxErrorExtSampClkRateTooHighForBackplane: ::std::os::raw::c_int =
+    -200274;
+pub const DAQmxErrorSampClkRateAndDivCombo: ::std::os::raw::c_int = -200273;
+pub const DAQmxErrorSampClkRateTooLowForDivDown: ::std::os::raw::c_int =
+    -200272;
+pub const DAQmxErrorProductOfAOMinAndGainTooSmall: ::std::os::raw::c_int =
+    -200271;
+pub const DAQmxErrorInterpolationRateNotPossible: ::std::os::raw::c_int =
+    -200270;
+pub const DAQmxErrorOffsetTooLarge: ::std::os::raw::c_int = -200269;
+pub const DAQmxErrorOffsetTooSmall: ::std::os::raw::c_int = -200268;
+pub const DAQmxErrorProductOfAOMaxAndGainTooLarge: ::std::os::raw::c_int =
+    -200267;
+pub const DAQmxErrorMinAndMaxNotSymmetric: ::std::os::raw::c_int = -200266;
+pub const DAQmxErrorInvalidAnalogTrigSrc: ::std::os::raw::c_int = -200265;
+pub const DAQmxErrorTooManyChansForAnalogRefTrig: ::std::os::raw::c_int =
+    -200264;
+pub const DAQmxErrorTooManyChansForAnalogPauseTrig: ::std::os::raw::c_int =
+    -200263;
+pub const DAQmxErrorTrigWhenOnDemandSampTiming: ::std::os::raw::c_int =
+    -200262;
+pub const DAQmxErrorInconsistentAnalogTrigSettings: ::std::os::raw::c_int =
+    -200261;
+pub const DAQmxErrorMemMapDataXferModeSampTimingCombo: ::std::os::raw::c_int =
+    -200260;
+pub const DAQmxErrorInvalidJumperedAttr: ::std::os::raw::c_int = -200259;
+pub const DAQmxErrorInvalidGainBasedOnMinMax: ::std::os::raw::c_int = -200258;
+pub const DAQmxErrorInconsistentExcit: ::std::os::raw::c_int = -200257;
+pub const DAQmxErrorTopologyNotSupportedByCfgTermBlock: ::std::os::raw::c_int
+          =
+    -200256;
+pub const DAQmxErrorBuiltInTempSensorNotSupported: ::std::os::raw::c_int =
+    -200255;
+pub const DAQmxErrorInvalidTerm: ::std::os::raw::c_int = -200254;
+pub const DAQmxErrorCannotTristateTerm: ::std::os::raw::c_int = -200253;
+pub const DAQmxErrorCannotTristateBusyTerm: ::std::os::raw::c_int = -200252;
+pub const DAQmxErrorNoDMAChansAvailable: ::std::os::raw::c_int = -200251;
+pub const DAQmxErrorInvalidWaveformLengthWithinLoopInScript:
+          ::std::os::raw::c_int =
+    -200250;
+pub const DAQmxErrorInvalidSubsetLengthWithinLoopInScript:
+          ::std::os::raw::c_int =
+    -200249;
+pub const DAQmxErrorMarkerPosInvalidForLoopInScript: ::std::os::raw::c_int =
+    -200248;
+pub const DAQmxErrorIntegerExpectedInScript: ::std::os::raw::c_int = -200247;
+pub const DAQmxErrorPLLBecameUnlocked: ::std::os::raw::c_int = -200246;
+pub const DAQmxErrorPLLLock: ::std::os::raw::c_int = -200245;
+pub const DAQmxErrorDDCClkOutDCMBecameUnlocked: ::std::os::raw::c_int =
+    -200244;
+pub const DAQmxErrorDDCClkOutDCMLock: ::std::os::raw::c_int = -200243;
+pub const DAQmxErrorClkDoublerDCMBecameUnlocked: ::std::os::raw::c_int =
+    -200242;
+pub const DAQmxErrorClkDoublerDCMLock: ::std::os::raw::c_int = -200241;
+pub const DAQmxErrorSampClkDCMBecameUnlocked: ::std::os::raw::c_int = -200240;
+pub const DAQmxErrorSampClkDCMLock: ::std::os::raw::c_int = -200239;
+pub const DAQmxErrorSampClkTimebaseDCMBecameUnlocked: ::std::os::raw::c_int =
+    -200238;
+pub const DAQmxErrorSampClkTimebaseDCMLock: ::std::os::raw::c_int = -200237;
+pub const DAQmxErrorAttrCannotBeReset: ::std::os::raw::c_int = -200236;
+pub const DAQmxErrorExplanationNotFound: ::std::os::raw::c_int = -200235;
+pub const DAQmxErrorWriteBufferTooSmall: ::std::os::raw::c_int = -200234;
+pub const DAQmxErrorSpecifiedAttrNotValid: ::std::os::raw::c_int = -200233;
+pub const DAQmxErrorAttrCannotBeRead: ::std::os::raw::c_int = -200232;
+pub const DAQmxErrorAttrCannotBeSet: ::std::os::raw::c_int = -200231;
+pub const DAQmxErrorNULLPtrForC_Api: ::std::os::raw::c_int = -200230;
+pub const DAQmxErrorReadBufferTooSmall: ::std::os::raw::c_int = -200229;
+pub const DAQmxErrorBufferTooSmallForString: ::std::os::raw::c_int = -200228;
+pub const DAQmxErrorNoAvailTrigLinesOnDevice: ::std::os::raw::c_int = -200227;
+pub const DAQmxErrorTrigBusLineNotAvail: ::std::os::raw::c_int = -200226;
+pub const DAQmxErrorCouldNotReserveRequestedTrigLine: ::std::os::raw::c_int =
+    -200225;
+pub const DAQmxErrorTrigLineNotFound: ::std::os::raw::c_int = -200224;
+pub const DAQmxErrorSCXI1126ThreshHystCombination: ::std::os::raw::c_int =
+    -200223;
+pub const DAQmxErrorAcqStoppedToPreventInputBufferOverwrite:
+          ::std::os::raw::c_int =
+    -200222;
+pub const DAQmxErrorTimeoutExceeded: ::std::os::raw::c_int = -200221;
+pub const DAQmxErrorInvalidDeviceID: ::std::os::raw::c_int = -200220;
+pub const DAQmxErrorInvalidAOChanOrder: ::std::os::raw::c_int = -200219;
+pub const DAQmxErrorSampleTimingTypeAndDataXferMode: ::std::os::raw::c_int =
+    -200218;
+pub const DAQmxErrorBufferWithOnDemandSampTiming: ::std::os::raw::c_int =
+    -200217;
+pub const DAQmxErrorBufferAndDataXferMode: ::std::os::raw::c_int = -200216;
+pub const DAQmxErrorMemMapAndBuffer: ::std::os::raw::c_int = -200215;
+pub const DAQmxErrorNoAnalogTrigHW: ::std::os::raw::c_int = -200214;
+pub const DAQmxErrorTooManyPretrigPlusMinPostTrigSamps: ::std::os::raw::c_int
+          =
+    -200213;
+pub const DAQmxErrorInconsistentUnitsSpecified: ::std::os::raw::c_int =
+    -200212;
+pub const DAQmxErrorMultipleRelaysForSingleRelayOp: ::std::os::raw::c_int =
+    -200211;
+pub const DAQmxErrorMultipleDevIDsPerChassisSpecifiedInList:
+          ::std::os::raw::c_int =
+    -200210;
+pub const DAQmxErrorDuplicateDevIDInList: ::std::os::raw::c_int = -200209;
+pub const DAQmxErrorInvalidRangeStatementCharInList: ::std::os::raw::c_int =
+    -200208;
+pub const DAQmxErrorInvalidDeviceIDInList: ::std::os::raw::c_int = -200207;
+pub const DAQmxErrorTriggerPolarityConflict: ::std::os::raw::c_int = -200206;
+pub const DAQmxErrorCannotScanWithCurrentTopology: ::std::os::raw::c_int =
+    -200205;
+pub const DAQmxErrorUnexpectedIdentifierInFullySpecifiedPathInList:
+          ::std::os::raw::c_int =
+    -200204;
+pub const DAQmxErrorSwitchCannotDriveMultipleTrigLines: ::std::os::raw::c_int
+          =
+    -200203;
+pub const DAQmxErrorInvalidRelayName: ::std::os::raw::c_int = -200202;
+pub const DAQmxErrorSwitchScanlistTooBig: ::std::os::raw::c_int = -200201;
+pub const DAQmxErrorSwitchChanInUse: ::std::os::raw::c_int = -200200;
+pub const DAQmxErrorSwitchNotResetBeforeScan: ::std::os::raw::c_int = -200199;
+pub const DAQmxErrorInvalidTopology: ::std::os::raw::c_int = -200198;
+pub const DAQmxErrorAttrNotSupported: ::std::os::raw::c_int = -200197;
+pub const DAQmxErrorUnexpectedEndOfActionsInList: ::std::os::raw::c_int =
+    -200196;
+pub const DAQmxErrorPowerLimitExceeded: ::std::os::raw::c_int = -200195;
+pub const DAQmxErrorHWUnexpectedlyPoweredOffAndOn: ::std::os::raw::c_int =
+    -200194;
+pub const DAQmxErrorSwitchOperationNotSupported: ::std::os::raw::c_int =
+    -200193;
+pub const DAQmxErrorOnlyContinuousScanSupported: ::std::os::raw::c_int =
+    -200192;
+pub const DAQmxErrorSwitchDifferentTopologyWhenScanning: ::std::os::raw::c_int
+          =
+    -200191;
+pub const DAQmxErrorDisconnectPathNotSameAsExistingPath: ::std::os::raw::c_int
+          =
+    -200190;
+pub const DAQmxErrorConnectionNotPermittedOnChanReservedForRouting:
+          ::std::os::raw::c_int =
+    -200189;
+pub const DAQmxErrorCannotConnectSrcChans: ::std::os::raw::c_int = -200188;
+pub const DAQmxErrorCannotConnectChannelToItself: ::std::os::raw::c_int =
+    -200187;
+pub const DAQmxErrorChannelNotReservedForRouting: ::std::os::raw::c_int =
+    -200186;
+pub const DAQmxErrorCannotConnectChansDirectly: ::std::os::raw::c_int =
+    -200185;
+pub const DAQmxErrorChansAlreadyConnected: ::std::os::raw::c_int = -200184;
+pub const DAQmxErrorChanDuplicatedInPath: ::std::os::raw::c_int = -200183;
+pub const DAQmxErrorNoPathToDisconnect: ::std::os::raw::c_int = -200182;
+pub const DAQmxErrorInvalidSwitchChan: ::std::os::raw::c_int = -200181;
+pub const DAQmxErrorNoPathAvailableBetween2SwitchChans: ::std::os::raw::c_int
+          =
+    -200180;
+pub const DAQmxErrorExplicitConnectionExists: ::std::os::raw::c_int = -200179;
+pub const DAQmxErrorSwitchDifferentSettlingTimeWhenScanning:
+          ::std::os::raw::c_int =
+    -200178;
+pub const DAQmxErrorOperationOnlyPermittedWhileScanning: ::std::os::raw::c_int
+          =
+    -200177;
+pub const DAQmxErrorOperationNotPermittedWhileScanning: ::std::os::raw::c_int
+          =
+    -200176;
+pub const DAQmxErrorHardwareNotResponding: ::std::os::raw::c_int = -200175;
+pub const DAQmxErrorInvalidSampAndMasterTimebaseRateCombo:
+          ::std::os::raw::c_int =
+    -200173;
+pub const DAQmxErrorNonZeroBufferSizeInProgIOXfer: ::std::os::raw::c_int =
+    -200172;
+pub const DAQmxErrorVirtualChanNameUsed: ::std::os::raw::c_int = -200171;
+pub const DAQmxErrorPhysicalChanDoesNotExist: ::std::os::raw::c_int = -200170;
+pub const DAQmxErrorMemMapOnlyForProgIOXfer: ::std::os::raw::c_int = -200169;
+pub const DAQmxErrorTooManyChans: ::std::os::raw::c_int = -200168;
+pub const DAQmxErrorCannotHaveCJTempWithOtherChans: ::std::os::raw::c_int =
+    -200167;
+pub const DAQmxErrorOutputBufferUnderwrite: ::std::os::raw::c_int = -200166;
+pub const DAQmxErrorSensorInvalidCompletionResistance: ::std::os::raw::c_int =
+    -200163;
+pub const DAQmxErrorVoltageExcitIncompatibleWith2WireCfg:
+          ::std::os::raw::c_int =
+    -200162;
+pub const DAQmxErrorIntExcitSrcNotAvailable: ::std::os::raw::c_int = -200161;
+pub const DAQmxErrorCannotCreateChannelAfterTaskVerified:
+          ::std::os::raw::c_int =
+    -200160;
+pub const DAQmxErrorLinesReservedForSCXIControl: ::std::os::raw::c_int =
+    -200159;
+pub const DAQmxErrorCouldNotReserveLinesForSCXIControl: ::std::os::raw::c_int
+          =
+    -200158;
+pub const DAQmxErrorCalibrationFailed: ::std::os::raw::c_int = -200157;
+pub const DAQmxErrorReferenceFrequencyInvalid: ::std::os::raw::c_int =
+    -200156;
+pub const DAQmxErrorReferenceResistanceInvalid: ::std::os::raw::c_int =
+    -200155;
+pub const DAQmxErrorReferenceCurrentInvalid: ::std::os::raw::c_int = -200154;
+pub const DAQmxErrorReferenceVoltageInvalid: ::std::os::raw::c_int = -200153;
+pub const DAQmxErrorEEPROMDataInvalid: ::std::os::raw::c_int = -200152;
+pub const DAQmxErrorCabledModuleNotCapableOfRoutingAI: ::std::os::raw::c_int =
+    -200151;
+pub const DAQmxErrorChannelNotAvailableInParallelMode: ::std::os::raw::c_int =
+    -200150;
+pub const DAQmxErrorExternalTimebaseRateNotKnownForDelay:
+          ::std::os::raw::c_int =
+    -200149;
+pub const DAQmxErrorFREQOUTCannotProduceDesiredFrequency:
+          ::std::os::raw::c_int =
+    -200148;
+pub const DAQmxErrorMultipleCounterInputTask: ::std::os::raw::c_int = -200147;
+pub const DAQmxErrorCounterStartPauseTriggerConflict: ::std::os::raw::c_int =
+    -200146;
+pub const DAQmxErrorCounterInputPauseTriggerAndSampleClockInvalid:
+          ::std::os::raw::c_int =
+    -200145;
+pub const DAQmxErrorCounterOutputPauseTriggerInvalid: ::std::os::raw::c_int =
+    -200144;
+pub const DAQmxErrorCounterTimebaseRateNotSpecified: ::std::os::raw::c_int =
+    -200143;
+pub const DAQmxErrorCounterTimebaseRateNotFound: ::std::os::raw::c_int =
+    -200142;
+pub const DAQmxErrorCounterOverflow: ::std::os::raw::c_int = -200141;
+pub const DAQmxErrorCounterNoTimebaseEdgesBetweenGates: ::std::os::raw::c_int
+          =
+    -200140;
+pub const DAQmxErrorCounterMaxMinRangeFreq: ::std::os::raw::c_int = -200139;
+pub const DAQmxErrorCounterMaxMinRangeTime: ::std::os::raw::c_int = -200138;
+pub const DAQmxErrorSuitableTimebaseNotFoundTimeCombo: ::std::os::raw::c_int =
+    -200137;
+pub const DAQmxErrorSuitableTimebaseNotFoundFrequencyCombo:
+          ::std::os::raw::c_int =
+    -200136;
+pub const DAQmxErrorInternalTimebaseSourceDivisorCombo: ::std::os::raw::c_int
+          =
+    -200135;
+pub const DAQmxErrorInternalTimebaseSourceRateCombo: ::std::os::raw::c_int =
+    -200134;
+pub const DAQmxErrorInternalTimebaseRateDivisorSourceCombo:
+          ::std::os::raw::c_int =
+    -200133;
+pub const DAQmxErrorExternalTimebaseRateNotknownForRate: ::std::os::raw::c_int
+          =
+    -200132;
+pub const DAQmxErrorAnalogTrigChanNotFirstInScanList: ::std::os::raw::c_int =
+    -200131;
+pub const DAQmxErrorNoDivisorForExternalSignal: ::std::os::raw::c_int =
+    -200130;
+pub const DAQmxErrorAttributeInconsistentAcrossRepeatedPhysicalChannels:
+          ::std::os::raw::c_int =
+    -200128;
+pub const DAQmxErrorCannotHandshakeWithPort0: ::std::os::raw::c_int = -200127;
+pub const DAQmxErrorControlLineConflictOnPortC: ::std::os::raw::c_int =
+    -200126;
+pub const DAQmxErrorLines4To7ConfiguredForOutput: ::std::os::raw::c_int =
+    -200125;
+pub const DAQmxErrorLines4To7ConfiguredForInput: ::std::os::raw::c_int =
+    -200124;
+pub const DAQmxErrorLines0To3ConfiguredForOutput: ::std::os::raw::c_int =
+    -200123;
+pub const DAQmxErrorLines0To3ConfiguredForInput: ::std::os::raw::c_int =
+    -200122;
+pub const DAQmxErrorPortConfiguredForOutput: ::std::os::raw::c_int = -200121;
+pub const DAQmxErrorPortConfiguredForInput: ::std::os::raw::c_int = -200120;
+pub const DAQmxErrorPortConfiguredForStaticDigitalOps: ::std::os::raw::c_int =
+    -200119;
+pub const DAQmxErrorPortReservedForHandshaking: ::std::os::raw::c_int =
+    -200118;
+pub const DAQmxErrorPortDoesNotSupportHandshakingDataIO: ::std::os::raw::c_int
+          =
+    -200117;
+pub const DAQmxErrorCannotTristate8255OutputLines: ::std::os::raw::c_int =
+    -200116;
+pub const DAQmxErrorTemperatureOutOfRangeForCalibration: ::std::os::raw::c_int
+          =
+    -200113;
+pub const DAQmxErrorCalibrationHandleInvalid: ::std::os::raw::c_int = -200112;
+pub const DAQmxErrorPasswordRequired: ::std::os::raw::c_int = -200111;
+pub const DAQmxErrorIncorrectPassword: ::std::os::raw::c_int = -200110;
+pub const DAQmxErrorPasswordTooLong: ::std::os::raw::c_int = -200109;
+pub const DAQmxErrorCalibrationSessionAlreadyOpen: ::std::os::raw::c_int =
+    -200108;
+pub const DAQmxErrorSCXIModuleIncorrect: ::std::os::raw::c_int = -200107;
+pub const DAQmxErrorAttributeInconsistentAcrossChannelsOnDevice:
+          ::std::os::raw::c_int =
+    -200106;
+pub const DAQmxErrorSCXI1122ResistanceChanNotSupportedForCfg:
+          ::std::os::raw::c_int =
+    -200105;
+pub const DAQmxErrorBracketPairingMismatchInList: ::std::os::raw::c_int =
+    -200104;
+pub const DAQmxErrorInconsistentNumSamplesToWrite: ::std::os::raw::c_int =
+    -200103;
+pub const DAQmxErrorIncorrectDigitalPattern: ::std::os::raw::c_int = -200102;
+pub const DAQmxErrorIncorrectNumChannelsToWrite: ::std::os::raw::c_int =
+    -200101;
+pub const DAQmxErrorIncorrectReadFunction: ::std::os::raw::c_int = -200100;
+pub const DAQmxErrorPhysicalChannelNotSpecified: ::std::os::raw::c_int =
+    -200099;
+pub const DAQmxErrorMoreThanOneTerminal: ::std::os::raw::c_int = -200098;
+pub const DAQmxErrorMoreThanOneActiveChannelSpecified: ::std::os::raw::c_int =
+    -200097;
+pub const DAQmxErrorInvalidNumberSamplesToRead: ::std::os::raw::c_int =
+    -200096;
+pub const DAQmxErrorAnalogWaveformExpected: ::std::os::raw::c_int = -200095;
+pub const DAQmxErrorDigitalWaveformExpected: ::std::os::raw::c_int = -200094;
+pub const DAQmxErrorActiveChannelNotSpecified: ::std::os::raw::c_int =
+    -200093;
+pub const DAQmxErrorFunctionNotSupportedForDeviceTasks: ::std::os::raw::c_int
+          =
+    -200092;
+pub const DAQmxErrorFunctionNotInLibrary: ::std::os::raw::c_int = -200091;
+pub const DAQmxErrorLibraryNotPresent: ::std::os::raw::c_int = -200090;
+pub const DAQmxErrorDuplicateTask: ::std::os::raw::c_int = -200089;
+pub const DAQmxErrorInvalidTask: ::std::os::raw::c_int = -200088;
+pub const DAQmxErrorInvalidChannel: ::std::os::raw::c_int = -200087;
+pub const DAQmxErrorInvalidSyntaxForPhysicalChannelRange:
+          ::std::os::raw::c_int =
+    -200086;
+pub const DAQmxErrorMinNotLessThanMax: ::std::os::raw::c_int = -200082;
+pub const DAQmxErrorSampleRateNumChansConvertPeriodCombo:
+          ::std::os::raw::c_int =
+    -200081;
+pub const DAQmxErrorAODuringCounter1DMAConflict: ::std::os::raw::c_int =
+    -200079;
+pub const DAQmxErrorAIDuringCounter0DMAConflict: ::std::os::raw::c_int =
+    -200078;
+pub const DAQmxErrorInvalidAttributeValue: ::std::os::raw::c_int = -200077;
+pub const DAQmxErrorSuppliedCurrentDataOutsideSpecifiedRange:
+          ::std::os::raw::c_int =
+    -200076;
+pub const DAQmxErrorSuppliedVoltageDataOutsideSpecifiedRange:
+          ::std::os::raw::c_int =
+    -200075;
+pub const DAQmxErrorCannotStoreCalConst: ::std::os::raw::c_int = -200074;
+pub const DAQmxErrorSCXIModuleNotFound: ::std::os::raw::c_int = -200073;
+pub const DAQmxErrorDuplicatePhysicalChansNotSupported: ::std::os::raw::c_int
+          =
+    -200072;
+pub const DAQmxErrorTooManyPhysicalChansInList: ::std::os::raw::c_int =
+    -200071;
+pub const DAQmxErrorInvalidAdvanceEventTriggerType: ::std::os::raw::c_int =
+    -200070;
+pub const DAQmxErrorDeviceIsNotAValidSwitch: ::std::os::raw::c_int = -200069;
+pub const DAQmxErrorDeviceDoesNotSupportScanning: ::std::os::raw::c_int =
+    -200068;
+pub const DAQmxErrorScanListCannotBeTimed: ::std::os::raw::c_int = -200067;
+pub const DAQmxErrorConnectOperatorInvalidAtPointInList: ::std::os::raw::c_int
+          =
+    -200066;
+pub const DAQmxErrorUnexpectedSwitchActionInList: ::std::os::raw::c_int =
+    -200065;
+pub const DAQmxErrorUnexpectedSeparatorInList: ::std::os::raw::c_int =
+    -200064;
+pub const DAQmxErrorExpectedTerminatorInList: ::std::os::raw::c_int = -200063;
+pub const DAQmxErrorExpectedConnectOperatorInList: ::std::os::raw::c_int =
+    -200062;
+pub const DAQmxErrorExpectedSeparatorInList: ::std::os::raw::c_int = -200061;
+pub const DAQmxErrorFullySpecifiedPathInListContainsRange:
+          ::std::os::raw::c_int =
+    -200060;
+pub const DAQmxErrorConnectionSeparatorAtEndOfList: ::std::os::raw::c_int =
+    -200059;
+pub const DAQmxErrorIdentifierInListTooLong: ::std::os::raw::c_int = -200058;
+pub const DAQmxErrorDuplicateDeviceIDInListWhenSettling: ::std::os::raw::c_int
+          =
+    -200057;
+pub const DAQmxErrorChannelNameNotSpecifiedInList: ::std::os::raw::c_int =
+    -200056;
+pub const DAQmxErrorDeviceIDNotSpecifiedInList: ::std::os::raw::c_int =
+    -200055;
+pub const DAQmxErrorSemicolonDoesNotFollowRangeInList: ::std::os::raw::c_int =
+    -200054;
+pub const DAQmxErrorSwitchActionInListSpansMultipleDevices:
+          ::std::os::raw::c_int =
+    -200053;
+pub const DAQmxErrorRangeWithoutAConnectActionInList: ::std::os::raw::c_int =
+    -200052;
+pub const DAQmxErrorInvalidIdentifierFollowingSeparatorInList:
+          ::std::os::raw::c_int =
+    -200051;
+pub const DAQmxErrorInvalidChannelNameInList: ::std::os::raw::c_int = -200050;
+pub const DAQmxErrorInvalidNumberInRepeatStatementInList:
+          ::std::os::raw::c_int =
+    -200049;
+pub const DAQmxErrorInvalidTriggerLineInList: ::std::os::raw::c_int = -200048;
+pub const DAQmxErrorInvalidIdentifierInListFollowingDeviceID:
+          ::std::os::raw::c_int =
+    -200047;
+pub const DAQmxErrorInvalidIdentifierInListAtEndOfSwitchAction:
+          ::std::os::raw::c_int =
+    -200046;
+pub const DAQmxErrorDeviceRemoved: ::std::os::raw::c_int = -200045;
+pub const DAQmxErrorRoutingPathNotAvailable: ::std::os::raw::c_int = -200044;
+pub const DAQmxErrorRoutingHardwareBusy: ::std::os::raw::c_int = -200043;
+pub const DAQmxErrorRequestedSignalInversionForRoutingNotPossible:
+          ::std::os::raw::c_int =
+    -200042;
+pub const DAQmxErrorInvalidRoutingDestinationTerminalName:
+          ::std::os::raw::c_int =
+    -200041;
+pub const DAQmxErrorInvalidRoutingSourceTerminalName: ::std::os::raw::c_int =
+    -200040;
+pub const DAQmxErrorRoutingNotSupportedForDevice: ::std::os::raw::c_int =
+    -200039;
+pub const DAQmxErrorWaitIsLastInstructionOfLoopInScript: ::std::os::raw::c_int
+          =
+    -200038;
+pub const DAQmxErrorClearIsLastInstructionOfLoopInScript:
+          ::std::os::raw::c_int =
+    -200037;
+pub const DAQmxErrorInvalidLoopIterationsInScript: ::std::os::raw::c_int =
+    -200036;
+pub const DAQmxErrorRepeatLoopNestingTooDeepInScript: ::std::os::raw::c_int =
+    -200035;
+pub const DAQmxErrorMarkerPositionOutsideSubsetInScript: ::std::os::raw::c_int
+          =
+    -200034;
+pub const DAQmxErrorSubsetStartOffsetNotAlignedInScript: ::std::os::raw::c_int
+          =
+    -200033;
+pub const DAQmxErrorInvalidSubsetLengthInScript: ::std::os::raw::c_int =
+    -200032;
+pub const DAQmxErrorMarkerPositionNotAlignedInScript: ::std::os::raw::c_int =
+    -200031;
+pub const DAQmxErrorSubsetOutsideWaveformInScript: ::std::os::raw::c_int =
+    -200030;
+pub const DAQmxErrorMarkerOutsideWaveformInScript: ::std::os::raw::c_int =
+    -200029;
+pub const DAQmxErrorWaveformInScriptNotInMem: ::std::os::raw::c_int = -200028;
+pub const DAQmxErrorKeywordExpectedInScript: ::std::os::raw::c_int = -200027;
+pub const DAQmxErrorBufferNameExpectedInScript: ::std::os::raw::c_int =
+    -200026;
+pub const DAQmxErrorProcedureNameExpectedInScript: ::std::os::raw::c_int =
+    -200025;
+pub const DAQmxErrorScriptHasInvalidIdentifier: ::std::os::raw::c_int =
+    -200024;
+pub const DAQmxErrorScriptHasInvalidCharacter: ::std::os::raw::c_int =
+    -200023;
+pub const DAQmxErrorResourceAlreadyReserved: ::std::os::raw::c_int = -200022;
+pub const DAQmxErrorSelfTestFailed: ::std::os::raw::c_int = -200020;
+pub const DAQmxErrorADCOverrun: ::std::os::raw::c_int = -200019;
+pub const DAQmxErrorDACUnderflow: ::std::os::raw::c_int = -200018;
+pub const DAQmxErrorInputFIFOUnderflow: ::std::os::raw::c_int = -200017;
+pub const DAQmxErrorOutputFIFOUnderflow: ::std::os::raw::c_int = -200016;
+pub const DAQmxErrorSCXISerialCommunication: ::std::os::raw::c_int = -200015;
+pub const DAQmxErrorDigitalTerminalSpecifiedMoreThanOnce:
+          ::std::os::raw::c_int =
+    -200014;
+pub const DAQmxErrorDigitalOutputNotSupported: ::std::os::raw::c_int =
+    -200012;
+pub const DAQmxErrorInconsistentChannelDirections: ::std::os::raw::c_int =
+    -200011;
+pub const DAQmxErrorInputFIFOOverflow: ::std::os::raw::c_int = -200010;
+pub const DAQmxErrorTimeStampOverwritten: ::std::os::raw::c_int = -200009;
+pub const DAQmxErrorStopTriggerHasNotOccurred: ::std::os::raw::c_int =
+    -200008;
+pub const DAQmxErrorRecordNotAvailable: ::std::os::raw::c_int = -200007;
+pub const DAQmxErrorRecordOverwritten: ::std::os::raw::c_int = -200006;
+pub const DAQmxErrorDataNotAvailable: ::std::os::raw::c_int = -200005;
+pub const DAQmxErrorDataOverwrittenInDeviceMemory: ::std::os::raw::c_int =
+    -200004;
+pub const DAQmxErrorDuplicatedChannel: ::std::os::raw::c_int = -200003;
+pub const DAQmxWarningTimestampCounterRolledOver: ::std::os::raw::c_uint =
+    200003;
+pub const DAQmxWarningInputTerminationOverloaded: ::std::os::raw::c_uint =
+    200004;
+pub const DAQmxWarningADCOverloaded: ::std::os::raw::c_uint = 200005;
+pub const DAQmxWarningPLLUnlocked: ::std::os::raw::c_uint = 200007;
+pub const DAQmxWarningCounter0DMADuringAIConflict: ::std::os::raw::c_uint =
+    200008;
+pub const DAQmxWarningCounter1DMADuringAOConflict: ::std::os::raw::c_uint =
+    200009;
+pub const DAQmxWarningStoppedBeforeDone: ::std::os::raw::c_uint = 200010;
+pub const DAQmxWarningRateViolatesSettlingTime: ::std::os::raw::c_uint =
+    200011;
+pub const DAQmxWarningRateViolatesMaxADCRate: ::std::os::raw::c_uint = 200012;
+pub const DAQmxWarningUserDefInfoStringTooLong: ::std::os::raw::c_uint =
+    200013;
+pub const DAQmxWarningTooManyInterruptsPerSecond: ::std::os::raw::c_uint =
+    200014;
+pub const DAQmxWarningPotentialGlitchDuringWrite: ::std::os::raw::c_uint =
+    200015;
+pub const DAQmxWarningDevNotSelfCalibratedWithDAQmx: ::std::os::raw::c_uint =
+    200016;
+pub const DAQmxWarningAISampRateTooLow: ::std::os::raw::c_uint = 200017;
+pub const DAQmxWarningAIConvRateTooLow: ::std::os::raw::c_uint = 200018;
+pub const DAQmxWarningReadOffsetCoercion: ::std::os::raw::c_uint = 200019;
+pub const DAQmxWarningPretrigCoercion: ::std::os::raw::c_uint = 200020;
+pub const DAQmxWarningSampValCoercedToMax: ::std::os::raw::c_uint = 200021;
+pub const DAQmxWarningSampValCoercedToMin: ::std::os::raw::c_uint = 200022;
+pub const DAQmxWarningPropertyVersionNew: ::std::os::raw::c_uint = 200024;
+pub const DAQmxWarningUserDefinedInfoTooLong: ::std::os::raw::c_uint = 200025;
+pub const DAQmxWarningCAPIStringTruncatedToFitBuffer: ::std::os::raw::c_uint =
+    200026;
+pub const DAQmxWarningSampClkRateTooLow: ::std::os::raw::c_uint = 200027;
+pub const DAQmxWarningPossiblyInvalidCTRSampsInFiniteDMAAcq:
+          ::std::os::raw::c_uint =
+    200028;
+pub const DAQmxWarningRISAcqCompletedSomeBinsNotFilled: ::std::os::raw::c_uint
+          =
+    200029;
+pub const DAQmxWarningPXIDevTempExceedsMaxOpTemp: ::std::os::raw::c_uint =
+    200030;
+pub const DAQmxWarningOutputGainTooLowForRFFreq: ::std::os::raw::c_uint =
+    200031;
+pub const DAQmxWarningOutputGainTooHighForRFFreq: ::std::os::raw::c_uint =
+    200032;
+pub const DAQmxWarningMultipleWritesBetweenSampClks: ::std::os::raw::c_uint =
+    200033;
+pub const DAQmxWarningDeviceMayShutDownDueToHighTemp: ::std::os::raw::c_uint =
+    200034;
+pub const DAQmxWarningRateViolatesMinADCRate: ::std::os::raw::c_uint = 200035;
+pub const DAQmxWarningSampClkRateAboveDevSpecs: ::std::os::raw::c_uint =
+    200036;
+pub const DAQmxWarningCOPrevDAQmxWriteSettingsOverwrittenForHWTimedSinglePoint:
+          ::std::os::raw::c_uint =
+    200037;
+pub const DAQmxWarningLowpassFilterSettlingTimeExceedsUserTimeBetween2ADCConversions:
+          ::std::os::raw::c_uint =
+    200038;
+pub const DAQmxWarningLowpassFilterSettlingTimeExceedsDriverTimeBetween2ADCConversions:
+          ::std::os::raw::c_uint =
+    200039;
+pub const DAQmxWarningSampClkRateViolatesSettlingTimeForGen:
+          ::std::os::raw::c_uint =
+    200040;
+pub const DAQmxWarningInvalidCalConstValueForAI: ::std::os::raw::c_uint =
+    200041;
+pub const DAQmxWarningInvalidCalConstValueForAO: ::std::os::raw::c_uint =
+    200042;
+pub const DAQmxWarningChanCalExpired: ::std::os::raw::c_uint = 200043;
+pub const DAQmxWarningUnrecognizedEnumValueEncounteredInStorage:
+          ::std::os::raw::c_uint =
+    200044;
+pub const DAQmxWarningTableCRCNotCorrect: ::std::os::raw::c_uint = 200045;
+pub const DAQmxWarningExternalCRCNotCorrect: ::std::os::raw::c_uint = 200046;
+pub const DAQmxWarningSelfCalCRCNotCorrect: ::std::os::raw::c_uint = 200047;
+pub const DAQmxWarningDeviceSpecExceeded: ::std::os::raw::c_uint = 200048;
+pub const DAQmxWarningOnlyGainCalibrated: ::std::os::raw::c_uint = 200049;
+pub const DAQmxWarningReversePowerProtectionActivated: ::std::os::raw::c_uint
+          =
+    200050;
+pub const DAQmxWarningOverVoltageProtectionActivated: ::std::os::raw::c_uint =
+    200051;
+pub const DAQmxWarningBufferSizeNotMultipleOfSectorSize:
+          ::std::os::raw::c_uint =
+    200052;
+pub const DAQmxWarningSampleRateMayCauseAcqToFail: ::std::os::raw::c_uint =
+    200053;
+pub const DAQmxWarningUserAreaCRCNotCorrect: ::std::os::raw::c_uint = 200054;
+pub const DAQmxWarningPowerUpInfoCRCNotCorrect: ::std::os::raw::c_uint =
+    200055;
+pub const DAQmxWarningConnectionCountHasExceededRecommendedLimit:
+          ::std::os::raw::c_uint =
+    200056;
+pub const DAQmxWarningNetworkDeviceAlreadyAdded: ::std::os::raw::c_uint =
+    200057;
+pub const DAQmxWarningAccessoryConnectionCountIsInvalid:
+          ::std::os::raw::c_uint =
+    200058;
+pub const DAQmxWarningUnableToDisconnectPorts: ::std::os::raw::c_uint =
+    200059;
+pub const DAQmxWarningReadRepeatedData: ::std::os::raw::c_uint = 200060;
+pub const DAQmxWarningPXI5600_NotConfigured: ::std::os::raw::c_uint = 200061;
+pub const DAQmxWarningPXI5661_IncorrectlyConfigured: ::std::os::raw::c_uint =
+    200062;
+pub const DAQmxWarningPXIe5601_NotConfigured: ::std::os::raw::c_uint = 200063;
+pub const DAQmxWarningPXIe5663_IncorrectlyConfigured: ::std::os::raw::c_uint =
+    200064;
+pub const DAQmxWarningPXIe5663E_IncorrectlyConfigured: ::std::os::raw::c_uint
+          =
+    200065;
+pub const DAQmxWarningPXIe5603_NotConfigured: ::std::os::raw::c_uint = 200066;
+pub const DAQmxWarningPXIe5665_5603_IncorrectlyConfigured:
+          ::std::os::raw::c_uint =
+    200067;
+pub const DAQmxWarningPXIe5667_5603_IncorrectlyConfigured:
+          ::std::os::raw::c_uint =
+    200068;
+pub const DAQmxWarningPXIe5605_NotConfigured: ::std::os::raw::c_uint = 200069;
+pub const DAQmxWarningPXIe5665_5605_IncorrectlyConfigured:
+          ::std::os::raw::c_uint =
+    200070;
+pub const DAQmxWarningPXIe5667_5605_IncorrectlyConfigured:
+          ::std::os::raw::c_uint =
+    200071;
+pub const DAQmxWarningPXIe5606_NotConfigured: ::std::os::raw::c_uint = 200072;
+pub const DAQmxWarningPXIe5665_5606_IncorrectlyConfigured:
+          ::std::os::raw::c_uint =
+    200073;
+pub const DAQmxWarningPXI5610_NotConfigured: ::std::os::raw::c_uint = 200074;
+pub const DAQmxWarningPXI5610_IncorrectlyConfigured: ::std::os::raw::c_uint =
+    200075;
+pub const DAQmxWarningPXIe5611_NotConfigured: ::std::os::raw::c_uint = 200076;
+pub const DAQmxWarningPXIe5611_IncorrectlyConfigured: ::std::os::raw::c_uint =
+    200077;
+pub const DAQmxWarningUSBHotfixForDAQ: ::std::os::raw::c_uint = 200078;
+pub const DAQmxWarningNoChangeSupersededByIdleBehavior: ::std::os::raw::c_uint
+          =
+    200079;
+pub const DAQmxWarningReadNotCompleteBeforeSampClk: ::std::os::raw::c_uint =
+    209800;
+pub const DAQmxWarningWriteNotCompleteBeforeSampClk: ::std::os::raw::c_uint =
+    209801;
+pub const DAQmxWarningWaitForNextSampClkDetectedMissedSampClk:
+          ::std::os::raw::c_uint =
+    209802;
+pub const DAQmxWarningOutputDataTransferConditionNotSupported:
+          ::std::os::raw::c_uint =
+    209803;
+pub const DAQmxErrorRoutingDestTermPXIDStarXNotInSystemTimingSlot_Routing:
+          ::std::os::raw::c_int =
+    -89167;
+pub const DAQmxErrorRoutingSrcTermPXIDStarXNotInSystemTimingSlot_Routing:
+          ::std::os::raw::c_int =
+    -89166;
+pub const DAQmxErrorRoutingSrcTermPXIDStarInNonDStarTriggerSlot_Routing:
+          ::std::os::raw::c_int =
+    -89165;
+pub const DAQmxErrorRoutingDestTermPXIDStarInNonDStarTriggerSlot_Routing:
+          ::std::os::raw::c_int =
+    -89164;
+pub const DAQmxErrorRoutingDestTermPXIClk10InNotInStarTriggerSlot_Routing:
+          ::std::os::raw::c_int =
+    -89162;
+pub const DAQmxErrorRoutingDestTermPXIClk10InNotInSystemTimingSlot_Routing:
+          ::std::os::raw::c_int =
+    -89161;
+pub const DAQmxErrorRoutingDestTermPXIStarXNotInStarTriggerSlot_Routing:
+          ::std::os::raw::c_int =
+    -89160;
+pub const DAQmxErrorRoutingDestTermPXIStarXNotInSystemTimingSlot_Routing:
+          ::std::os::raw::c_int =
+    -89159;
+pub const DAQmxErrorRoutingSrcTermPXIStarXNotInStarTriggerSlot_Routing:
+          ::std::os::raw::c_int =
+    -89158;
+pub const DAQmxErrorRoutingSrcTermPXIStarXNotInSystemTimingSlot_Routing:
+          ::std::os::raw::c_int =
+    -89157;
+pub const DAQmxErrorRoutingSrcTermPXIStarInNonStarTriggerSlot_Routing:
+          ::std::os::raw::c_int =
+    -89156;
+pub const DAQmxErrorRoutingDestTermPXIStarInNonStarTriggerSlot_Routing:
+          ::std::os::raw::c_int =
+    -89155;
+pub const DAQmxErrorRoutingDestTermPXIStarInStarTriggerSlot_Routing:
+          ::std::os::raw::c_int =
+    -89154;
+pub const DAQmxErrorRoutingDestTermPXIStarInSystemTimingSlot_Routing:
+          ::std::os::raw::c_int =
+    -89153;
+pub const DAQmxErrorRoutingSrcTermPXIStarInStarTriggerSlot_Routing:
+          ::std::os::raw::c_int =
+    -89152;
+pub const DAQmxErrorRoutingSrcTermPXIStarInSystemTimingSlot_Routing:
+          ::std::os::raw::c_int =
+    -89151;
+pub const DAQmxErrorInvalidSignalModifier_Routing: ::std::os::raw::c_int =
+    -89150;
+pub const DAQmxErrorRoutingDestTermPXIClk10InNotInSlot2_Routing:
+          ::std::os::raw::c_int =
+    -89149;
+pub const DAQmxErrorRoutingDestTermPXIStarXNotInSlot2_Routing:
+          ::std::os::raw::c_int =
+    -89148;
+pub const DAQmxErrorRoutingSrcTermPXIStarXNotInSlot2_Routing:
+          ::std::os::raw::c_int =
+    -89147;
+pub const DAQmxErrorRoutingSrcTermPXIStarInSlot16AndAbove_Routing:
+          ::std::os::raw::c_int =
+    -89146;
+pub const DAQmxErrorRoutingDestTermPXIStarInSlot16AndAbove_Routing:
+          ::std::os::raw::c_int =
+    -89145;
+pub const DAQmxErrorRoutingDestTermPXIStarInSlot2_Routing:
+          ::std::os::raw::c_int =
+    -89144;
+pub const DAQmxErrorRoutingSrcTermPXIStarInSlot2_Routing:
+          ::std::os::raw::c_int =
+    -89143;
+pub const DAQmxErrorRoutingDestTermPXIChassisNotIdentified_Routing:
+          ::std::os::raw::c_int =
+    -89142;
+pub const DAQmxErrorRoutingSrcTermPXIChassisNotIdentified_Routing:
+          ::std::os::raw::c_int =
+    -89141;
+pub const DAQmxErrorTrigLineNotFoundSingleDevRoute_Routing:
+          ::std::os::raw::c_int =
+    -89140;
+pub const DAQmxErrorNoCommonTrigLineForRoute_Routing: ::std::os::raw::c_int =
+    -89139;
+pub const DAQmxErrorResourcesInUseForRouteInTask_Routing:
+          ::std::os::raw::c_int =
+    -89138;
+pub const DAQmxErrorResourcesInUseForRoute_Routing: ::std::os::raw::c_int =
+    -89137;
+pub const DAQmxErrorRouteNotSupportedByHW_Routing: ::std::os::raw::c_int =
+    -89136;
+pub const DAQmxErrorResourcesInUseForInversionInTask_Routing:
+          ::std::os::raw::c_int =
+    -89135;
+pub const DAQmxErrorResourcesInUseForInversion_Routing: ::std::os::raw::c_int
+          =
+    -89134;
+pub const DAQmxErrorInversionNotSupportedByHW_Routing: ::std::os::raw::c_int =
+    -89133;
+pub const DAQmxErrorResourcesInUseForProperty_Routing: ::std::os::raw::c_int =
+    -89132;
+pub const DAQmxErrorRouteSrcAndDestSame_Routing: ::std::os::raw::c_int =
+    -89131;
+pub const DAQmxErrorDevAbsentOrUnavailable_Routing: ::std::os::raw::c_int =
+    -89130;
+pub const DAQmxErrorInvalidTerm_Routing: ::std::os::raw::c_int = -89129;
+pub const DAQmxErrorCannotTristateTerm_Routing: ::std::os::raw::c_int =
+    -89128;
+pub const DAQmxErrorCannotTristateBusyTerm_Routing: ::std::os::raw::c_int =
+    -89127;
+pub const DAQmxErrorCouldNotReserveRequestedTrigLine_Routing:
+          ::std::os::raw::c_int =
+    -89126;
+pub const DAQmxErrorTrigLineNotFound_Routing: ::std::os::raw::c_int = -89125;
+pub const DAQmxErrorRoutingPathNotAvailable_Routing: ::std::os::raw::c_int =
+    -89124;
+pub const DAQmxErrorRoutingHardwareBusy_Routing: ::std::os::raw::c_int =
+    -89123;
+pub const DAQmxErrorRequestedSignalInversionForRoutingNotPossible_Routing:
+          ::std::os::raw::c_int =
+    -89122;
+pub const DAQmxErrorInvalidRoutingDestinationTerminalName_Routing:
+          ::std::os::raw::c_int =
+    -89121;
+pub const DAQmxErrorInvalidRoutingSourceTerminalName_Routing:
+          ::std::os::raw::c_int =
+    -89120;
+pub const DAQmxErrorServiceLocatorNotAvailable_Routing: ::std::os::raw::c_int
+          =
+    -88907;
+pub const DAQmxErrorCouldNotConnectToServer_Routing: ::std::os::raw::c_int =
+    -88900;
+pub const DAQmxErrorDeviceNameContainsSpacesOrPunctuation_Routing:
+          ::std::os::raw::c_int =
+    -88720;
+pub const DAQmxErrorDeviceNameContainsNonprintableCharacters_Routing:
+          ::std::os::raw::c_int =
+    -88719;
+pub const DAQmxErrorDeviceNameIsEmpty_Routing: ::std::os::raw::c_int = -88718;
+pub const DAQmxErrorDeviceNameNotFound_Routing: ::std::os::raw::c_int =
+    -88717;
+pub const DAQmxErrorLocalRemoteDriverVersionMismatch_Routing:
+          ::std::os::raw::c_int =
+    -88716;
+pub const DAQmxErrorDuplicateDeviceName_Routing: ::std::os::raw::c_int =
+    -88715;
+pub const DAQmxErrorRuntimeAborting_Routing: ::std::os::raw::c_int = -88710;
+pub const DAQmxErrorRuntimeAborted_Routing: ::std::os::raw::c_int = -88709;
+pub const DAQmxErrorResourceNotInPool_Routing: ::std::os::raw::c_int = -88708;
+pub const DAQmxErrorDriverDeviceGUIDNotFound_Routing: ::std::os::raw::c_int =
+    -88705;
+pub const DAQmxErrorPALUSBTransactionError: ::std::os::raw::c_int = -50808;
+pub const DAQmxErrorPALIsocStreamBufferError: ::std::os::raw::c_int = -50807;
+pub const DAQmxErrorPALInvalidAddressComponent: ::std::os::raw::c_int =
+    -50806;
+pub const DAQmxErrorPALSharingViolation: ::std::os::raw::c_int = -50805;
+pub const DAQmxErrorPALInvalidDeviceState: ::std::os::raw::c_int = -50804;
+pub const DAQmxErrorPALConnectionReset: ::std::os::raw::c_int = -50803;
+pub const DAQmxErrorPALConnectionAborted: ::std::os::raw::c_int = -50802;
+pub const DAQmxErrorPALConnectionRefused: ::std::os::raw::c_int = -50801;
+pub const DAQmxErrorPALBusResetOccurred: ::std::os::raw::c_int = -50800;
+pub const DAQmxErrorPALWaitInterrupted: ::std::os::raw::c_int = -50700;
+pub const DAQmxErrorPALMessageUnderflow: ::std::os::raw::c_int = -50651;
+pub const DAQmxErrorPALMessageOverflow: ::std::os::raw::c_int = -50650;
+pub const DAQmxErrorPALThreadAlreadyDead: ::std::os::raw::c_int = -50604;
+pub const DAQmxErrorPALThreadStackSizeNotSupported: ::std::os::raw::c_int =
+    -50603;
+pub const DAQmxErrorPALThreadControllerIsNotThreadCreator:
+          ::std::os::raw::c_int =
+    -50602;
+pub const DAQmxErrorPALThreadHasNoThreadObject: ::std::os::raw::c_int =
+    -50601;
+pub const DAQmxErrorPALThreadCouldNotRun: ::std::os::raw::c_int = -50600;
+pub const DAQmxErrorPALSyncAbandoned: ::std::os::raw::c_int = -50551;
+pub const DAQmxErrorPALSyncTimedOut: ::std::os::raw::c_int = -50550;
+pub const DAQmxErrorPALReceiverSocketInvalid: ::std::os::raw::c_int = -50503;
+pub const DAQmxErrorPALSocketListenerInvalid: ::std::os::raw::c_int = -50502;
+pub const DAQmxErrorPALSocketListenerAlreadyRegistered: ::std::os::raw::c_int
+          =
+    -50501;
+pub const DAQmxErrorPALDispatcherAlreadyExported: ::std::os::raw::c_int =
+    -50500;
+pub const DAQmxErrorPALDMALinkEventMissed: ::std::os::raw::c_int = -50450;
+pub const DAQmxErrorPALBusError: ::std::os::raw::c_int = -50413;
+pub const DAQmxErrorPALRetryLimitExceeded: ::std::os::raw::c_int = -50412;
+pub const DAQmxErrorPALTransferOverread: ::std::os::raw::c_int = -50411;
+pub const DAQmxErrorPALTransferOverwritten: ::std::os::raw::c_int = -50410;
+pub const DAQmxErrorPALPhysicalBufferFull: ::std::os::raw::c_int = -50409;
+pub const DAQmxErrorPALPhysicalBufferEmpty: ::std::os::raw::c_int = -50408;
+pub const DAQmxErrorPALLogicalBufferFull: ::std::os::raw::c_int = -50407;
+pub const DAQmxErrorPALLogicalBufferEmpty: ::std::os::raw::c_int = -50406;
+pub const DAQmxErrorPALTransferAborted: ::std::os::raw::c_int = -50405;
+pub const DAQmxErrorPALTransferStopped: ::std::os::raw::c_int = -50404;
+pub const DAQmxErrorPALTransferInProgress: ::std::os::raw::c_int = -50403;
+pub const DAQmxErrorPALTransferNotInProgress: ::std::os::raw::c_int = -50402;
+pub const DAQmxErrorPALCommunicationsFault: ::std::os::raw::c_int = -50401;
+pub const DAQmxErrorPALTransferTimedOut: ::std::os::raw::c_int = -50400;
+pub const DAQmxErrorPALMemoryHeapNotEmpty: ::std::os::raw::c_int = -50355;
+pub const DAQmxErrorPALMemoryBlockCheckFailed: ::std::os::raw::c_int = -50354;
+pub const DAQmxErrorPALMemoryPageLockFailed: ::std::os::raw::c_int = -50353;
+pub const DAQmxErrorPALMemoryFull: ::std::os::raw::c_int = -50352;
+pub const DAQmxErrorPALMemoryAlignmentFault: ::std::os::raw::c_int = -50351;
+pub const DAQmxErrorPALMemoryConfigurationFault: ::std::os::raw::c_int =
+    -50350;
+pub const DAQmxErrorPALDeviceInitializationFault: ::std::os::raw::c_int =
+    -50303;
+pub const DAQmxErrorPALDeviceNotSupported: ::std::os::raw::c_int = -50302;
+pub const DAQmxErrorPALDeviceUnknown: ::std::os::raw::c_int = -50301;
+pub const DAQmxErrorPALDeviceNotFound: ::std::os::raw::c_int = -50300;
+pub const DAQmxErrorPALFeatureDisabled: ::std::os::raw::c_int = -50265;
+pub const DAQmxErrorPALComponentBusy: ::std::os::raw::c_int = -50264;
+pub const DAQmxErrorPALComponentAlreadyInstalled: ::std::os::raw::c_int =
+    -50263;
+pub const DAQmxErrorPALComponentNotUnloadable: ::std::os::raw::c_int = -50262;
+pub const DAQmxErrorPALComponentNeverLoaded: ::std::os::raw::c_int = -50261;
+pub const DAQmxErrorPALComponentAlreadyLoaded: ::std::os::raw::c_int = -50260;
+pub const DAQmxErrorPALComponentCircularDependency: ::std::os::raw::c_int =
+    -50259;
+pub const DAQmxErrorPALComponentInitializationFault: ::std::os::raw::c_int =
+    -50258;
+pub const DAQmxErrorPALComponentImageCorrupt: ::std::os::raw::c_int = -50257;
+pub const DAQmxErrorPALFeatureNotSupported: ::std::os::raw::c_int = -50256;
+pub const DAQmxErrorPALFunctionNotFound: ::std::os::raw::c_int = -50255;
+pub const DAQmxErrorPALFunctionObsolete: ::std::os::raw::c_int = -50254;
+pub const DAQmxErrorPALComponentTooNew: ::std::os::raw::c_int = -50253;
+pub const DAQmxErrorPALComponentTooOld: ::std::os::raw::c_int = -50252;
+pub const DAQmxErrorPALComponentNotFound: ::std::os::raw::c_int = -50251;
+pub const DAQmxErrorPALVersionMismatch: ::std::os::raw::c_int = -50250;
+pub const DAQmxErrorPALFileFault: ::std::os::raw::c_int = -50209;
+pub const DAQmxErrorPALFileWriteFault: ::std::os::raw::c_int = -50208;
+pub const DAQmxErrorPALFileReadFault: ::std::os::raw::c_int = -50207;
+pub const DAQmxErrorPALFileSeekFault: ::std::os::raw::c_int = -50206;
+pub const DAQmxErrorPALFileCloseFault: ::std::os::raw::c_int = -50205;
+pub const DAQmxErrorPALFileOpenFault: ::std::os::raw::c_int = -50204;
+pub const DAQmxErrorPALDiskFull: ::std::os::raw::c_int = -50203;
+pub const DAQmxErrorPALOSFault: ::std::os::raw::c_int = -50202;
+pub const DAQmxErrorPALOSInitializationFault: ::std::os::raw::c_int = -50201;
+pub const DAQmxErrorPALOSUnsupported: ::std::os::raw::c_int = -50200;
+pub const DAQmxErrorPALCalculationOverflow: ::std::os::raw::c_int = -50175;
+pub const DAQmxErrorPALHardwareFault: ::std::os::raw::c_int = -50152;
+pub const DAQmxErrorPALFirmwareFault: ::std::os::raw::c_int = -50151;
+pub const DAQmxErrorPALSoftwareFault: ::std::os::raw::c_int = -50150;
+pub const DAQmxErrorPALMessageQueueFull: ::std::os::raw::c_int = -50108;
+pub const DAQmxErrorPALResourceAmbiguous: ::std::os::raw::c_int = -50107;
+pub const DAQmxErrorPALResourceBusy: ::std::os::raw::c_int = -50106;
+pub const DAQmxErrorPALResourceInitialized: ::std::os::raw::c_int = -50105;
+pub const DAQmxErrorPALResourceNotInitialized: ::std::os::raw::c_int = -50104;
+pub const DAQmxErrorPALResourceReserved: ::std::os::raw::c_int = -50103;
+pub const DAQmxErrorPALResourceNotReserved: ::std::os::raw::c_int = -50102;
+pub const DAQmxErrorPALResourceNotAvailable: ::std::os::raw::c_int = -50101;
+pub const DAQmxErrorPALResourceOwnedBySystem: ::std::os::raw::c_int = -50100;
+pub const DAQmxErrorPALBadToken: ::std::os::raw::c_int = -50020;
+pub const DAQmxErrorPALBadThreadMultitask: ::std::os::raw::c_int = -50019;
+pub const DAQmxErrorPALBadLibrarySpecifier: ::std::os::raw::c_int = -50018;
+pub const DAQmxErrorPALBadAddressSpace: ::std::os::raw::c_int = -50017;
+pub const DAQmxErrorPALBadWindowType: ::std::os::raw::c_int = -50016;
+pub const DAQmxErrorPALBadAddressClass: ::std::os::raw::c_int = -50015;
+pub const DAQmxErrorPALBadWriteCount: ::std::os::raw::c_int = -50014;
+pub const DAQmxErrorPALBadWriteOffset: ::std::os::raw::c_int = -50013;
+pub const DAQmxErrorPALBadWriteMode: ::std::os::raw::c_int = -50012;
+pub const DAQmxErrorPALBadReadCount: ::std::os::raw::c_int = -50011;
+pub const DAQmxErrorPALBadReadOffset: ::std::os::raw::c_int = -50010;
+pub const DAQmxErrorPALBadReadMode: ::std::os::raw::c_int = -50009;
+pub const DAQmxErrorPALBadCount: ::std::os::raw::c_int = -50008;
+pub const DAQmxErrorPALBadOffset: ::std::os::raw::c_int = -50007;
+pub const DAQmxErrorPALBadMode: ::std::os::raw::c_int = -50006;
+pub const DAQmxErrorPALBadDataSize: ::std::os::raw::c_int = -50005;
+pub const DAQmxErrorPALBadPointer: ::std::os::raw::c_int = -50004;
+pub const DAQmxErrorPALBadSelector: ::std::os::raw::c_int = -50003;
+pub const DAQmxErrorPALBadDevice: ::std::os::raw::c_int = -50002;
+pub const DAQmxErrorPALIrrelevantAttribute: ::std::os::raw::c_int = -50001;
+pub const DAQmxErrorPALValueConflict: ::std::os::raw::c_int = -50000;
+pub const DAQmxErrorRetryCall: ::std::os::raw::c_short = -26853;
+pub const DAQmxErrorFileDoesNotExist: ::std::os::raw::c_short = -26852;
+pub const DAQmxErrorGenerationDisabled: ::std::os::raw::c_short = -26851;
+pub const DAQmxErrorAlreadyInitialized: ::std::os::raw::c_short = -26850;
+pub const DAQmxErrorPXISystemDescriptionParseError: ::std::os::raw::c_short =
+    -26809;
+pub const DAQmxErrorPXISAConfigurationLocked: ::std::os::raw::c_short =
+    -26808;
+pub const DAQmxErrorNotActiveResourceManager: ::std::os::raw::c_short =
+    -26807;
+pub const DAQmxErrorInvalidAttribute: ::std::os::raw::c_short = -26806;
+pub const DAQmxErrorInvalidHandle: ::std::os::raw::c_short = -26805;
+pub const DAQmxErrorServiceNotRunning: ::std::os::raw::c_short = -26804;
+pub const DAQmxErrorRecursiveCall: ::std::os::raw::c_short = -26803;
+pub const DAQmxErrorTimeout: ::std::os::raw::c_short = -26802;
+pub const DAQmxErrorUnspecifiedError: ::std::os::raw::c_short = -26801;
+pub const DAQmxErrorHandlerNotFound: ::std::os::raw::c_short = -26657;
+pub const DAQmxErrorIncorrectDataType: ::std::os::raw::c_short = -26656;
+pub const DAQmxErrorInconsistentFileFault: ::std::os::raw::c_short = -26655;
+pub const DAQmxErrorChildNotFound: ::std::os::raw::c_short = -26654;
+pub const DAQmxErrorAttributeNotFound: ::std::os::raw::c_short = -26653;
+pub const DAQmxErrorIOError: ::std::os::raw::c_short = -26652;
+pub const DAQmxErrorPxiResmanMxsPxiSystemNotFound: ::std::os::raw::c_short =
+    -26600;
+pub const DAQmxErrorPxiResmanPciDescriptionStringParseError:
+          ::std::os::raw::c_short =
+    -26550;
+pub const DAQmxErrorPxiResmanModuleParseError: ::std::os::raw::c_short =
+    -26500;
+pub const DAQmxErrorPxiResmanSystemDescriptionSpecLimitation:
+          ::std::os::raw::c_short =
+    -26403;
+pub const DAQmxErrorPxiResmanSystemDescriptionWriteError:
+          ::std::os::raw::c_short =
+    -26402;
+pub const DAQmxErrorPxiResmanSystemDescriptionParseError:
+          ::std::os::raw::c_short =
+    -26401;
+pub const DAQmxErrorPxiResmanSystemDescriptionFileNotFound:
+          ::std::os::raw::c_short =
+    -26400;
+pub const DAQmxErrorPxiResmanControllerParseError: ::std::os::raw::c_short =
+    -26302;
+pub const DAQmxErrorPxiResmanControllerTypeInvalid: ::std::os::raw::c_short =
+    -26301;
+pub const DAQmxErrorPxiResmanControllerFileNotFound: ::std::os::raw::c_short =
+    -26300;
+pub const DAQmxErrorPxiResmanChassisTriggerParseError: ::std::os::raw::c_short
+          =
+    -26206;
+pub const DAQmxErrorPxiResmanChassisBridgeParseError: ::std::os::raw::c_short
+          =
+    -26205;
+pub const DAQmxErrorPxiResmanChassisSlotParseError: ::std::os::raw::c_short =
+    -26204;
+pub const DAQmxErrorPxiResmanChassisSegmentParseError: ::std::os::raw::c_short
+          =
+    -26203;
+pub const DAQmxErrorPxiResmanChassisParseError: ::std::os::raw::c_short =
+    -26202;
+pub const DAQmxErrorPxiResmanChassisBridgeNotFound: ::std::os::raw::c_short =
+    -26201;
+pub const DAQmxErrorPxiResmanChassisFileNotFound: ::std::os::raw::c_short =
+    -26200;
+pub const DAQmxErrorInsufficientBuffer: ::std::os::raw::c_short = -26113;
+pub const DAQmxErrorDirCreateFault: ::std::os::raw::c_short = -26112;
+pub const DAQmxErrorAccessDenied: ::std::os::raw::c_short = -26111;
+pub const DAQmxErrorPathNotFound: ::std::os::raw::c_short = -26110;
+pub const DAQmxErrorFileExists: ::std::os::raw::c_short = -26109;
+pub const DAQmxErrorFileDeleteFault: ::std::os::raw::c_short = -26107;
+pub const DAQmxErrorFileCopyFault: ::std::os::raw::c_short = -26106;
+pub const DAQmxErrorFileCloseFault: ::std::os::raw::c_short = -26105;
+pub const DAQmxErrorFileNotFound: ::std::os::raw::c_short = -26103;
+pub const DAQmxErrorPxiResmanSystemNotInitialized: ::std::os::raw::c_short =
+    -26102;
+pub const DAQmxErrorPxiResmanInvalidConfiguration: ::std::os::raw::c_short =
+    -26101;
+pub const DAQmxErrorPxiResmanAllocationError: ::std::os::raw::c_short =
+    -26100;
+pub const DAQmxErrorTrigmanDisconnected: ::std::os::raw::c_short = -26010;
+pub const DAQmxErrorTrigmanInvalidClient: ::std::os::raw::c_short = -26009;
+pub const DAQmxErrorTrigmanConflictingRoute: ::std::os::raw::c_short = -26008;
+pub const DAQmxErrorTrigmanConflictingRouteNoUnreserve:
+          ::std::os::raw::c_short =
+    -26007;
+pub const DAQmxErrorTrigmanConflictingRouteGeneric: ::std::os::raw::c_short =
+    -26006;
+pub const DAQmxErrorTrigmanLineAlreadyReserved: ::std::os::raw::c_short =
+    -26005;
+pub const DAQmxErrorTrigmanLineNotReservedUnroutable: ::std::os::raw::c_short
+          =
+    -26004;
+pub const DAQmxErrorTrigmanLineNotReserved: ::std::os::raw::c_short = -26003;
+pub const DAQmxErrorTrigmanInvalidParameter: ::std::os::raw::c_short = -26002;
+pub const DAQmxErrorTrigmanUnsupportedOper: ::std::os::raw::c_short = -26001;
+pub const DAQmxErrorTrigmanUnknownError: ::std::os::raw::c_short = -26000;
+pub const DAQmxWarningTrigmanUnknownError: ::std::os::raw::c_ushort = 26000;
+pub const DAQmxWarningTrigmanUnsupportedOper: ::std::os::raw::c_ushort =
+    26001;
+pub const DAQmxWarningTrigmanInvalidParameter: ::std::os::raw::c_ushort =
+    26002;
+pub const DAQmxWarningTrigmanLineNotReserved: ::std::os::raw::c_ushort =
+    26003;
+pub const DAQmxWarningTrigmanLineNotReservedUnroutable:
+          ::std::os::raw::c_ushort =
+    26004;
+pub const DAQmxWarningTrigmanLineAlreadyReserved: ::std::os::raw::c_ushort =
+    26005;
+pub const DAQmxWarningTrigmanConflictingRouteGeneric: ::std::os::raw::c_ushort
+          =
+    26006;
+pub const DAQmxWarningTrigmanConflictingRouteNoUnreserve:
+          ::std::os::raw::c_ushort =
+    26007;
+pub const DAQmxWarningTrigmanConflictingRoute: ::std::os::raw::c_ushort =
+    26008;
+pub const DAQmxWarningTrigmanInvalidClient: ::std::os::raw::c_ushort = 26009;
+pub const DAQmxWarningTrigmanDisconnected: ::std::os::raw::c_ushort = 26010;
+pub const DAQmxWarningPxiResmanAllocationError: ::std::os::raw::c_ushort =
+    26100;
+pub const DAQmxWarningPxiResmanInvalidConfiguration: ::std::os::raw::c_ushort
+          =
+    26101;
+pub const DAQmxWarningPxiResmanSystemNotInitialized: ::std::os::raw::c_ushort
+          =
+    26102;
+pub const DAQmxWarningFileNotFound: ::std::os::raw::c_ushort = 26103;
+pub const DAQmxWarningFileCloseFault: ::std::os::raw::c_ushort = 26105;
+pub const DAQmxWarningFileCopyFault: ::std::os::raw::c_ushort = 26106;
+pub const DAQmxWarningFileDeleteFault: ::std::os::raw::c_ushort = 26107;
+pub const DAQmxWarningFileExists: ::std::os::raw::c_ushort = 26109;
+pub const DAQmxWarningPathNotFound: ::std::os::raw::c_ushort = 26110;
+pub const DAQmxWarningAccessDenied: ::std::os::raw::c_ushort = 26111;
+pub const DAQmxWarningDirCreateFault: ::std::os::raw::c_ushort = 26112;
+pub const DAQmxWarningInsufficientBuffer: ::std::os::raw::c_ushort = 26113;
+pub const DAQmxWarningPxiResmanChassisFileNotFound: ::std::os::raw::c_ushort =
+    26200;
+pub const DAQmxWarningPxiResmanChassisBridgeNotFound: ::std::os::raw::c_ushort
+          =
+    26201;
+pub const DAQmxWarningPxiResmanChassisParseError: ::std::os::raw::c_ushort =
+    26202;
+pub const DAQmxWarningPxiResmanChassisSegmentParseError:
+          ::std::os::raw::c_ushort =
+    26203;
+pub const DAQmxWarningPxiResmanChassisSlotParseError: ::std::os::raw::c_ushort
+          =
+    26204;
+pub const DAQmxWarningPxiResmanChassisBridgeParseError:
+          ::std::os::raw::c_ushort =
+    26205;
+pub const DAQmxWarningPxiResmanChassisTriggerParseError:
+          ::std::os::raw::c_ushort =
+    26206;
+pub const DAQmxWarningPxiResmanControllerFileNotFound:
+          ::std::os::raw::c_ushort =
+    26300;
+pub const DAQmxWarningPxiResmanControllerTypeInvalid: ::std::os::raw::c_ushort
+          =
+    26301;
+pub const DAQmxWarningPxiResmanControllerParseError: ::std::os::raw::c_ushort
+          =
+    26302;
+pub const DAQmxWarningPxiResmanSystemDescriptionFileNotFound:
+          ::std::os::raw::c_ushort =
+    26400;
+pub const DAQmxWarningPxiResmanSystemDescriptionParseError:
+          ::std::os::raw::c_ushort =
+    26401;
+pub const DAQmxWarningPxiResmanSystemDescriptionWriteError:
+          ::std::os::raw::c_ushort =
+    26402;
+pub const DAQmxWarningPxiResmanSystemDescriptionSpecLimitation:
+          ::std::os::raw::c_ushort =
+    26403;
+pub const DAQmxWarningPxiResmanModuleParseError: ::std::os::raw::c_ushort =
+    26500;
+pub const DAQmxWarningPxiResmanPciDescriptionStringParseError:
+          ::std::os::raw::c_ushort =
+    26550;
+pub const DAQmxWarningPxiResmanMxsPxiSystemNotFound: ::std::os::raw::c_ushort
+          =
+    26600;
+pub const DAQmxWarningIOError: ::std::os::raw::c_ushort = 26652;
+pub const DAQmxWarningAttributeNotFound: ::std::os::raw::c_ushort = 26653;
+pub const DAQmxWarningChildNotFound: ::std::os::raw::c_ushort = 26654;
+pub const DAQmxWarningInconsistentFileFault: ::std::os::raw::c_ushort = 26655;
+pub const DAQmxWarningIncorrectDataType: ::std::os::raw::c_ushort = 26656;
+pub const DAQmxWarningHandlerNotFound: ::std::os::raw::c_ushort = 26657;
+pub const DAQmxWarningUnspecifiedError: ::std::os::raw::c_ushort = 26801;
+pub const DAQmxWarningTimeout: ::std::os::raw::c_ushort = 26802;
+pub const DAQmxWarningRecursiveCall: ::std::os::raw::c_ushort = 26803;
+pub const DAQmxWarningServiceNotRunning: ::std::os::raw::c_ushort = 26804;
+pub const DAQmxWarningInvalidHandle: ::std::os::raw::c_ushort = 26805;
+pub const DAQmxWarningInvalidAttribute: ::std::os::raw::c_ushort = 26806;
+pub const DAQmxWarningNotActiveResourceManager: ::std::os::raw::c_ushort =
+    26807;
+pub const DAQmxWarningPXISAConfigurationLocked: ::std::os::raw::c_ushort =
+    26808;
+pub const DAQmxWarningPXISystemDescriptionParseError: ::std::os::raw::c_ushort
+          =
+    26809;
+pub const DAQmxWarningAlreadyInitialized: ::std::os::raw::c_ushort = 26850;
+pub const DAQmxWarningGenerationDisabled: ::std::os::raw::c_ushort = 26851;
+pub const DAQmxWarningFileDoesNotExist: ::std::os::raw::c_ushort = 26852;
+pub const DAQmxWarningRetryCall: ::std::os::raw::c_ushort = 26853;
+pub const DAQmxWarningPALValueConflict: ::std::os::raw::c_ushort = 50000;
+pub const DAQmxWarningPALIrrelevantAttribute: ::std::os::raw::c_ushort =
+    50001;
+pub const DAQmxWarningPALBadDevice: ::std::os::raw::c_ushort = 50002;
+pub const DAQmxWarningPALBadSelector: ::std::os::raw::c_ushort = 50003;
+pub const DAQmxWarningPALBadPointer: ::std::os::raw::c_ushort = 50004;
+pub const DAQmxWarningPALBadDataSize: ::std::os::raw::c_ushort = 50005;
+pub const DAQmxWarningPALBadMode: ::std::os::raw::c_ushort = 50006;
+pub const DAQmxWarningPALBadOffset: ::std::os::raw::c_ushort = 50007;
+pub const DAQmxWarningPALBadCount: ::std::os::raw::c_ushort = 50008;
+pub const DAQmxWarningPALBadReadMode: ::std::os::raw::c_ushort = 50009;
+pub const DAQmxWarningPALBadReadOffset: ::std::os::raw::c_ushort = 50010;
+pub const DAQmxWarningPALBadReadCount: ::std::os::raw::c_ushort = 50011;
+pub const DAQmxWarningPALBadWriteMode: ::std::os::raw::c_ushort = 50012;
+pub const DAQmxWarningPALBadWriteOffset: ::std::os::raw::c_ushort = 50013;
+pub const DAQmxWarningPALBadWriteCount: ::std::os::raw::c_ushort = 50014;
+pub const DAQmxWarningPALBadAddressClass: ::std::os::raw::c_ushort = 50015;
+pub const DAQmxWarningPALBadWindowType: ::std::os::raw::c_ushort = 50016;
+pub const DAQmxWarningPALBadThreadMultitask: ::std::os::raw::c_ushort = 50019;
+pub const DAQmxWarningPALResourceOwnedBySystem: ::std::os::raw::c_ushort =
+    50100;
+pub const DAQmxWarningPALResourceNotAvailable: ::std::os::raw::c_ushort =
+    50101;
+pub const DAQmxWarningPALResourceNotReserved: ::std::os::raw::c_ushort =
+    50102;
+pub const DAQmxWarningPALResourceReserved: ::std::os::raw::c_ushort = 50103;
+pub const DAQmxWarningPALResourceNotInitialized: ::std::os::raw::c_ushort =
+    50104;
+pub const DAQmxWarningPALResourceInitialized: ::std::os::raw::c_ushort =
+    50105;
+pub const DAQmxWarningPALResourceBusy: ::std::os::raw::c_ushort = 50106;
+pub const DAQmxWarningPALResourceAmbiguous: ::std::os::raw::c_ushort = 50107;
+pub const DAQmxWarningPALFirmwareFault: ::std::os::raw::c_ushort = 50151;
+pub const DAQmxWarningPALHardwareFault: ::std::os::raw::c_ushort = 50152;
+pub const DAQmxWarningPALOSUnsupported: ::std::os::raw::c_ushort = 50200;
+pub const DAQmxWarningPALOSFault: ::std::os::raw::c_ushort = 50202;
+pub const DAQmxWarningPALFunctionObsolete: ::std::os::raw::c_ushort = 50254;
+pub const DAQmxWarningPALFunctionNotFound: ::std::os::raw::c_ushort = 50255;
+pub const DAQmxWarningPALFeatureNotSupported: ::std::os::raw::c_ushort =
+    50256;
+pub const DAQmxWarningPALComponentInitializationFault:
+          ::std::os::raw::c_ushort =
+    50258;
+pub const DAQmxWarningPALComponentAlreadyLoaded: ::std::os::raw::c_ushort =
+    50260;
+pub const DAQmxWarningPALComponentNotUnloadable: ::std::os::raw::c_ushort =
+    50262;
+pub const DAQmxWarningPALMemoryAlignmentFault: ::std::os::raw::c_ushort =
+    50351;
+pub const DAQmxWarningPALMemoryHeapNotEmpty: ::std::os::raw::c_ushort = 50355;
+pub const DAQmxWarningPALTransferNotInProgress: ::std::os::raw::c_ushort =
+    50402;
+pub const DAQmxWarningPALTransferInProgress: ::std::os::raw::c_ushort = 50403;
+pub const DAQmxWarningPALTransferStopped: ::std::os::raw::c_ushort = 50404;
+pub const DAQmxWarningPALTransferAborted: ::std::os::raw::c_ushort = 50405;
+pub const DAQmxWarningPALLogicalBufferEmpty: ::std::os::raw::c_ushort = 50406;
+pub const DAQmxWarningPALLogicalBufferFull: ::std::os::raw::c_ushort = 50407;
+pub const DAQmxWarningPALPhysicalBufferEmpty: ::std::os::raw::c_ushort =
+    50408;
+pub const DAQmxWarningPALPhysicalBufferFull: ::std::os::raw::c_ushort = 50409;
+pub const DAQmxWarningPALTransferOverwritten: ::std::os::raw::c_ushort =
+    50410;
+pub const DAQmxWarningPALTransferOverread: ::std::os::raw::c_ushort = 50411;
+pub const DAQmxWarningPALDispatcherAlreadyExported: ::std::os::raw::c_ushort =
+    50500;
+pub const DAQmxWarningPALSyncAbandoned: ::std::os::raw::c_ushort = 50551;
 pub type int8 = ::std::os::raw::c_char;
 pub type uInt8 = ::std::os::raw::c_uchar;
 pub type int16 = ::std::os::raw::c_short;
@@ -38,7 +5793,8 @@ pub type DAQmxSignalEventCallbackPtr =
                                                    *mut ::std::os::raw::c_void)
                               -> int32>;
 #[link(name =
-           "C:\\Program Files (x86)\\National Instruments\\Shared\\ExternalCompilerSupport\\C\\lib64\\msvc\\NIDAQmx")]
+           "C:\\Program Files (x86)\\National Instruments\\Shared\\ExternalCompilerSupport\\C\\lib64\\msvc\\NIDAQmx",
+       kind = "dylib")]
 extern "C" {
     pub fn DAQmxLoadTask(taskName: *mut ::std::os::raw::c_char,
                          taskHandle: *mut TaskHandle) -> int32;
